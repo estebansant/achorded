@@ -1,0 +1,46 @@
+{
+  "name": "achorder",
+  "version": "1.0.0",
+  "description": "Achorder is another of my personal projects, the spacial thing is that Achorder will be built using React. This time, I am making an e-commerce website where you can buy electric guitars, acoustic guitars, amplifiers and some  accessories for your guitars. I must remark that this website won't sell any real objects. It is just my version of an e-commerce that doesn't seek to sell any item.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack --config webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebansant/achorder.git"
+  },
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "author": "Esteban Santiago <estebansant30@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estebansant/achorder/issues"
+  },
+  "homepage": "https://github.com/estebansant/achorder#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
