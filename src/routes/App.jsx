@@ -2,10 +2,13 @@ import React from 'react';
 import '../styles/global.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../containers/Layout';
-import { Login } from '../containers/Login';
-import { RecoverPassword } from '../containers/RecoverPassword';
+import { Login } from '../pages/Login';
 import { Home } from '../pages/Home';
 import { NotFound } from '../pages/NotFound';
+import { SignUp } from '../pages/SignUp';
+import { MyAccount } from '../pages/MyAccount';
+import { Checkout } from '../pages/Checkout';
+import { ElectricGuitars } from '../pages/sections/ElectricGuitars';
 
 const App = () => {
   return (
@@ -14,7 +17,10 @@ const App = () => {
         <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/login" element={<Login />} />
-            <Route exact path="/recover-password" element={<RecoverPassword />} />
+            <Route exact path="/account" element={<MyAccount />} />
+            <Route exact path="/electric-guitars" element={<ElectricGuitars />} />
+            <Route exact path="/signup" element={<SignUp />} />
+            <Route exact path="/checkout" element={<Checkout />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
