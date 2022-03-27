@@ -32,7 +32,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(css|scss)$/,
                 use: [
                     "style-loader",
                     "css-loader",
@@ -52,6 +52,7 @@ module.exports = {
     ],
     devServer: {
         static: path.join(__dirname, 'dist'),
+        historyApiFallback: true,
         compress: true,
         port: 3000,
     }
