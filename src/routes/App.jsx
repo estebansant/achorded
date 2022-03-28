@@ -1,5 +1,4 @@
 import React from 'react';
-import '.@styles/global.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../containers/Layout';
 import { Login } from '../pages/Login';
