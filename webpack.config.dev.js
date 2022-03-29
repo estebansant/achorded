@@ -5,6 +5,11 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: './src/index.js',
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',

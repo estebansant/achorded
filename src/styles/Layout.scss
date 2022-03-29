@@ -13,23 +13,3 @@ body{
     background: $main-red;
     background-attachment: fixed;
 }
-::-webkit-scrollbar{
-    width: 10px;
-    height: 10px;
-}
-::-webkit-scrollbar-track {
-    background-color: $secondary-red;
-}
-::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-    border-radius: $border-radius;
-    background: $main-red;
-}
-::-webkit-scrollbar-thumb:hover{
-    transition: all .3s ease-out;
-    background: linear-gradient(transparent, $main-red);
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
-}
-.Layout{
-    padding: 10px;
-}
