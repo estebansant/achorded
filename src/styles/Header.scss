@@ -9,7 +9,7 @@
     z-index: 100;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.35);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .menu{
@@ -28,7 +28,6 @@
     }
 }
 .Header__container--right{
-    width: 45.8px;
     .shopping{
         list-style: none;
         position: relative;
@@ -42,11 +41,12 @@
                 width: 20px;
                 height: 20px;
                 position: absolute;
-                text-align: center;
-                line-height: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 top: -5px;
                 right: -2px;
-                color: black;
+                color: $main-black;
                 font-size: 2rem;
                 font-family: $title;
                 font-weight: bold;
@@ -56,17 +56,132 @@
         }
     }
 }
-.Header__container--left, .profile, .question__icon, .profile__inner--menu{
+.Header__container--left, .profile, .question__icon, .profile__inner--menu, .profile__menu, .about{
     display: none;
 }
-@media(min-width:768px){
+@media(min-width: 768px){
+    .Header__container{
+        justify-content: space-between;
+    }
+    .menu{
+        position: relative;
+        left: 5%;
+    }
+    .Header__container--right{
+        position: relative;
+        right: 5%;
+    }
+}
+@media(min-width: 929px){
+    .Header__container{
+        justify-content: space-evenly;
+    }
     .menu{
         display: none;
     }
-    .Header__container--left ul, .Header__container--right ul{
-        width: fit-content;
-        list-style: none;
-        padding: 0px;
-        margin: 24px;
+    .Header__container--left{
+        display: inline-block;
+        position: relative;
+        left: 3%;
+        .navigation__left{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            &--item{
+                margin-right: 18px;
+                a{
+                    font-family: $title;
+                    color: $white;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+            &--last{
+                a{
+                    font-family: $title;
+                    color: $white;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .Header__container--center{
+        width: 27%;
+        margin: 0 auto;
+        .Header__logo{
+            max-width: 160px;
+            position: relative;
+            left: 15%;
+        }
+    }
+    .Header__container--right{
+        display: inline-block;
+        right: 3%;
+        .navigation__right{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            .about{
+                display: inline;
+                margin-right: 18px;
+                a{
+                    text-decoration: none;
+                    font-family: $title;
+                    color: $white;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+            .profile {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-right: 18px;
+                &__text{
+                    font-family: $title;
+                    color: $white;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+                &__arrow{
+                    width: 18px;
+                    height: 9px;
+                    margin-right: 8px
+                }
+            }
+            .question__icon{
+                margin-right: 18px;
+                a{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .Header__container--right .shopping a .shopping__text{
+        right: -8px;
+    }
+    .navigation__left--item a:hover, .navigation__left--last a:hover, .profile__text:hover, .about:hover{
+        text-decoration: underline;
+    }
+}
+@media(min-width: 2560px){
+    .Header__container--center{
+        display: flex;
+        justify-content: center;
+        .Header__logo{
+            max-width: 160px;
+            position: relative;
+            left: 0%;
+        }
     }
 }

@@ -4,20 +4,21 @@ import menu from '@icons/hamburger-menu.svg';
 import logo from '@logo/achorded_logo.svg';
 import question from '@icons/question.svg';
 import shoppingCart from '@icons/shopping_cart.svg';
+import arrow from '@icons/chevron_down.svg';
 
 const Header = () => {
   return (
     <nav className="Header__container">
       <img src={menu} alt="menu" className="menu"/>
       <div className="Header__container--left">
-        <ul>
-          <li className="navigation__item">
+        <ul className="navigation__left">
+          <li className="navigation__left--item">
             <a href="#">Electric Guitars</a>
           </li>
-          <li className="navigation__item">
+          <li className="navigation__left--item">
             <a href="#">Acoustic Guitars</a>
           </li>
-          <li className="navigation__item">
+          <li className="navigation__left--last">
             <a href="#">Accessories</a>
           </li>
         </ul>
@@ -30,10 +31,13 @@ const Header = () => {
       </div>
 
       <div className="Header__container--right">
-        <ul>
+        <ul className="navigation__right">
+          <li className="about">
+            <a href="#">About Us</a>
+          </li>
           <li className="profile">
-            <span className="profile__arrow"></span>
-            Profile
+            <img src={arrow} alt="arrow down" class="profile__arrow"/>
+            <p className="profile__text">Profile</p>
             <div className="profile__menu">
               <ul className="profile__inner--menu">
                 <li className="inner__menu--item">
