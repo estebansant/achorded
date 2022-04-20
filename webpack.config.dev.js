@@ -29,7 +29,7 @@ module.exports = {
             '@logo': path.resolve(__dirname, 'src/assets/logo/')
         }
     },
-    mode: 'production',
+    mode: 'development',
     module: {
         rules: [
             {

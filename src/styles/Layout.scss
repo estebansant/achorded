@@ -1,15 +1,17 @@
-@import "./_global.scss";
+@forward "./_global.scss";
+@use "./variables/colors";
+@use "./variables/fonts";
 
 
 html{
     font-size: 62.5%;
-    font-family: 'Alegreya', sans-serif;
+    font-family: fonts.$text, sans-serif;
     scroll-behavior: smooth;
     min-height: 100%;
 }
 body{
     width: 100%;
     overflow-x: hidden;
-    background: $main-red;
+    background: colors.$main-red;
     background-attachment: fixed;
 }

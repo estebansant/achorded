@@ -1,4 +1,6 @@
-@import "./_global.scss";
+@forward "./_global.scss";
+@use "./variables/colors";
+@use "./variables/fonts";
 
 .NotFound__container{
     width: 88%;
@@ -19,16 +21,16 @@
     }
     .NotFound__title{
         font-size: 4rem;
-        font-family: $title;
+        font-family: fonts.$title;
         font-weight: bold;
-        color: $yellow;
+        color: colors.$yellow;
         text-align: center;
     }
     .NotFound__text{
         font-size: 2rem;
-        font-family: $text;
+        font-family: fonts.$text;
         font-weight: 400;
-        color: $white;
+        color: colors.$white;
         text-align: center;
     }
 }

@@ -1,5 +1,7 @@
-@import "./_global.scss";
+@forward "./_global.scss";
+@use "./variables/colors";
+@use "./variables/fonts";
 
 .login{
-    color: $yellow;
+    color: colors.$yellow;
 }
