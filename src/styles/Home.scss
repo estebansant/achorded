@@ -1,0 +1,34 @@
+@forward "./_global.scss";
+@use "./variables/colors";
+@use "./variables/fonts";
+@use "./variables/size";
+
+.banner{
+    width: 100%;
+    &__container{
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &--text{
+            position: relative;
+            margin-top: -38%;
+            text-align: center;
+            h1{
+                color: colors.$white;
+                font-family: fonts.$title;
+                font-size: size.$main-title;
+                text-shadow: 4px 5px 4px colors.$main-black;
+            }
+            p{
+                margin-top: 15px;
+                color: colors.$white;
+                font-family: fonts.$text;
+                font-size: size.$text;
+                text-shadow: 4px 5px 4px colors.$main-black;
+                font-weight: 500;
+            }
+        }
+    }
+}

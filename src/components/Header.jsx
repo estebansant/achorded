@@ -36,7 +36,7 @@ const Header = () => {
             <a href="#">About Us</a>
           </li>
           <li className="profile">
-            <img src={arrow} alt="arrow down" class="profile__arrow"/>
+            <img src={arrow} alt="arrow down" className="profile__arrow"/>
             <p className="profile__text">Profile</p>
             <div className="profile__menu">
               <ul className="profile__inner--menu">
