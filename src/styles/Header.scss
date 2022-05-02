@@ -113,7 +113,7 @@
         }
     }
     .Header__container--center{
-        width: 27%;
+        width: 22%;
         margin: 0 auto;
         .Header__logo{
             max-width: 160px;
@@ -163,8 +163,13 @@
             }
             .question__icon{
                 margin-right: 18px;
+                display: inline-block;
                 a{
                     display: inline-block;
+                    img{
+                        width: 34px;
+                        height: 34px;
+                    }
                 }
             }
         }

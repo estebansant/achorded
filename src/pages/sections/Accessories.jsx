@@ -2,7 +2,9 @@ import React from 'react'
 
 const Accessories = () => {
   return (
-    <div>Accessories</div>
+    <main>
+      <h1>Accessories</h1>
+    </main>
   )
 }
 

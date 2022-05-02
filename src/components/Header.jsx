@@ -13,19 +13,19 @@ const Header = () => {
       <div className="Header__container--left">
         <ul className="navigation__left">
           <li className="navigation__left--item">
-            <a href="#">Electric Guitars</a>
+            <a href="/electric-guitars">Electric Guitars</a>
           </li>
           <li className="navigation__left--item">
-            <a href="#">Acoustic Guitars</a>
+            <a href="/acoustic-guitars">Acoustic Guitars</a>
           </li>
           <li className="navigation__left--last">
-            <a href="#">Accessories</a>
+            <a href="/accessories">Accessories</a>
           </li>
         </ul>
       </div>
 
       <div className="Header__container--center">
-        <a href="#">
+        <a href="/">
           <img src={logo} alt="Achorded logo" className="Header__logo"/>
         </a>
       </div>
@@ -33,31 +33,33 @@ const Header = () => {
       <div className="Header__container--right">
         <ul className="navigation__right">
           <li className="about">
-            <a href="#">About Us</a>
+            <a href="/about">About Us</a>
           </li>
           <li className="profile">
             <img src={arrow} alt="arrow down" className="profile__arrow"/>
             <p className="profile__text">Profile</p>
-            <div className="profile__menu">
-              <ul className="profile__inner--menu">
-                <li className="inner__menu--item">
-                  <a href="#">My orders</a>
-                </li>
-                <li className="inner__menu--item">
-                  <a href="#">My account</a>
-                </li>
-              </ul>
-            </div>
+
+              <div className="profile__menu">
+                <ul className="profile__inner--menu">
+                  <li className="inner__menu--item">
+                    <a href="#">My orders</a>
+                  </li>
+                  <li className="inner__menu--item">
+                    <a href="#">My account</a>
+                  </li>
+                </ul>
+              </div>
+              
           </li>
 
           <li className="question__icon">
-            <a href="#">
+            <a href="/questions">
               <img src={question} alt="questions"/>
             </a>
           </li>
 
           <li className="shopping">
-            <a href="#">
+            <a href="/my-cart">
               <img src={shoppingCart} alt="shopping cart" className="shopping__icon"/>
               <div className="shopping__text">2</div>
             </a>
