@@ -1,3 +1,65 @@
 @use "@styles/variables/colors";
 @use "@styles/variables/fonts";
 @use "@styles/variables/size";
+
+.highlights{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 25px;
+    &__title{
+        font-size: size.$title;
+        font-family: fonts.$title;
+        color: colors.$white;
+    }
+    &__sections{
+        width: 100%;
+        height: fit-content;
+        white-space: nowrap;
+        position: relative;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 20px 20px 0px 40px;
+        h3{
+            display: inline-block;
+            font-size: size.$subtitle;
+            font-family: fonts.$text;
+            color: colors.$white;
+            font-weight: 500;
+            margin-right: 50px;
+            margin-bottom: 10px;
+        }
+        h3:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 2.1rem;
+        }
+    }
+}
+.highlights__sections::-webkit-scrollbar { 
+    height: 5px;
+}
+
+@media (min-width: 768px) {
+    .highlights{
+        &__sections{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+    }
+}
+@media (min-width:1024px) {
+    .highlights{
+        &__sections{
+            width: 80%;
+        }
+    }
+}
