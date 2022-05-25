@@ -13,6 +13,9 @@ import { Faqs } from '../pages/Faqs';
 import { Accessories } from '../pages/sections/Accessories';
 import { ElectricGuitars } from '../pages/sections/ElectricGuitars';
 import { AcousticGuitars } from '../pages/sections/AcousticGuitars';
+import { Smokey } from '../pages/sections/products/electric/Smokey';
+import { OldFashioned } from '../pages/sections/products/electric/OldFasioned';
+import { ClassicalRock } from '../pages/sections/products/electric/ClassicalRock';
 
 const App = () => {
   return (
@@ -30,6 +33,9 @@ const App = () => {
             <Route exact path="/accessories" element={<Accessories />} />
             <Route exact path="/electric-guitars" element={<ElectricGuitars />} />
             <Route exact path="/acoustic-guitars" element={<AcousticGuitars />} />
+            <Route exact path="/electric-guitars/smokey" element={<Smokey />} />
+            <Route exact path="/electric-guitars/old-fashioned" element={<OldFashioned />} />
+            <Route exact path="/electric-guitars/classical-rock" element={<ClassicalRock />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

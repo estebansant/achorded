@@ -26,6 +26,8 @@ const Highlights = () =>{
             <h3 id="accessories" onClick={onClick}>For styling</h3> 
           </div>
 
+          <hr/>
+
           <div className="highlights__products">
             <ElectricHighlights />
           </div>

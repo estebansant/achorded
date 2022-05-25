@@ -39,6 +39,9 @@
             font-size: 2.1rem;
         }
     }
+    hr{
+        display: none;
+    }
 }
 .highlights__sections::-webkit-scrollbar { 
     height: 5px;
@@ -54,12 +57,23 @@
             padding: 0px;
             overflow-x: hidden;
         }
+        hr{
+            margin: 0 auto;
+            display: inline;
+            width: 85%;
+            background-color: colors.$light-white;
+            border: 1px solid colors.$light-white;
+            border-radius: 8px;
+        }
     }
 }
 @media (min-width:1024px) {
     .highlights{
         &__sections{
             width: 80%;
+        }
+        hr{
+            width: 70%;
         }
     }
 }
