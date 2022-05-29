@@ -14,7 +14,7 @@ const Banner = () =>{
 
                 <div className="banner__container--items">
                     <h1>Tuning the chords <br/> of your rhythm.</h1>
-                    <p>Shop amazing guitars <br/> from our collection.</p>
+                    <p>Shop amazing guitars from our collection.</p>
                 </div>
 
                 <div className="banner__container--button">
