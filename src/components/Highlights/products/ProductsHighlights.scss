@@ -17,7 +17,7 @@
     border-radius: 16px;
     margin-top: 40px;
     position: relative;
-    box-shadow: 8px 12px 10px rgba(95, 4, 4, 0.6);
+    box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.6);
     transition: all 0.2s ease-in-out;
     &-link{
         display: flex;
@@ -60,7 +60,7 @@
 .showcase:hover{
     cursor: pointer;
     transform: scale(1.05);
-    box-shadow: 0px 0px 14px rgba(207, 207, 207, 0.5);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
     .showcase__image{
         position: relative;
         margin-top: -15%;

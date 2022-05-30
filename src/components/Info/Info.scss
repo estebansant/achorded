@@ -1,0 +1,64 @@
+@use "@styles/variables/colors";
+@use "@styles/variables/fonts";
+@use "@styles/variables/size";
+
+.info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: colors.$main-black;
+    &__title{
+        font-size: size.$title;
+        font-family: fonts.$title;
+        color: colors.$white;
+        font-weight: bold;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        &--image{
+            max-width: 85%;
+            height: auto;
+            background-size: fit-content;
+            border: solid 4px colors.$secondary-red;
+            padding: 6px;
+        }
+        &--text{
+            width: 85%;
+            font-size: size.$text;
+            font-family: fonts.$text;
+            font-weight: 500;
+            color: colors.$white;
+            margin-top: 20px;
+            text-align: justify;
+        }
+    }
+}
+@media (min-width: 768px){
+    .info{
+        display: block;
+        &__title{
+            font-size: size.$main-title;
+            text-align: left;
+        }
+        &__container{
+            flex-direction: row;
+            &--image{
+                max-width: 45%;
+            }
+            &--text{
+                width: 40%;
+            }
+        }
+    }
+}
