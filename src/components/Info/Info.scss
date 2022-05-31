@@ -9,16 +9,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: colors.$main-black;
     &__title{
         font-size: size.$title;
         font-family: fonts.$title;
         color: colors.$white;
         font-weight: bold;
+        margin-top: 12px;
+        width: 95%;
     }
     &__container{
         display: flex;
@@ -26,38 +27,69 @@
         justify-content: space-evenly;
         align-items: center;
         margin-top: 20px;
+        margin-bottom: 20px;
         &--image{
-            max-width: 85%;
+            max-width: 95%;
             height: auto;
-            background-size: fit-content;
-            border: solid 4px colors.$secondary-red;
-            padding: 6px;
         }
         &--text{
-            width: 85%;
+            width: 95%;
             font-size: size.$text;
             font-family: fonts.$text;
             font-weight: 500;
             color: colors.$white;
-            margin-top: 20px;
-            text-align: justify;
+            margin-top: 5px;
+            margin-bottom: 35px;
+            text-align: left;
         }
     }
 }
 @media (min-width: 768px){
     .info{
         display: block;
+        padding-left: 50px;
+        padding-right: 50px;
         &__title{
             font-size: size.$main-title;
             text-align: left;
         }
         &__container{
             flex-direction: row;
+            justify-content: space-around;
             &--image{
-                max-width: 45%;
+                max-width: 40%;
             }
             &--text{
-                width: 40%;
+                width: 55%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-size: size.$subtitle;
+            }
+        }
+    }
+}
+@media (min-width: 1024px){
+    .info{
+        padding-left: 100px;
+        padding-right: 100px;
+        &__container{
+            justify-content: space-between;
+            &--image{
+                max-width: 50%; 
+            }
+            &--text{
+                width: 43%;
+            }
+        }
+    }
+}
+@media (min-width: 1440px){
+    .info{
+        padding-left: 8%;
+        padding-right: 8%;
+        &__container{
+            &--image{
+                max-width: 40%; 
             }
         }
     }
