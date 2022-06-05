@@ -3,6 +3,7 @@ import '@styles/Home.scss';
 import { Banner } from '@components/Banner/Banner.jsx';
 import { Highlights } from '@components/Highlights/Highlights.jsx';
 import { Info } from '@components/Info/Info.jsx';
+import { Story } from '@components/Story/Story.jsx';
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <Banner />
       <Highlights />
       <Info />
-      
+      <Story />
     </main>
   )
 }
