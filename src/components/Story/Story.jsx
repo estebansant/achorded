@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import triangleRed from '@images/electric/electric_triangle_red-1.svg';
 
 const Story = () => {
     return(
@@ -13,19 +14,168 @@ const Story = () => {
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={30}
-                slidesPerView={3}
+                breakpoints={
+                    {
+                        640:{
+                            slidesPerView: 3,
+                        },
+                        1024:{
+                            slidesPerView: 4,
+                        },
+                        1440:{
+                            slidesPerView: 6,
+                        }
+                    }
+                }
+                slidesPerView={1}
                 navigation
+                centeredSlides={true}
+                centeredSlidesBounds={true}
+                roundLengths={true}
+                loopAdditionalSlides={30}
                 loop={true}
                 className="story__swiper"
                 >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className="story__swiper--slide">
+                    <a className="swiper__slide--link">
+                        <img className="swiper__slide--image"src={triangleRed} alt="dabois"/>
+                        <div className="swiper__slide--writing">
+                            <h3 className="swiper__slide--writing__title">Triangle Red Guitar</h3>
+                            <p className="swiper__slide--writing__text">This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.</p>
+                        </div>
+                        
+                    </a>
+                </SwiperSlide>
             </Swiper>
         </section>
     )
