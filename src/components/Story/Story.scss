@@ -12,12 +12,12 @@
     }
     &__swiper{
         width: 100vw;
-        height: 680px;
+        height: 720px;
         margin-top: 20px;
-        position: relative;
+        justify-content: center;
         &--slide{
-            max-width: 250px;
-            max-height: 557px;
+            max-width: 300px;
+            max-height: 625px;
             background-color: colors.$white;
             border-radius: 16px;
             box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.6);
@@ -50,7 +50,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .swiper__slide--title{
@@ -70,9 +70,6 @@
     width: 100%;
     height: fit-content;
     background-color: colors.$main-black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 20px;
     border-bottom-left-radius: 16px;
