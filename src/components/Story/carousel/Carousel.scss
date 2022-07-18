@@ -2,16 +2,40 @@
 @use "@styles/variables/fonts";
 @use "@styles/variables/size";
 
-.slider{
+.carousel{
+    position:relative;
+    width: 100vw;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right__arrow{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    max-width: 40px;
+    max-height: 40px;
+}
+.left__arrow{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    max-width: 40px;
+    max-height: 40px;
+}
+.slides{
     max-width: 300px;
-    max-height: 625px;
+    max-height: 640px;
+    min-height: 640px;
     background-color: colors.$white;
     border-radius: 16px;
     box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease-in-out;
+    overflow: hidden;
     &__link{
         width: 100%;
-        height: 100%;
+        min-height: 640px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -49,7 +73,7 @@
         }
     }
 }
-.slider::after{
+.slides::after{
     content: '';
     position: absolute;
     z-index: -1;
@@ -61,4 +85,21 @@
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
     opacity: 0;
     transition: all 0.5s ease-in-out;
+}
+.slides:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: none;
+}
+.slides:hover::after{
+    opacity: 1;
+}
+
+@media(min-width: 768px){
+    .left__arrow{
+        left: 30px;
+    }
+    .right__arrow{
+        right: 30px;
+    }
 }
