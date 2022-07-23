@@ -30,15 +30,15 @@ const Carousel = ({slides}) => {
                 return(
                     <div className={index === section ? 'slide active' : 'slide'} key={index}>
                         {index === section && (
-                        <div className="slides">
-                            <a className="slides__link">
-                                <h3 className="slides__link--title">{slide.title}</h3>
-                                <img className="slides__link--image"src={slide.image} alt={slide.alt}/>
-                                <div className="slides__link--description">
-                                    <p>{slide.description}</p>
-                                </div>
-                            </a>
-                        </div>
+                            <div className="slides">
+                                <a className="slides__link">
+                                    <h3 className="slides__link--title">{slide.title}</h3>
+                                    <img className="slides__link--image"src={slide.image} alt={slide.alt}/>
+                                    <div className="slides__link--description">
+                                        <p>{slide.description}</p>
+                                    </div>
+                                </a>
+                            </div>
                         )}
                     </div>
                 )

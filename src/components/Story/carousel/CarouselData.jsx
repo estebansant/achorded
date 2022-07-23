@@ -111,5 +111,5 @@ export const CarouselData = [
         image: gibsonTwelveChords,
         alt: 'gibson j45 with 12 chords',
         description: 'Acoustic it is, so we sound more clear.'
-    },
+    }
 ]
