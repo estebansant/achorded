@@ -73,7 +73,7 @@ const Carousel = () => {
                 return(
                     <div className="carousel__slide" key={index}>
                             <div className="slides">
-                                <a className="slides__link">
+                                <a href={slide.link} className="slides__link">
                                     <h3 className="slides__link--title">{slide.title}</h3>
                                     <img className="slides__link--image"src={slide.image} alt={slide.alt}/>
                                     <div className="slides__link--description">

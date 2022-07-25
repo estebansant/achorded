@@ -20,96 +20,112 @@ export const CarouselData = [
         title: 'Gibson Model V',
         image: vModelGibson,
         alt: 'red gibson guitar model v',
-        description: 'This is a small paragraph about the guitar´s history.'
+        description: 'This is a small paragraph about the guitar´s history.',
+        link: '/electric-guitars/gibson-model-v'
     },
     {
         title: 'Gibson Explorer',
         image: gibsonExplorer,
         alt: 'blue gibson explorer guitar',
-        description: 'This is a small paragraph about the guitar´s history.'
+        description: 'This is a small paragraph about the guitar´s history.',
+        link: '/electric-guitars/gibson-explorer'
     },
     {
         title: 'Gibson Les Paul',
         image: gibsonLesPaul,
         alt: 'black gibson les paul guitar',
-        description: 'This is a small paragraph about the guitar´s history.'
+        description: 'This is a small paragraph about the guitar´s history.',
+        link: '/electric-guitars/les-paul-black'
     },
     {
         title: 'Fender P-Bass',
         image: pBass,
         alt: 'blue p bass from fender',
-        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.'
+        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        link: '/electric-guitars/p-bass'
     },
     {
         title: 'The Stratocaster',
         image: stratocaster,
         alt: 'stratocaster red guitar',
-        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.'
+        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        link: '/electric-guitars/stratocaster'
     },
     {
         title: 'Fender Telecaster',
         image: telecaster,
         alt: 'fender telecaster brown',
-        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.'
+        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        link: 'electric-guitars/telecaster'
     },
     {
         title: 'Stratocaster Affinity Series',
         image: stratocasterAS,
         alt: 'affinity series fender  stratocaster green',
-        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.'
+        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        link: '/electric-guitars/stratocaster-as'
     },
     {
         title: 'Jackson Soloist',
         image: jacksonSoloist,
         alt: 'black jackson soloist guitar',
-        description: 'You know what they say, it is always Jackson Mississippi.'
+        description: 'You know what they say, it is always Jackson Mississippi.',
+        link: '/electric-guitars/jackson-soloist'
     },
     {
         title: 'Jackson Rhoads',
         image: jacksonRhoads,
         alt: 'red jackson rhoads guitar',
-        description: 'You know what they say, it is always Jackson Mississippi.'
+        description: 'You know what they say, it is always Jackson Mississippi.',
+        link: '/electric-guitars/jackson-rhoads'
     },
     {
         title: 'Dean EAB Acoustic Bass',
         image: eabAcousticBass,
         alt: 'dean eab acoustic bass',
-        description: 'Acoustic it is, so we sound more clear.'
+        description: 'Acoustic it is, so we sound more clear.',
+        link: '/acoustic-guitars/dean-eab-bass'
     },
     {
         title: 'Yamaha Classic C-40',
         image: yamahaClassic,
         alt: 'classic yamaha guitar',
-        description: 'Acoustic it is, so we sound more clear.'
+        description: 'Acoustic it is, so we sound more clear.',
+        link: 'acoustic-guitars/yamaha-c-40'
     },
     {
         title: 'Fender Dreadnought',
         image: fenderDreadnought,
         alt: 'fender dreadnought brown guitar',
-        description: 'Acoustic it is, so we sound more clear.'
+        description: 'Acoustic it is, so we sound more clear.',
+        link: '/acoustic-guitars/fender-dreadnought'
     },
     {
         title: 'Fender Concert Fa-135Ce',
         image: fenderConcert,
         alt: 'red fender concert guitar',
-        description: 'Acoustic it is, so we sound more clear.'
+        description: 'Acoustic it is, so we sound more clear.',
+        link: '/acoustic-guitars/fender-concert-fa-135ce'
     },
     {
         title: 'Gibson G-Writer',
         image: gibsonWriter,
         alt: 'red gibson writer guitar',
-        description: 'Acoustic it is, so we sound more clear.'
+        description: 'Acoustic it is, so we sound more clear.',
+        link: '/acoustic-guitars/gibson-g-writer'
     },
     {
         title: 'Gibson J-45 with 6 Chords',
         image: gibsonSixChords,
         alt: 'gibson j45 with 6 chords',
-        description: 'Acoustic it is, so we sound more clear.'
+        description: 'Acoustic it is, so we sound more clear.',
+        link: '/acoustic-guitars/gibson-j-45-6-chords'
     },
     {
         title: 'Gibson J-45 with 12 Chords',
         image: gibsonTwelveChords,
         alt: 'gibson j45 with 12 chords',
-        description: 'Acoustic it is, so we sound more clear.'
+        description: 'Acoustic it is, so we sound more clear.',
+        link: '/acoustic-guitars/gibson-j-45-12-chords'
     }
 ]

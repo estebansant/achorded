@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Smokey = () => {
+const PBass = () => {
   return (
     <main>
-        <h1>The Smokey</h1>
+      <h1>P Bass</h1>
     </main>
   )
 }
 
-export {Smokey}
+export {PBass}
