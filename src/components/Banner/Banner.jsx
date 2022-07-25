@@ -1,5 +1,5 @@
 import React from 'react';
-import './Banner.scss';
+import '@styles/Banner.scss';
 import bannerMobile from '@images/banner_mobile.jpg';
 import banner from '@images/main_banner.jpg';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Story.scss';
+import '@styles/Story.scss';
 import { Carousel } from './carousel/Carousel';
 
 const Story = () => {

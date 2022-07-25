@@ -3,7 +3,9 @@ import '@styles/Login.scss';
 
 const Login = () => {
   return (
-    <div className="login">Login</div>
+    <main>
+      <h1>Login</h1>
+    </main>
   )
 }
 

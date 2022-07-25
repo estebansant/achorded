@@ -1,5 +1,5 @@
 import React from 'react';
-import './Highlights.scss';
+import '@styles/Highlights.scss';
 import { ElectricHighlights } from './products/ElectricHighlights';
 import { AcousticHighlights } from './products/AcousticHighlights';
 import { AccessoriesHighlights } from './products/AccessoriesHighlights';

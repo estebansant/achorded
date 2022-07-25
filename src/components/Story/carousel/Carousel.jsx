@@ -1,5 +1,5 @@
 import React from 'react';
-import './Carousel.scss';
+import '@styles/Carousel.scss';
 import Slider from "react-slick";
 import { CarouselData } from './CarouselData';
 import rightArrow from '@icons/arrow-right.svg';

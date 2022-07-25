@@ -1,5 +1,5 @@
 import React from 'react';
-import './Info.scss';
+import '@styles/Info.scss';
 import astronauts from '@images/astronauts_vibing.png';
 
 const Info = () => {

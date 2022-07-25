@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProductsHighlights.scss';
+import '@styles/ProductsHighlights.scss';
 import stratocaster from '@images/electric/stratocaster-red.svg';
 import telecaster from '@images/electric/telecaster-brown.svg';
 import jacksonSoloist from '@images/electric/jackson_soloist-black.svg';

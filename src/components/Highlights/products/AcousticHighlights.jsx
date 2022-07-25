@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProductsHighlights.scss';
+import '@styles/ProductsHighlights.scss';
 
 const AcousticHighlights = () => {
   return (
