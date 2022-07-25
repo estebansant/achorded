@@ -1,6 +1,6 @@
-@forward "./_global.scss";
-@use "./variables/colors";
-@use "./variables/fonts";
+@forward "@styles/_global.scss";
+@use "@styles/variables/colors";
+@use "@styles/variables/fonts";
 
 .Header__container{
     width: 100%;

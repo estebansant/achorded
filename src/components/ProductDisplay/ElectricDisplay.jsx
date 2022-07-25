@@ -1,8 +1,9 @@
 import React from 'react'
+import '@styles/ProductDisplay/ElectricDisplay.scss'
 
 const ElectricDisplay = () => {
   return (
-    <div>ElectricDisplay</div>
+    <h1>Shop for Electric Guitars</h1>
   )
 }
 

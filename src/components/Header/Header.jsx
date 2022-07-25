@@ -1,5 +1,5 @@
 import React from 'react'
-import '@styles/Header.scss';
+import '@styles/Header/Header.scss';
 import { LeftMenu } from './Parts/LeftMenu.jsx';
 import { MainLogo } from './Parts/MainLogo.jsx';
 import { RightMenu } from './Parts/RightMenu.jsx';
