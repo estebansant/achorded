@@ -17,11 +17,11 @@ import gibsonTwelveChords from '@images/acoustic/gibson_j-45_12chords.svg';
 
 export const CarouselData = [
     {
-        title: 'Gibson Model V',
+        title: 'Gibson Flying V',
         image: vModelGibson,
-        alt: 'red gibson guitar model v',
+        alt: 'red gibson guitar flying v',
         description: 'This is a small paragraph about the guitar´s history.',
-        link: '/electric-guitars/gibson-model-v'
+        link: '/electric-guitars/gibson-flying-v'
     },
     {
         title: 'Gibson Explorer',

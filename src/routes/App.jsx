@@ -29,7 +29,7 @@ import { JacksonSoloist } from '../pages/sections/products/electric/JacksonSoloi
 import { PBass } from '../pages/sections/products/electric/PBass';
 import { Stratocaster } from '../pages/sections/products/electric/Stratocaster';
 import { Telecaster } from '../pages/sections/products/electric/Telecaster';
-import { GibsonModelV } from '../pages/sections/products/electric/GibsonModelV';
+import { GibsonFlyingV } from '../pages/sections/products/electric/GibsonFlyingV';
 
 // Acoustic guitars
 import { DeanEAB } from '../pages/sections/products/acoustic/DeanEAB';
@@ -68,7 +68,7 @@ const App = () => {
             <Route exact path="/electric-guitars/p-bass" element={<PBass />} />
             <Route exact path="/electric-guitars/stratocaster" element={<Stratocaster />} />
             <Route exact path="/electric-guitars/telecaster" element={<Telecaster />} />
-            <Route exact path="/electric-guitars/gibson-model-v" element={<GibsonModelV />} />
+            <Route exact path="/electric-guitars/gibson-flying-v" element={<GibsonFlyingV />} />
 
             {/* Acoustic guitars routes */}
             <Route exact path="/acoustic-guitars/dean-eab-bass" element={<DeanEAB />} />
