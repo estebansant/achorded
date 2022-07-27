@@ -5,38 +5,42 @@ import { ElectricData } from './Data/ElectricData.jsx';
 const ElectricDisplay = () => {
   return (
     <React.Fragment>
-      <h1 className="title">Shop for Electric Guitars</h1>
-      <p className="description">Browse between different models of electric guitars, pick the one that suits you best, <br/>
-      and gor for it!</p>
+      <section className="display">
+        <h1 className="display__title">Shop for Electric Guitars.</h1>
+        <p className="display__description">Browse between different models of electric guitars, pick the one that suits you best, and gor for it!</p>
 
-      <section className="grid">
+        <section className="grid__wrapper">
+          <div className="display__grid">
+            {ElectricData.map((card, index) => {
+                      return(
+                          <div className="grid__card" key={index}>
 
-        {ElectricData.map((card, index) => {
-                  return(
-                      <div className="grid__card" key={index}>
+                                  <img className="grid__card--image"src={card.image} alt={card.alt}/>
 
-                              <img className="grid__card--image"src={card.image} alt={card.alt}/>
+                                  <div className="grid__card--description">
+                                      <h3 className="grid__card--description__title">{card.title}</h3>
 
-                              <div className="grid__card--description">
-                                  <h3 className="grid__card--title">{card.title}</h3>
+                                      <div className="grid__card--description__rating">
+                                        <img className="grid__card--description__rating--image" src={card.stars} alt="rating" />
+                                        <p className="grid__card--description__rating--value">{card.rating}</p>
+                                      </div>
 
-                                  <div className="grid__card--rating">
-                                    <img className="grid__card--rating__image" src={card.stars} alt="rating" />
-                                    <p className="grid__card--rating__value">{card.rating}</p>
+                                      <p className="grid__card--description__price">{card.price}</p>
                                   </div>
+                              
+                              <a href={card.link} className="grid__card--link">
+                                <button>Shop</button>
+                              </a>
+                              
+                          </div>
+                      )
+                  })}
+          </div>
+          
 
-                                  <p className="grid__card--price">{card.price}</p>
-                              </div>
-                          
-                          <a href={card.link} className="grid__card--link">
-                            <button>Shop</button>
-                          </a>
-                          
-                      </div>
-                  )
-              })}
-
-      </section> 
+        </section>
+      </section>
+      
     </React.Fragment>
     
   )

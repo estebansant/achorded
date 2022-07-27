@@ -14,19 +14,19 @@ import fiveStars from '@images/five_stars.svg';
 
 export const ElectricData = [
     {
-        title: 'Gibson Model V',
+        title: 'Gibson Flying V',
         image: vModelGibson,
-        alt: 'red gibson guitar model v',
-        price: 'This is a small paragraph about the guitar´s history.',
+        alt: 'red gibson guitar flying v',
+        price: '1.999$ USD',
         stars: fourHalfStars,
         rating: '4.6',
-        link: '/electric-guitars/gibson-model-v',
+        link: '/electric-guitars/gibson-flying-v',
     },
     {
         title: 'Gibson Explorer',
         image: gibsonExplorer,
         alt: 'blue gibson explorer guitar',
-        price: 'This is a small paragraph about the guitar´s history.',
+        price: '1.999$ USD',
         stars: fiveStars,
         rating: '4.8',
         link: '/electric-guitars/gibson-explorer'
@@ -35,7 +35,7 @@ export const ElectricData = [
         title: 'Gibson Les Paul',
         image: gibsonLesPaulBlack,
         alt: 'black gibson les paul guitar',
-        price: 'This is a small paragraph about the guitar´s history.',
+        price: '1.799$ USD',
         stars: fourHalfStars,
         rating: '4.5',
         link: '/electric-guitars/les-paul-black'
@@ -44,7 +44,7 @@ export const ElectricData = [
         title: 'Gibson Les Paul',
         image: gibsonLesPaulBlue,
         alt: 'blue gibson les paul guitar',
-        price: 'This is a small paragraph about the guitar´s history.',
+        price: '1.799$ USD',
         stars: fourHalfStars,
         rating: '4.4',
         link: '/electric-guitars/les-paul-blue'
@@ -53,7 +53,7 @@ export const ElectricData = [
         title: 'Fender P-Bass',
         image: pBass,
         alt: 'blue p bass from fender',
-        price: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        price: '1.499$ USD',
         stars: fourStars,
         rating: '4',
         link: '/electric-guitars/p-bass'
@@ -62,7 +62,7 @@ export const ElectricData = [
         title: 'The Stratocaster',
         image: stratocaster,
         alt: 'stratocaster red guitar',
-        price: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        price: '1.449$ USD',
         stars: fiveStars,
         rating: '5',
         link: '/electric-guitars/stratocaster'
@@ -71,16 +71,16 @@ export const ElectricData = [
         title: 'Fender Telecaster',
         image: telecaster,
         alt: 'fender telecaster brown',
-        price: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        price: '1.699$ USD',
         stars: fiveStars,
         rating: '4.9',
         link: 'electric-guitars/telecaster'
     },
     {
-        title: 'Stratocaster Affinity Series',
+        title: 'Stratocaster AS',
         image: stratocasterAS,
         alt: 'affinity series fender  stratocaster green',
-        price: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        price: '350$ USD',
         stars: fourHalfStars,
         rating: '4.6',
         link: '/electric-guitars/stratocaster-as'
@@ -89,7 +89,7 @@ export const ElectricData = [
         title: 'Jackson Soloist',
         image: jacksonSoloist,
         alt: 'black jackson soloist guitar',
-        price: 'You know what they say, it is always Jackson Mississippi.',
+        price: '850$ USD',
         stars: fourStars,
         rating: '4.1',
         link: '/electric-guitars/jackson-soloist'
@@ -98,7 +98,7 @@ export const ElectricData = [
         title: 'Jackson Rhoads',
         image: jacksonRhoads,
         alt: 'red jackson rhoads guitar',
-        price: 'You know what they say, it is always Jackson Mississippi.',
+        price: '1.250$ USD',
         stars: fiveStars,
         rating: '4.8',
         link: '/electric-guitars/jackson-rhoads'
