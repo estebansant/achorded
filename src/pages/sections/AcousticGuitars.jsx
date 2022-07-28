@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { AcousticDisplay } from '@components/ProductDisplay/AcousticDisplay';
 
 const AcousticGuitars = () => {
   return (
     <main>
-      <h1>Acoustic Guitars</h1>
+      <AcousticDisplay />
     </main>
   )
 }

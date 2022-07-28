@@ -39,6 +39,7 @@ import { GibsonGWriter } from '../pages/sections/products/acoustic/GibsonGWriter
 import { J45_6Chords } from '../pages/sections/products/acoustic/J45_6Chords';
 import { J45_12Chords } from '../pages/sections/products/acoustic/J45_12Chords';
 import { YamahaC40 } from '../pages/sections/products/acoustic/YamahaC40';
+import { Cuatro } from '../pages/sections/products/acoustic/Cuatro';
 
 const App = () => {
   return (
@@ -78,6 +79,7 @@ const App = () => {
             <Route exact path="/acoustic-guitars/gibson-j-45-6-chords" element={<J45_6Chords />} />
             <Route exact path="/acoustic-guitars/gibson-j-45-12-chords" element={<J45_12Chords />} />
             <Route exact path="/acoustic-guitars/yamaha-c-40" element={<YamahaC40 />} />
+            <Route exact path="/acoustic-guitars/cuatro" element={<Cuatro />} />
 
             {/* Not found route */}
             <Route path="*" element={<NotFound />} />

@@ -53,6 +53,8 @@
     }
     &--image{
         width: 64%;
+        max-height: 370px;
+        min-height: 370px;
         position: relative;
         top: -15%;
         filter: brightness(100%);
