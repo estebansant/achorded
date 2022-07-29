@@ -1,5 +1,5 @@
 import React from 'react';
-import '@styles/ProductDisplay/ElectricDisplay.scss';
+import '@styles/ProductDisplay/GuitarsDisplay.scss';
 import { AcousticData } from './Data/AcousticData.jsx';
 
 const AcousticDisplay = () => {
@@ -7,7 +7,6 @@ const AcousticDisplay = () => {
     <React.Fragment>
       <section className="display">
         <h1 className="display__title">Shop for Acoustic Guitars.</h1>
-        <p className="display__description">Browse between different models of electric guitars, pick the one that suits you best, and gor for it!</p>
 
         <section className="display__grid">
           {AcousticData.map((card, index) => {

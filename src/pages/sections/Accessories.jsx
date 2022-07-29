@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { AccessoriesDisplay } from '@components/ProductDisplay/AccessoriesDisplay';
 
 const Accessories = () => {
   return (
     <main>
-      <h1>Accessories</h1>
+      <AccessoriesDisplay />
     </main>
   )
 }

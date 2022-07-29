@@ -41,6 +41,17 @@ import { J45_12Chords } from '../pages/sections/products/acoustic/J45_12Chords';
 import { YamahaC40 } from '../pages/sections/products/acoustic/YamahaC40';
 import { Cuatro } from '../pages/sections/products/acoustic/Cuatro';
 
+// Accessories
+import { BigAmplifier } from '../pages/sections/products/accessories/BigAmplifier';
+import { SmallAmplifier } from '../pages/sections/products/accessories/SmallAmplifier';
+import { PlectrumBundle } from '../pages/sections/products/accessories/PlectrumBundle';
+import { SpiderPlectrum } from '../pages/sections/products/accessories/SpiderPlectrum';
+import { BlackPlectrum } from '../pages/sections/products/accessories/BlackPlectrum';
+import { TemplarPlectrum } from '../pages/sections/products/accessories/TemplarPlectrum';
+import { RockPlectrum } from '../pages/sections/products/accessories/RockPlectrum';
+import { GuitarPlectrum } from '../pages/sections/products/accessories/GuitarPlectrum';
+
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -80,6 +91,16 @@ const App = () => {
             <Route exact path="/acoustic-guitars/gibson-j-45-12-chords" element={<J45_12Chords />} />
             <Route exact path="/acoustic-guitars/yamaha-c-40" element={<YamahaC40 />} />
             <Route exact path="/acoustic-guitars/cuatro" element={<Cuatro />} />
+
+            {/* Accessories routes */}
+            <Route exact path="/accessories/studio-amplifier" element={<BigAmplifier />} />
+            <Route exact path="/accessories/portable-amplifier" element={<SmallAmplifier />} />
+            <Route exact path="/accessories/plectrum-bundle" element={<PlectrumBundle />} />
+            <Route exact path="/accessories/plectrum-spider" element={<SpiderPlectrum />} />
+            <Route exact path="/accessories/plectrum-templar" element={<TemplarPlectrum />} />
+            <Route exact path="/accessories/plectrum-black" element={<BlackPlectrum />} />
+            <Route exact path="/accessories/plectrum-guitar" element={<GuitarPlectrum />} />
+            <Route exact path="/accessories/plectrum-rock" element={<RockPlectrum />} />
 
             {/* Not found route */}
             <Route path="*" element={<NotFound />} />

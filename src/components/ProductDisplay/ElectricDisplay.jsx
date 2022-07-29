@@ -1,5 +1,5 @@
 import React from 'react';
-import '@styles/ProductDisplay/ElectricDisplay.scss';
+import '@styles/ProductDisplay/GuitarsDisplay.scss';
 import { ElectricData } from './Data/ElectricData.jsx';
 
 const ElectricDisplay = () => {
@@ -7,7 +7,6 @@ const ElectricDisplay = () => {
     <React.Fragment>
       <section className="display">
         <h1 className="display__title">Shop for Electric Guitars.</h1>
-        <p className="display__description">Browse between different models of electric guitars, pick the one that suits you best, and gor for it!</p>
 
         <section className="display__grid">
           {ElectricData.map((card, index) => {
