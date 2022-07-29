@@ -19,8 +19,8 @@ const AccessoriesDisplay = () => {
                                 <div className="grid__cards--descriptions">
                                     <h3 className="grid__cards--descriptions__titles">{card.title}</h3>
 
-                                    <div className="grid__cards--descriptios__ratings">
-                                      <img className="grid__cards--descriptiosn__ratings--images" src={card.stars} alt="rating" />
+                                    <div className="grid__cards--descriptions__ratings">
+                                      <img className="grid__cards--descriptions__ratings--images" src={card.stars} alt="rating" />
                                       <p className="grid__cards--descriptions__ratings--values">{card.rating}</p>
                                     </div>
 

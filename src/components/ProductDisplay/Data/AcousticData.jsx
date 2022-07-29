@@ -21,13 +21,13 @@ export const AcousticData = [
         link: '/acoustic-guitars/dean-eab-bass'
     },
     {
-        title: 'Yamaha Classic C-40',
-        image: yamahaClassic,
-        alt: 'classic yamaha guitar',
-        price: '199$ USD',
-        stars: fourHalfStars,
-        rating: '4.7',
-        link: 'acoustic-guitars/yamaha-c-40'
+        title: 'Fender Concert',
+        image: fenderConcert,
+        alt: 'red fender concert guitar',
+        price: '229$ USD',
+        stars: fiveStars,
+        rating: '4.9',
+        link: '/acoustic-guitars/fender-concert-fa-135ce'
     },
     {
         title: 'Fender Dreadnought',
@@ -37,15 +37,6 @@ export const AcousticData = [
         stars: fourHalfStars,
         rating: '4.5',
         link: '/acoustic-guitars/fender-dreadnought'
-    },
-    {
-        title: 'Fender Concert',
-        image: fenderConcert,
-        alt: 'red fender concert guitar',
-        price: '229$ USD',
-        stars: fiveStars,
-        rating: '4.9',
-        link: '/acoustic-guitars/fender-concert-fa-135ce'
     },
     {
         title: 'Gibson G-Writer',
@@ -75,7 +66,16 @@ export const AcousticData = [
         link: '/acoustic-guitars/gibson-j-45-12-chords'
     },
     {
-        title: 'Cuatro Venezolano',
+        title: 'Yamaha Classic C-40',
+        image: yamahaClassic,
+        alt: 'classic yamaha guitar',
+        price: '199$ USD',
+        stars: fourHalfStars,
+        rating: '4.7',
+        link: 'acoustic-guitars/yamaha-c-40'
+    },
+    {
+        title: 'Venezuelan Cuatro',
         image: cuatro,
         alt: 'cuatro venezolano',
         price: '99$ USD',
