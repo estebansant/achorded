@@ -34,7 +34,7 @@ import fourHalfStars from '@images/four_half_stars.svg';
 import fiveStars from '@images/five_stars.svg';
 
 export const ElectricData = [
-    
+
 // Electric Guitars
     {
         GibsonFlyingV: [
@@ -189,23 +189,149 @@ export const ElectricData = [
             }
         ]
     },
+
+    // Acoustic Guitars
     {
-        JacksonSoloist: [
+        DeanEABAcousticBass: [
             {
-                title: 'Fender P-Bass',
-                image: pBass,
-                alt: 'blue p bass from fender',
-                price: '1.499$ USD',
+                title: 'Dean EAB Acoustic Bass',
+                image: eabAcousticBass,
+                alt: 'dean eab acoustic bass',
+                price: '279$ USD',
                 stars: fourStars,
-                rating: '4',
-                pickups: 'Yosemite Split Single-Coil',
-                neck: 'Modern "C"',
+                rating: '4.1',
+                bridge: 'Balsamo',
+                neck: '"C"',
+                frets: '24 Frets',
+                description: 'The Dean EAB Bass Guitar is a full-sized instrument with 34" scale that produces a deeper, fuller tone than other acoustic bass guitars that cost much more. Equipped with Dean’s new DMT G03 Preamp system you can easily dial in any tonal options you desire. This bass also features an on-board tuner and comfortable C-shaped neck.'
+            }
+        ]
+    },
+    {
+        YamahaClassic: [
+            {
+                title: 'Yamaha Classic C-40',
+                image: yamahaClassic,
+                alt: 'classic yamaha guitar',
+                price: '199$ USD',
+                stars: fourHalfStars,
+                rating: '4.7',
+                bridge: 'Rosewood',
+                neck: '"C"',
+                frets: '18 Frets',
+                description: 'The Yamaha Classic C-40 is the perfect basis to learn how to play guitar easily and successfully. It has an outsanding quality; instrument produces a powerful sound that is interspersed with warm bass frequencies and, thanks to its  light weight , unfolds quickly and persistently.'
+            }
+        ]
+    },
+    {
+        FederConcert: [
+            {
+                title: 'Fender Concert FA-135CE',
+                image: fenderConcert,
+                alt: 'red fender concert guitar',
+                price: '229$ USD',
+                stars: fiveStars,
+                rating: '4.9',
+                bridge: 'Walnut',
+                neck: '"C"',
                 frets: '20 Frets',
-                fretSize: 'Medium Jumbo',
-                description: 'The American Performer Precision Bass delivers the exceptional tone and feel you expect from an authentic Fender—along with new, player-oriented features that make it even more inspiring to play.'
+                description: 'With a combination of player-friendly features, attractive aesthetics and reliable Fender quality, the FA-135CE is a value-packed option for today’s acoustic player. This Fender Alternative series concert model features a durable all-laminate body with a spruce top and cutaway for upper fret access, and an easy-to-play “C”-shape neck with a walnut fingerboard for a smooth and comfortable playing feel.'
+            }
+        ]
+    },
+    {
+        FenderDreadnought: [
+            {
+                title: 'Fender Dreadnought FA-125CE',
+                image: fenderDreadnought,
+                alt: 'fender dreadnought brown guitar',
+                price: '199$ USD',
+                stars: fourHalfStars,
+                rating: '4.5',
+                bridge: 'Laminated Hardwood',
+                neck: '"C"',
+                frets: '20 Frets',
+                description: 'The single-cutaway FA-125CE combines Fender tone and style with our FE-A2 electronics for a guitar that was made to take the stage. Beginners and developing players will appreciate the nato neck that gives the guitar a lively tone and smooth, easy playing feel.'
+            }
+        ]
+    },
+    {
+        GibsonGWriter: [
+            {
+                title: 'Gibson G-Writer',
+                image: gibsonWriter,
+                alt: 'red gibson writer guitar',
+                price: '1.599$ USD',
+                stars: fiveStars,
+                rating: '5',
+                bridge: 'Striped Ebony',
+                neck: 'Advanced Response',
+                frets: '20 Frets',
+                description: 'With the Gibson G-Writer you can spend more time playing instead of tuning, and the utile neck with its easy-playing Advanced Response neck profile is so comfortable you won’t want to put it down.'
+            }
+        ]
+    },
+    {
+        J45_6Chords: [
+            {
+                title: 'Gibson J-45 with 6 Chords',
+                image: gibsonSixChords,
+                alt: 'gibson j45 with 6 chords',
+                price: '2.849$ USD',
+                stars: fiveStars,
+                rating: '4.8',
+                bridge: 'Rosewood',
+                neck: 'SlimTaper',
+                frets: '20 Frets',
+                description: 'The J-45 is Gibson’s best-selling acoustic of all time. World-renowned for its full, balanced expression, warm bass, and excellent projection, the J-45 has been refined to carry this legacy to new heights.'
+            }
+        ]
+    },
+    {
+        J45_12Chords: [
+            {
+                title: 'Gibson J-45 with 12C',
+                image: gibsonTwelveChords,
+                alt: 'gibson j45 with 12 chords',
+                price: '3.399$ USD',
+                stars: fiveStars,
+                rating: '4.8',
+                bridge: 'Rosewood',
+                neck: 'SlimTaper',
+                frets: '20 Frets',
+                description: 'The world-famous Workhorse is Gibson’s best-selling acoustic of all time. Now it is available in a new 12-string version.'
+            }
+        ]
+    },
+    {
+        Cuatro: [
+            {
+                title: 'Venezuelan Cuatro',
+                image: cuatro,
+                alt: 'cuatro venezolano',
+                price: '99$ USD',
+                stars: fourHalfStars,
+                rating: '4.7',
+                bridge: 'Cedar wood',
+                chords: 'Nylon',
+                frets: '14 Frets',
+                description: 'The Venezuelan Cuatro is the most emblematic instrument of the Venezuelan music. It has the peculiarity of only having 4 chords and being smaller than a normal guitar. It is most used in the rural areas of the country, and it has a roll in almost all native music genres, like "joropo" and the "gaita zuliana".'
             }
         ]
     },
 
-    // Acoustic Guitars
+    // Accessories
+    {
+        StudioAmplifier: [
+            {
+                title: 'Studio Amplifier',
+                image: amplifierBig,
+                alt: 'amplifier for concerts',
+                price: '279$ USD',
+                stars: fourHalfStars,
+                rating: '4.4',
+                description: 'The Venezuelan Cuatro is the most emblematic instrument of the Venezuelan music. It has the peculiarity of only having 4 chords and being smaller than a normal guitar. It is most used in the rural areas of the country, and it has a roll in almost all native music genres, like "joropo" and the "gaita zuliana".'
+            }
+        ]
+    },
 ]
