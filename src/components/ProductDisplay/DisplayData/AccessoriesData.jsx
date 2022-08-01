@@ -15,7 +15,7 @@ export const AccessoriesData = [
         title: 'Studio Amplifier',
         image: amplifierBig,
         alt: 'amplifier for concerts',
-        price: '279$ USD',
+        price: '2.999$ USD',
         stars: fourHalfStars,
         rating: '4.4',
         link: '/accessories/studio-amplifier'
@@ -24,7 +24,7 @@ export const AccessoriesData = [
         title: 'Portable Amplifier',
         image: amplifierSmall,
         alt: 'portable amplifier',
-        price: '279$ USD',
+        price: '499$ USD',
         stars: fourStars,
         rating: '4.2',
         link: '/accessories/portable-amplifier'
@@ -33,7 +33,7 @@ export const AccessoriesData = [
         title: 'Plectrum Bundle',
         image: plectrumBundle,
         alt: 'bundle with multiple plectrums',
-        price: '279$ USD',
+        price: '15$ USD',
         stars: fiveStars,
         rating: '4.9',
         link: '/accessories/plectrum-bundle'
@@ -42,7 +42,7 @@ export const AccessoriesData = [
         title: 'Spider Plectrum',
         image: plectrumSpider,
         alt: 'plectrum with a spider',
-        price: '279$ USD',
+        price: '5$ USD',
         stars: fourHalfStars,
         rating: '4.7',
         link: '/accessories/plectrum-spider'
@@ -51,7 +51,7 @@ export const AccessoriesData = [
         title: 'Templar Plectrum',
         image: plectrumTemplar,
         alt: 'plectrum with a templar cross',
-        price: '279$ USD',
+        price: '5$ USD',
         stars: fiveStars,
         rating: '5',
         link: '/accessories/plectrum-templar'
@@ -60,7 +60,7 @@ export const AccessoriesData = [
         title: 'Pure Black Plectrum',
         image: plectrumBlack,
         alt: 'black color plectrum',
-        price: '279$ USD',
+        price: '5$ USD',
         stars: fourHalfStars,
         rating: '4.5',
         link: '/accessories/plectrum-black'
@@ -69,7 +69,7 @@ export const AccessoriesData = [
         title: 'Guitar Plectrum',
         image: plectrumGuitar,
         alt: 'plectrum with a guitar',
-        price: '279$ USD',
+        price: '5$ USD',
         stars: fourStars,
         rating: '4.1',
         link: '/accessories/plectrum-guitar'
@@ -78,7 +78,7 @@ export const AccessoriesData = [
         title: 'Rock Plectrum',
         image: plectrumRock,
         alt: 'plectrum with rock',
-        price: '279$ USD',
+        price: '5$ USD',
         stars: fourStars,
         rating: '4',
         link: '/accessories/plectrum-rock'

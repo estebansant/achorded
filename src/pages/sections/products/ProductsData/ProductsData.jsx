@@ -327,10 +327,101 @@ export const ElectricData = [
                 title: 'Studio Amplifier',
                 image: amplifierBig,
                 alt: 'amplifier for concerts',
-                price: '279$ USD',
+                price: '2.999$ USD',
                 stars: fourHalfStars,
                 rating: '4.4',
-                description: 'The Venezuelan Cuatro is the most emblematic instrument of the Venezuelan music. It has the peculiarity of only having 4 chords and being smaller than a normal guitar. It is most used in the rural areas of the country, and it has a roll in almost all native music genres, like "joropo" and the "gaita zuliana".'
+                description: 'An amplifier able to deliver the best quallity of sound for your music. This Studio Amplifier is able to reproduce sounds with high fidelity quality, it is designed to ambient a medium sized or big studio, and you could even use it to play in a theater.'
+            }
+        ]
+    },
+    {
+        SmallAmplifier: [
+            {
+                title: 'Portable Amplifier',
+                image: amplifierSmall,
+                alt: 'portable amplifier',
+                price: '499$ USD',
+                stars: fourStars,
+                rating: '4.2',
+                description: 'Don’t get fooled by its size, this small amplifier has a great quality of sound, it’s light and portable, which makes it easy to carry from place to place, and ideal to start practicing with your electric guitar.'
+            }
+        ]
+    },
+    {
+        PlectrumBundle: [
+            {
+                title: 'Plectrum Bundle',
+                image: plectrumBundle,
+                alt: 'bundle with multiple plectrums',
+                price: '15$ USD',
+                stars: fiveStars,
+                rating: '4.9',
+                description: 'Get the best plectrums designs in one bundle for a great price! Pay for 3 and take home another one for free with this plectrum bundle.'
+            }
+        ]
+    },
+    {
+        SpiderBundle: [
+            {
+                title: 'Spider Plectrum',
+                image: plectrumSpider,
+                alt: 'plectrum with a spider',
+                price: '5$ USD',
+                stars: fourHalfStars,
+                rating: '4.7',
+                description: 'A plectrum with a spider design on the front.'
+            }
+        ]
+    },
+    {
+        TemplarBundle: [
+            {
+                title: 'Templar Plectrum',
+                image: plectrumTemplar,
+                alt: 'plectrum with a templar cross',
+                price: '5$ USD',
+                stars: fiveStars,
+                rating: '5',
+                description: 'A plectrum with a templar design on the front.'
+            }
+        ]
+    },
+    {
+        BlackBundle: [
+            {
+                title: 'Pure Black Plectrum',
+                image: plectrumBlack,
+                alt: 'black color plectrum',
+                price: '5$ USD',
+                stars: fourHalfStars,
+                rating: '4.5',
+                description: 'A plectrum with a pure black design on the front with golden details.'
+            }
+        ]
+    },
+    {
+        GuitarBundle: [
+            {
+                title: 'Guitar Plectrum',
+                image: plectrumGuitar,
+                alt: 'plectrum with a guitar',
+                price: '5$ USD',
+                stars: fourStars,
+                rating: '4.1',
+                description: 'A plectrum with a blue guitar on the front.'
+            }
+        ]
+    },
+    {
+        RockBundle: [
+            {
+                title: 'Rock Plectrum',
+                image: plectrumRock,
+                alt: 'plectrum with rock',
+                price: '5$ USD',
+                stars: fourStars,
+                rating: '4',
+                description: 'A plectrum with a "rock" design in golden letters on the front.'
             }
         ]
     },
