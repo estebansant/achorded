@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/ProductDisplay/GuitarsDisplay.scss';
-import { AcousticData } from './Data/AcousticData.jsx';
+import { AcousticData } from './DisplayData/AcousticData.jsx';
 
 const AcousticDisplay = () => {
   return (

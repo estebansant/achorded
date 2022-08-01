@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/ProductDisplay/AccessoriesDisplay.scss'
-import { AccessoriesData } from './Data/AccessoriesData.jsx';
+import { AccessoriesData } from './DisplayData/AccessoriesData.jsx';
 
 const AccessoriesDisplay = () => {
   return (

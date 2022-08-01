@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/ProductDisplay/GuitarsDisplay.scss';
-import { ElectricData } from './Data/ElectricData.jsx';
+import { ElectricData } from './DisplayData/ElectricData.jsx';
 
 const ElectricDisplay = () => {
   return (

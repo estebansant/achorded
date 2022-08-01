@@ -79,20 +79,11 @@ export const ElectricData = [
     {
         title: 'Stratocaster AS',
         image: stratocasterAS,
-        alt: 'affinity series fender  stratocaster green',
+        alt: 'affinity series fender stratocaster green',
         price: '350$ USD',
         stars: fourHalfStars,
         rating: '4.6',
         link: '/electric-guitars/stratocaster-as'
-    },
-    {
-        title: 'Jackson Soloist',
-        image: jacksonSoloist,
-        alt: 'black jackson soloist guitar',
-        price: '850$ USD',
-        stars: fourStars,
-        rating: '4.1',
-        link: '/electric-guitars/jackson-soloist'
     },
     {
         title: 'Jackson Rhoads',
@@ -102,5 +93,14 @@ export const ElectricData = [
         stars: fiveStars,
         rating: '4.8',
         link: '/electric-guitars/jackson-rhoads'
+    },
+    {
+        title: 'Jackson Soloist',
+        image: jacksonSoloist,
+        alt: 'black jackson soloist guitar',
+        price: '850$ USD',
+        stars: fourStars,
+        rating: '4.1',
+        link: '/electric-guitars/jackson-soloist'
     },
 ]
