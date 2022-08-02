@@ -33,7 +33,7 @@ import fourStars from '@images/four_stars.svg';
 import fourHalfStars from '@images/four_half_stars.svg';
 import fiveStars from '@images/five_stars.svg';
 
-export const ElectricData = [
+export const ProductsData = [
 
 // Electric Guitars
     {
@@ -51,7 +51,7 @@ export const ElectricData = [
                 fretSize: 'Medium Jumbo',
                 description: 'Introduced in 1958 and only made in limited quantities, the Gibson Flying V has taken flight over the years along with legions of followers. This Gibson Flying V model has a SlimTaper neck, with a special set of calibrated BurstBucker 2 (neck) and BurstBucker 3 (bridge) pickups that provide the perfect mix of volume, tone, and power.'
             }
-        ]
+        ],
     },
     {
         GibsonExplorer: [

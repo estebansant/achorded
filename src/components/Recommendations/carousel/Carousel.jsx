@@ -19,17 +19,17 @@ const Carousel = () => {
         );
       }
       
-      function SamplePrevArrow(props) {
-        const { onClick } = props;
-        return (
-            <img
-                className="left__arrow"
-                src={leftArrow}
-                alt="prev slide arrow"
-                onClick={onClick}
-            />
-        );
-      }
+    function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+        <img
+            className="left__arrow"
+            src={leftArrow}
+            alt="prev slide arrow"
+            onClick={onClick}
+        />
+    );
+    }
     const settings = {
         dots: false,
         infinite: true,
