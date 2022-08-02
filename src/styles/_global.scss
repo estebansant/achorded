@@ -30,6 +30,6 @@ main{
 }
 ::-webkit-scrollbar-thumb:hover{
     transition: all .3s ease-out;
-    background: linear-gradient(transparent, colors.$main-red);
+    background: colors.$secondary-black;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import '@styles/ProductDisplay/GuitarsDisplay.scss';
+import '@styles/ProductDisplay/ElectricDisplay.scss';
 import { ElectricData } from './DisplayData/ElectricData.jsx';
 
 const ElectricDisplay = () => {
