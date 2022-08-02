@@ -20,112 +20,112 @@ export const CarouselData = [
         title: 'Gibson Flying V',
         image: vModelGibson,
         alt: 'red gibson guitar flying v',
-        description: 'This is a small paragraph about the guitar´s history.',
+        description: 'The Gibson Flying V has taken flight over the years, with legions of followers.',
         link: '/electric-guitars/gibson-flying-v'
     },
     {
         title: 'Gibson Explorer',
         image: gibsonExplorer,
         alt: 'blue gibson explorer guitar',
-        description: 'This is a small paragraph about the guitar´s history.',
+        description: 'The Gibson Explorer traveled where no man had gone before and past every guitar design before it.',
         link: '/electric-guitars/gibson-explorer'
     },
     {
         title: 'Gibson Les Paul',
         image: gibsonLesPaul,
         alt: 'black gibson les paul guitar',
-        description: 'This is a small paragraph about the guitar´s history.',
+        description: 'Originally introduced in 1955, the Les Paul has been embraced by musicians for over 60 years.',
         link: '/electric-guitars/les-paul-black'
     },
     {
         title: 'Fender P-Bass',
         image: pBass,
         alt: 'blue p bass from fender',
-        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        description: 'The Precision Bass delivers the exceptional tone and feel you expect from an authentic Fender.',
         link: '/electric-guitars/p-bass'
     },
     {
         title: 'The Stratocaster',
         image: stratocaster,
         alt: 'stratocaster red guitar',
-        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        description: 'The inspiring sound of a Stratocaster is one of the foundations of the iconic Fender.',
         link: '/electric-guitars/stratocaster'
     },
     {
         title: 'Fender Telecaster',
         image: telecaster,
         alt: 'fender telecaster brown',
-        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        description: 'The Telecaster launched a musical revolution when it released. Laying the foundation for modern music.',
         link: 'electric-guitars/telecaster'
     },
     {
         title: 'Stratocaster Affinity Series',
         image: stratocasterAS,
         alt: 'affinity series fender  stratocaster green',
-        description: 'This is a small paragraph about the story of this particular guitar, and how it came to be what it is today.',
+        description: 'The Stratocaster Affinity Series has a legendary design and exquisite tone for today’s guitarist.',
         link: '/electric-guitars/stratocaster-as'
     },
     {
         title: 'Jackson Soloist',
         image: jacksonSoloist,
         alt: 'black jackson soloist guitar',
-        description: 'You know what they say, it is always Jackson Mississippi.',
+        description: 'Melding classic style with modern materials, it is another bold step in the world of high-tech guitars.',
         link: '/electric-guitars/jackson-soloist'
     },
     {
         title: 'Jackson Rhoads',
         image: jacksonRhoads,
         alt: 'red jackson rhoads guitar',
-        description: 'You know what they say, it is always Jackson Mississippi.',
+        description: 'Jackson’s first customer was the legendary guitarist Randy Rhoads. Thanks to it, this guitar was born.',
         link: '/electric-guitars/jackson-rhoads'
     },
     {
         title: 'Dean EAB Acoustic Bass',
         image: eabAcousticBass,
         alt: 'dean eab acoustic bass',
-        description: 'Acoustic it is, so we sound more clear.',
+        description: 'The Dean EAB Bass Guitar produces a deeper, fuller tone than other acoustic bass guitars.',
         link: '/acoustic-guitars/dean-eab-bass'
     },
     {
         title: 'Yamaha Classic C-40',
         image: yamahaClassic,
         alt: 'classic yamaha guitar',
-        description: 'Acoustic it is, so we sound more clear.',
+        description: 'The Yamaha Classic C-40 is the perfect basis to learn how to play guitar easily and successfully.',
         link: 'acoustic-guitars/yamaha-c-40'
     },
     {
         title: 'Fender Dreadnought',
         image: fenderDreadnought,
         alt: 'fender dreadnought brown guitar',
-        description: 'Acoustic it is, so we sound more clear.',
+        description: 'It combines Fender tone and style with our electronics for a guitar that was made to take the stage.',
         link: '/acoustic-guitars/fender-dreadnought'
     },
     {
         title: 'Fender Concert Fa-135Ce',
         image: fenderConcert,
         alt: 'red fender concert guitar',
-        description: 'Acoustic it is, so we sound more clear.',
+        description: 'Player-friendly features, attractive aesthetics and reliable Fender quality, for today’s acoustic player.',
         link: '/acoustic-guitars/fender-concert-fa-135ce'
     },
     {
         title: 'Gibson G-Writer',
         image: gibsonWriter,
         alt: 'red gibson writer guitar',
-        description: 'Acoustic it is, so we sound more clear.',
+        description: 'With the Gibson G-Writer you can spend more time playing instead of tuning. Ideal for beginners.',
         link: '/acoustic-guitars/gibson-g-writer'
     },
     {
         title: 'Gibson J-45 with 6 Chords',
         image: gibsonSixChords,
         alt: 'gibson j45 with 6 chords',
-        description: 'Acoustic it is, so we sound more clear.',
+        description: 'World-renowned for its full, balanced expression, warm bass, and excellent projection.',
         link: '/acoustic-guitars/gibson-j-45-6-chords'
     },
     {
         title: 'Gibson J-45 with 12 Chords',
         image: gibsonTwelveChords,
         alt: 'gibson j45 with 12 chords',
-        description: 'Acoustic it is, so we sound more clear.',
+        description: 'Gibson J-45 is Gibson’s best-selling acoustic of all time. Available now in a new 12-string version.',
         link: '/acoustic-guitars/gibson-j-45-12-chords'
     }
 ]

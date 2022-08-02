@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import '@styles/Story/Carousel.scss';
+import '@styles/Recommendations/Carousel.scss';
 import { CarouselData } from './CarouselData';
 import rightArrow from '@icons/arrow-right.svg';
 import leftArrow from '@icons/arrow-left.svg';

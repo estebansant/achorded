@@ -66,6 +66,8 @@
         }
         &--image{
             width: 64%;
+            min-height: 450px;
+            max-height: 450px;
             height: auto;
             margin: 0 auto; 
             object-fit: contain;

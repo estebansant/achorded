@@ -49,7 +49,7 @@ export const ElectricData = [
                 neck: 'SlimTaper',
                 frets: '22 Frets',
                 fretSize: 'Medium Jumbo',
-                description: 'Introduced in 1958 and only made in limited quantities, the Gibson Flying V™ has taken flight over the years along with legions of followers. This Gibson Flying V model has a SlimTaper™ neck, with a special set of calibrated BurstBucker™ 2 (neck) and BurstBucker 3 (bridge) pickups that provide the perfect mix of volume, tone, and power.'
+                description: 'Introduced in 1958 and only made in limited quantities, the Gibson Flying V has taken flight over the years along with legions of followers. This Gibson Flying V model has a SlimTaper neck, with a special set of calibrated BurstBucker 2 (neck) and BurstBucker 3 (bridge) pickups that provide the perfect mix of volume, tone, and power.'
             }
         ]
     },
@@ -101,6 +101,23 @@ export const ElectricData = [
                 frets: '22 Frets',
                 fretSize: 'Medium Jumbo',
                 description: 'Originally introduced in 1955, the Les Paul has been embraced by musicians for over 60 years. It has 2 P-90 pickups, one on the neck and another one on the bridge, a binding on the neck, and additional controls for the rhythm pickup and the 3-way toggle switch.'
+            }
+        ]
+    },
+    {
+        PBass: [
+            {
+                title: 'Fender P-Bass',
+                image: pBass,
+                alt: 'blue p bass from fender',
+                price: '1.499$ USD',
+                stars: fourStars,
+                rating: '4',
+                pickups: 'Yosemite Split Single-Coil',
+                neck: 'Modern "C"',
+                frets: '20 Frets',
+                fretSize: 'Medium Jumbo',
+                description: 'Born in Corona, California, the Precision Bass delivers the exceptional tone and feel you expect from an authentic Fender—along with new, player-oriented features that make it even more inspiring to play.'
             }
         ]
     },
