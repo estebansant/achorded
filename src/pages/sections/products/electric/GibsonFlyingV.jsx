@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { ProductsData } from '../ProductsData/ProductsData';
 import { CarouselData } from '@components/Recommendations/carousel/CarouselData.jsx';
 import '@styles/Recommendations/Carousel.scss';
+import '@styles/Products/Guitars.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 import rightArrow from '@icons/arrow-right.svg';
 import leftArrow from '@icons/arrow-left.svg';
@@ -37,7 +38,7 @@ const GibsonFlyingV = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
@@ -72,40 +73,47 @@ const GibsonFlyingV = () => {
 
   // Sort recommended items on the carousel
   const CarouselNewArray = CarouselData.splice(0, 9);
-  const SplicedArray = CarouselNewArray.splice(0, 1);
+  const RemoveCurrentGuitar = CarouselNewArray.splice(0, 1);
 
   return (
     <main>
         {ProductsData.map((first) => first.GibsonFlyingV?.map((product, index) => {
           return (
             <section key={index} className="main__container">
-              <h1 className="main__title">{product.title}</h1>
-                
-                {/* Rating */}
-                <div className="rating">
-                  <img className="rating__image" src={product.stars} alt="rating" />
-                  <p className="rating__value">{product.rating}</p>
-                </div>
 
                 {/* Product display */}
                 <section className="product">
 
-                  <div className="product__specs">
-                    <div className="product__specs--container">
-                      <p className="product__specs--containers__text">{product.pickups}</p>
-                      <h3 className="product__specs--container__subtitle">Pickups</h3>
+                  <div className="product__wrapper">
+                    <div className="information">
+                      <h1 className="information__title">{product.title}</h1>
+                      
+                      {/* Rating */}
+                      <div className="information__rating">
+                        <img className="information__rating--image" src={product.stars} alt="rating" />
+                        <p className="information__rating--value">{product.rating}</p>
+                      </div>
                     </div>
-                    <div className="product__specs--container">
-                      <p className="product__specs--container__text">{product.neck}</p>
-                      <h3 className="product__specs--container__subtitle">Neck Profile</h3>
-                    </div>
-                    <div className="product__specs--container">
-                      <p className="product__specs--container__amount">{product.frets}</p>
-                      <h3 className="product__specs--container__subtitle">{product.fretSize}</h3>
+
+                    <div className="specs">
+                      <div className="specs__container">
+                        <p className="specs__container--text">{product.pickups}</p>
+                        <h3 className="specs__container--subtitle">Pickups</h3>
+                      </div>
+                      <div className="specs__container">
+                        <p className="specs__container--text">{product.neck}</p>
+                        <h3 className="specs__container--subtitle">Neck Profile</h3>
+                      </div>
+                      <div className="specs__container">
+                        <p className="specs__container--text">{product.frets}</p>
+                        <h3 className="specs__container--subtitle">{product.fretSize}</h3>
+                      </div>
                     </div>
                   </div>
-
-                  <img className="product__image" src={product.image} alt={product.alt}/>
+                  
+                  <div className="product__image">
+                    <img className="product__image--picture" src={product.image} alt={product.alt}/>
+                  </div>
 
                 </section>
 
