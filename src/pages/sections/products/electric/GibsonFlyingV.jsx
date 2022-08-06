@@ -117,9 +117,8 @@ const GibsonFlyingV = () => {
 
                 </section>
 
-                <p className="description">{product.description}</p>
-
                 {/* Price section */}
+
                 <section className="price">
                   <div className="price__container">
                     <p className="price__container--value">{product.price}</p>
@@ -129,6 +128,8 @@ const GibsonFlyingV = () => {
                     </button>
                   </div>
                 </section>
+
+                <p className="description">{product.description}</p>
 
                 {/* Recommendation carousel */}
                 <section className="recommendations">
