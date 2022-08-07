@@ -121,10 +121,10 @@ const GibsonFlyingV = () => {
 
                 <section className="price">
                   <div className="price__container">
-                    <p className="price__container--value">{product.price}</p>
-                    <button className="price__container--button">Buy Now</button>
-                    <button className="price__container--cart">
-                      <img src={addShoppingCart} alt="add to shopping cart"/>
+                    <p className="price__value">{product.price}</p>
+                    <button className="price__button--buy">Buy Now</button>
+                    <button className="price__button--cart">
+                      <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
                     </button>
                   </div>
                 </section>
