@@ -81,60 +81,74 @@ const GibsonFlyingV = () => {
           return (
             <section key={index} className="main__container">
 
-                {/* Product display */}
-                <section className="product">
+              <div className="main__container--wrapper">
+                  {/* Product display */}
+                <section className="product__box">
 
-                  <div className="product__wrapper">
-                    <div className="information">
-                      <h1 className="information__title">{product.title}</h1>
-                      
-                      {/* Rating */}
-                      <div className="information__rating">
-                        <img className="information__rating--image" src={product.stars} alt="rating" />
-                        <p className="information__rating--value">{product.rating}</p>
+                    <div className="product">
+
+                    <div className="product__wrapper">
+
+                      <div className="information">
+                        <h1 className="information__title">{product.title}</h1>
+                        
+                        {/* Rating */}
+                        <div className="information__rating">
+                          <img className="information__rating--image" src={product.stars} alt="rating" />
+                          <p className="information__rating--value">{product.rating}</p>
+                        </div>
+
+                        <p className="information__price">{product.price}</p>
+                      </div>
+
+                      <div className="specs">
+                        <div className="specs__container">
+                          <p className="specs__container--text">{product.pickups}</p>
+                          <h3 className="specs__container--subtitle">Pickups</h3>
+                        </div>
+                        <div className="specs__container">
+                          <p className="specs__container--text">{product.neck}</p>
+                          <h3 className="specs__container--subtitle">Neck Profile</h3>
+                        </div>
+                        <div className="specs__container">
+                          <p className="specs__container--text">{product.frets}</p>
+                          <h3 className="specs__container--subtitle">{product.fretSize}</h3>
+                        </div>
                       </div>
                     </div>
-
-                    <div className="specs">
-                      <div className="specs__container">
-                        <p className="specs__container--text">{product.pickups}</p>
-                        <h3 className="specs__container--subtitle">Pickups</h3>
-                      </div>
-                      <div className="specs__container">
-                        <p className="specs__container--text">{product.neck}</p>
-                        <h3 className="specs__container--subtitle">Neck Profile</h3>
-                      </div>
-                      <div className="specs__container">
-                        <p className="specs__container--text">{product.frets}</p>
-                        <h3 className="specs__container--subtitle">{product.fretSize}</h3>
-                      </div>
+                    
+                    <div className="product__image">
+                      <img className="product__image--picture" src={product.image} alt={product.alt}/>
                     </div>
-                  </div>
-                  
-                  <div className="product__image">
-                    <img className="product__image--picture" src={product.image} alt={product.alt}/>
+
                   </div>
 
                 </section>
 
-                {/* Price section */}
+                <section className="details__container">
 
-                <section className="price">
-                  <div className="price__container">
-                    <p className="price__value">{product.price}</p>
-                    <button className="price__button--buy">Buy Now</button>
-                    <button className="price__button--cart">
-                      <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
-                    </button>
-                  </div>
+                  {/* Price section */}
+
+                  <div className="price">
+                      <div className="price__container">
+                        <button className="price__button--buy">Buy Now</button>
+                        <button className="price__button--cart">
+                          <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
+                        </button>
+                      </div>
+                    </div>
+
+                  <p className="description">{product.description}</p>
+
                 </section>
-
-                <p className="description">{product.description}</p>
+      
+              </div>
+                
 
                 {/* Recommendation carousel */}
-                <section className="recommendations">
+                <section className="suggested">
 
-                  <h2 className="recommendations__title">Similar Products</h2>
+                  <h2 className="suggested__title">Similar Products</h2>
 
                   <Slider {...settings} className="carousel">
                     {CarouselNewArray.map((slide, index) => {
