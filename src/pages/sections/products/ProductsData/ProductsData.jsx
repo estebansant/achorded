@@ -209,7 +209,7 @@ export const ProductsData = [
 
     // Acoustic Guitars
     {
-        DeanEABAcousticBass: [
+        DeanEAB: [
             {
                 title: 'Dean EAB Acoustic Bass',
                 image: eabAcousticBass,
@@ -241,7 +241,7 @@ export const ProductsData = [
         ]
     },
     {
-        FederConcert: [
+        FenderConcert: [
             {
                 title: 'Fender Concert FA-135CE',
                 image: fenderConcert,
@@ -347,6 +347,7 @@ export const ProductsData = [
                 price: '$2.999',
                 stars: fourHalfStars,
                 rating: '4.4',
+                link: '/accessories/studio-amplifier',
                 description: 'An amplifier able to deliver the best quallity of sound for your music. This Studio Amplifier is able to reproduce sounds with high fidelity quality, it is designed to ambient a medium sized or big studio, and you could even use it to play in a theater.'
             }
         ]
@@ -360,6 +361,7 @@ export const ProductsData = [
                 price: '$499',
                 stars: fourStars,
                 rating: '4.2',
+                link: '/accessories/portable-amplifier',
                 description: 'Don’t get fooled by its size, this small amplifier has a great quality of sound, it’s light and portable, which makes it easy to carry from place to place, and ideal to start practicing with your electric guitar.'
             }
         ]
@@ -373,6 +375,7 @@ export const ProductsData = [
                 price: '$15',
                 stars: fiveStars,
                 rating: '4.9',
+                link: '/accessories/plectrum-bundle',
                 description: 'Get the best plectrums designs in one bundle for a great price! Pay for 3 and take home another one for free with this plectrum bundle.'
             }
         ]
@@ -386,6 +389,7 @@ export const ProductsData = [
                 price: '$5',
                 stars: fourHalfStars,
                 rating: '4.7',
+                link: '/accessories/plectrum-spider',
                 description: 'A plectrum with a spider design on the front.'
             }
         ]
@@ -399,6 +403,7 @@ export const ProductsData = [
                 price: '$5',
                 stars: fiveStars,
                 rating: '5',
+                link: '/accessories/plectrum-templar',
                 description: 'A plectrum with a templar design on the front.'
             }
         ]
@@ -412,6 +417,7 @@ export const ProductsData = [
                 price: '$5',
                 stars: fourHalfStars,
                 rating: '4.5',
+                link: '/accessories/plectrum-black',
                 description: 'A plectrum with a pure black design on the front with golden details.'
             }
         ]
@@ -425,6 +431,7 @@ export const ProductsData = [
                 price: '$5',
                 stars: fourStars,
                 rating: '4.1',
+                link: '/accessories/plectrum-guitar',
                 description: 'A plectrum with a blue guitar on the front.'
             }
         ]
@@ -438,6 +445,7 @@ export const ProductsData = [
                 price: '$5',
                 stars: fourStars,
                 rating: '4',
+                link: '/accessories/plectrum-rock',
                 description: 'A plectrum with a "rock" design in golden letters on the front.'
             }
         ]

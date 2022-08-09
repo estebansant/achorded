@@ -91,7 +91,7 @@ export const CarouselData = [
         image: yamahaClassic,
         alt: 'classic yamaha guitar',
         description: 'The Yamaha Classic C-40 is the perfect basis to learn how to play guitar easily and successfully.',
-        link: 'acoustic-guitars/yamaha-c-40'
+        link: '/acoustic-guitars/yamaha-c-40'
     },
     {
         title: 'Fender Dreadnought',
