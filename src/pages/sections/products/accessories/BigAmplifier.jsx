@@ -2,8 +2,8 @@ import React from 'react';
 import Slider from "react-slick";
 import { ProductsData } from '../ProductsData/ProductsData';
 import { AccessoriesCarouselData } from '../ProductsData/AccessoriesCarouselData';
-import '@styles/Recommendations/Carousel.scss';
-import '@styles/Products/Guitars.scss';
+import '@styles/Recommendations/AccessoriesCarousel.scss';
+import '@styles/Products/Accessories.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 import rightArrow from '@icons/arrow-right.svg';
 import leftArrow from '@icons/arrow-left.svg';
@@ -78,52 +78,52 @@ const BigAmplifier = () => {
     <main>
         {ProductsData.map((first) => first.StudioAmplifier?.map((product, index) => {
           return (
-            <section key={index} className="main__container">
+            <section key={index} className="main__containerB">
 
-              <div className="main__container--wrapper">
+              <div className="main__containerB--wrapper">
                   {/* Product display */}
-                <section className="product__box">
+                <section className="productB__box">
 
-                    <div className="product">
+                    <div className="productB">
 
-                    <div className="product__wrapper">
+                    <div className="productB__wrapper">
 
-                      <div className="information">
-                        <h1 className="information__title">{product.title}</h1>
+                      <div className="informationB">
+                        <h1 className="informationB__title">{product.title}</h1>
                         
                         {/* Rating */}
-                        <div className="information__rating">
-                          <img className="information__rating--image" src={product.stars} alt="rating" />
-                          <p className="information__rating--value">{product.rating}</p>
+                        <div className="informationB__rating">
+                          <img className="informationB__rating--image" src={product.stars} alt="rating" />
+                          <p className="informationB__rating--value">{product.rating}</p>
                         </div>
 
-                        <p className="information__price">{product.price}</p>
+                        <p className="informationB__price">{product.price}</p>
                       </div>
 
                     </div>
                     
-                    <div className="product__image">
-                      <img className="product__image--picture" src={product.image} alt={product.alt}/>
+                    <div className="productB__image">
+                      <img className="productB__image--picture" src={product.image} alt={product.alt}/>
                     </div>
 
                   </div>
 
                 </section>
 
-                <section className="details__container">
+                <section className="detailsB__container">
 
                   {/* Price section */}
 
-                  <div className="price">
-                      <div className="price__container">
-                        <button className="price__button--buy">Buy Now</button>
-                        <button className="price__button--cart">
-                          <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
+                  <div className="priceB">
+                      <div className="priceB__container">
+                        <button className="priceB__button--buy">Buy Now</button>
+                        <button className="priceB__button--cart">
+                          <img className="priceB__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
                         </button>
                       </div>
                     </div>
 
-                  <p className="description">{product.description}</p>
+                  <p className="descriptionB">{product.description}</p>
 
                 </section>
       
@@ -135,17 +135,14 @@ const BigAmplifier = () => {
 
                   <h2 className="suggested__title">Similar Products</h2>
 
-                  <Slider {...settings} className="carousel">
+                  <Slider {...settings} className="carouselAC">
                     {AccessoriesCarouselData.map((slide, index) => {
                         return(
-                            <div className="carousel__slide" key={index}>
-                                    <div className="slides">
-                                        <a href={slide.link} className="slides__link">
-                                            <h3 className="slides__link--title">{slide.title}</h3>
-                                            <img className="slides__link--image"src={slide.image} alt={slide.alt}/>
-                                            <div className="slides__link--description">
-                                                <p>{slide.description}</p>
-                                            </div>
+                            <div className="carouselAC__slide" key={index}>
+                                    <div className="slidesAC">
+                                        <a href={slide.link} className="slidesAC__link">
+                                            <h3 className="slidesAC__link--title">{slide.title}</h3>
+                                            <img className="slidesAC__link--image"src={slide.image} alt={slide.alt}/>
                                         </a>
                                     </div>
                             </div>

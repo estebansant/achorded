@@ -381,7 +381,7 @@ export const ProductsData = [
         ]
     },
     {
-        SpiderBundle: [
+        SpiderPlectrum: [
             {
                 title: 'Spider Plectrum',
                 image: plectrumSpider,
@@ -395,7 +395,7 @@ export const ProductsData = [
         ]
     },
     {
-        TemplarBundle: [
+        TemplarPlectrum: [
             {
                 title: 'Templar Plectrum',
                 image: plectrumTemplar,
@@ -409,7 +409,7 @@ export const ProductsData = [
         ]
     },
     {
-        BlackBundle: [
+        BlackPlectrum: [
             {
                 title: 'Pure Black Plectrum',
                 image: plectrumBlack,
@@ -423,7 +423,7 @@ export const ProductsData = [
         ]
     },
     {
-        GuitarBundle: [
+        GuitarPlectrum: [
             {
                 title: 'Guitar Plectrum',
                 image: plectrumGuitar,
@@ -437,7 +437,7 @@ export const ProductsData = [
         ]
     },
     {
-        RockBundle: [
+        RockPlectrum: [
             {
                 title: 'Rock Plectrum',
                 image: plectrumRock,
