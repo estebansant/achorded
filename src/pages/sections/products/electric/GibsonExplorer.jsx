@@ -10,6 +10,14 @@ import leftArrow from '@icons/arrow-left.svg';
 
 const GibsonExplorer = () => {
   
+  // Cart State
+
+  const [cart, setCart] = React.useState ('');
+
+  const onHandleCart = () => {
+    setCart ('Hello world');
+  }
+
   // Carousel settings
 
   function SampleNextArrow(props) {
@@ -132,7 +140,7 @@ const GibsonExplorer = () => {
                   <div className="price">
                       <div className="price__container">
                         <button className="price__button--buy">Buy Now</button>
-                        <button className="price__button--cart">
+                        <button className="price__button--cart" onClick={onHandleCart}>
                           <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
                         </button>
                       </div>

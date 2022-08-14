@@ -1,5 +1,6 @@
 @forward "@styles/_global.scss";
 @use "@styles/variables/colors";
+@use "@styles/variables/size";
 @use "@styles/variables/fonts";
 
 .Header__container{
@@ -81,6 +82,48 @@
     .menu{
         display: none;
     }
+    .profile .profile__menu, .profile .profile__inner--menu{
+        display: inline-block;
+    }
+    .profile .profile__menu{
+        width: 150px;
+        height: 80px;
+        border: 1px solid colors.$main-red;
+        border-top: none;
+        background-color: colors.$secondary-red;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 2px 20px 20px 20px;
+        position: absolute;
+        top: 48px;
+        right: 55px;
+    }
+    .profile .profile__inner--menu{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .inner__menu--item{
+        font-size: size.$text;
+        font-family: fonts.$title;
+        font-weight: 500;
+        text-align: right;
+        width: 100%;
+        padding-bottom: 10px;
+        margin-top: 6px;
+        color: colors.$white;
+        a{
+            text-decoration: none;
+            color: colors.$white;
+        }
+    }
+    .profile__inner--menu li:nth-child(1){
+        border-bottom: 2px solid colors.$light-white;
+    }
+    .inner__menu--item:hover{
+        text-decoration: underline;
+    }
     .Header__container--left{
         display: inline-block;
         position: relative;
@@ -148,17 +191,22 @@
                 justify-content: space-evenly;
                 align-items: center;
                 margin-right: 18px;
-                &__text{
-                    font-family: fonts.$title;
-                    color: colors.$white;
-                    font-weight: 500;
-                    font-size: 2rem;
-                    cursor: pointer;
-                }
-                &__arrow{
-                    width: 18px;
-                    height: 9px;
-                    margin-right: 8px
+                &__container{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    &--text{
+                        font-family: fonts.$title;
+                        color: colors.$white;
+                        font-weight: 500;
+                        font-size: 2rem;
+                        cursor: pointer;
+                    }
+                    &--arrow{
+                        width: 18px;
+                        height: 9px;
+                        margin-right: 8px
+                    }
                 }
             }
             .question__icon{
@@ -177,8 +225,12 @@
     .Header__container--right .shopping a .shopping__text{
         right: -8px;
     }
-    .navigation__left--item a:hover, .navigation__left--last a:hover, .profile__text:hover, .about:hover{
+    .navigation__left--item a:hover, .navigation__left--last a:hover, .profile__container--text:hover, .about:hover{
         text-decoration: underline;
+    }
+    .profile__container:hover{
+        text-decoration: underline;
+        cursor: pointer;
     }
 }
 @media(min-width: 2560px){

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const MyAccount = () => {
+const MyOrders = () => {
   return (
     <main>
-      <h1>My Account</h1>
+      <h1>My Orders</h1>
     </main>
   )
 }
 
-export {MyAccount}
+export {MyOrders}

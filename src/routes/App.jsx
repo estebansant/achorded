@@ -11,7 +11,7 @@ import { Home } from '../pages/Home';
 import { About } from '../pages/About';
 import { NotFound } from '../pages/NotFound';
 import { SignUp } from '../pages/SignUp';
-import { MyAccount } from '../pages/MyAccount';
+import { MyOrders } from '../pages/MyOrders';
 import { Checkout } from '../pages/Checkout';
 import { Cart } from '../pages/Cart';
 import { Faqs } from '../pages/Faqs';
@@ -60,7 +60,7 @@ const App = () => {
           {/* Website pages routes */}
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
-            <Route exact path="/account" element={<MyAccount />} />
+            <Route exact path="/orders" element={<MyOrders />} />
             <Route exact path="/signup" element={<SignUp />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/checkout" element={<Checkout />} />
