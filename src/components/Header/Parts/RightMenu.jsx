@@ -1,6 +1,7 @@
 import React from 'react';
 import question from '@icons/question.svg';
 import shoppingCart from '@icons/shopping_cart.svg';
+import '@styles/Header/RightMenu.scss';
 import arrow from '@icons/chevron_down.svg';
 
 const RightMenu = () => {
@@ -15,31 +16,35 @@ const RightMenu = () => {
             <React.Fragment>
             <div className="Header__container--right">
                 <ul className="navigation__right">
+
                 <li className="about">
                     <a href="/about">About Us</a>
                 </li>
+
                 <li className="profile">
                     <div className="profile__container" onClick={onToggleMenu}>
-                        <img src={arrow} alt="arrow down" className="profile__container--arrow"/>
-                        <p className="profile__container--text">Profile</p>
-                    </div>
 
-                    {toggleMenu && 
+                        <label className="profile__container--main" htmlFor="checkbox">
+                            <input type="checkbox" className="profile__container--main__checkbox" />
+                            <img src={arrow} alt="arrow down" className="profile__container--main__arrow"/>
+                            <p className="profile__container--main__text">Profile</p>
+                        </label>
+
+                        {toggleMenu && 
                     
-                    <div className="profile__menu">
-                        <ul className="profile__inner--menu">
-                        <li className="inner__menu--item">
-                            <a href="/orders">My orders</a>
-                        </li>
-                        <li className="inner__menu--item">
-                            <p>Log out</p>
-                        </li>
-                        </ul>
+                            <div className="profile__menu">
+                                <ul className="profile__inner--menu">
+                                <li className="inner__menu--item">
+                                    <a href="/orders">My orders</a>
+                                </li>
+                                <li className="inner__menu--item">
+                                    <p>Log out</p>
+                                </li>
+                                </ul>
+                            </div>
+                            
+                        }
                     </div>
-                    
-                    }
-                    
-                    
                 </li>
 
                 <li className="question__icon">

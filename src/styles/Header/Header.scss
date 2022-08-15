@@ -30,131 +30,16 @@
             }
     }
 }
-.Header__container--right{
-    .shopping{
-        list-style: none;
-        position: relative;
-        a{
-            display: inline-block;
-            .shopping__icon{    
-                width: 35.81px;
-                height: 34.14px;
-            }
-            .shopping__text{
-                width: 20px;
-                height: 20px;
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                top: -5px;
-                right: -2px;
-                color: colors.$main-black;
-                font-size: 2rem;
-                font-family: fonts.$title;
-                font-weight: bold;
-                background-color: colors.$yellow;
-                border-radius: 50%;
-            }
-        }
-    }
-}
-.Header__container--left, .profile, .question__icon, .profile__inner--menu, .profile__menu, .about{
-    display: none;
-}
 @media(min-width: 768px){
     .Header__container{
         justify-content: space-between;
-    }
-    .menu{
-        position: relative;
-        left: 5%;
-    }
-    .Header__container--right{
-        position: relative;
-        right: 5%;
     }
 }
 @media(min-width: 929px){
     .Header__container{
         justify-content: space-evenly;
     }
-    .menu{
-        display: none;
-    }
-    .profile .profile__menu, .profile .profile__inner--menu{
-        display: inline-block;
-    }
-    .profile .profile__menu{
-        width: 150px;
-        height: 80px;
-        border: 1px solid colors.$main-red;
-        border-top: none;
-        background-color: colors.$secondary-red;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        padding: 2px 20px 20px 20px;
-        position: absolute;
-        top: 48px;
-        right: 55px;
-    }
-    .profile .profile__inner--menu{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-    .inner__menu--item{
-        font-size: size.$text;
-        font-family: fonts.$title;
-        font-weight: 500;
-        text-align: right;
-        width: 100%;
-        padding-bottom: 10px;
-        margin-top: 6px;
-        color: colors.$white;
-        a{
-            text-decoration: none;
-            color: colors.$white;
-        }
-    }
-    .profile__inner--menu li:nth-child(1){
-        border-bottom: 2px solid colors.$light-white;
-    }
-    .inner__menu--item:hover{
-        text-decoration: underline;
-    }
-    .Header__container--left{
-        display: inline-block;
-        position: relative;
-        left: 3%;
-        .navigation__left{
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            &--item{
-                margin-right: 18px;
-                a{
-                    font-family: fonts.$title;
-                    color: colors.$white;
-                    font-weight: 500;
-                    font-size: 2rem;
-                    cursor: pointer;
-                }
-            }
-            &--last{
-                a{
-                    font-family: fonts.$title;
-                    color: colors.$white;
-                    font-weight: 500;
-                    font-size: 2rem;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+    
     .Header__container--center{
         width: 22%;
         margin: 0 auto;
@@ -163,74 +48,6 @@
             position: relative;
             left: 15%;
         }
-    }
-    .Header__container--right{
-        display: inline-block;
-        right: 3%;
-        .navigation__right{
-            width: 100%;
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            .about{
-                display: inline;
-                margin-right: 18px;
-                a{
-                    text-decoration: none;
-                    font-family: fonts.$title;
-                    color: colors.$white;
-                    font-weight: 500;
-                    font-size: 2rem;
-                    cursor: pointer;
-                }
-            }
-            .profile {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                margin-right: 18px;
-                &__container{
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    &--text{
-                        font-family: fonts.$title;
-                        color: colors.$white;
-                        font-weight: 500;
-                        font-size: 2rem;
-                        cursor: pointer;
-                    }
-                    &--arrow{
-                        width: 18px;
-                        height: 9px;
-                        margin-right: 8px
-                    }
-                }
-            }
-            .question__icon{
-                margin-right: 18px;
-                display: inline-block;
-                a{
-                    display: inline-block;
-                    img{
-                        width: 34px;
-                        height: 34px;
-                    }
-                }
-            }
-        }
-    }
-    .Header__container--right .shopping a .shopping__text{
-        right: -8px;
-    }
-    .navigation__left--item a:hover, .navigation__left--last a:hover, .profile__container--text:hover, .about:hover{
-        text-decoration: underline;
-    }
-    .profile__container:hover{
-        text-decoration: underline;
-        cursor: pointer;
     }
 }
 @media(min-width: 2560px){

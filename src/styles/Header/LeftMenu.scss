@@ -1,0 +1,54 @@
+@forward "@styles/_global.scss";
+@use "@styles/variables/colors";
+@use "@styles/variables/size";
+@use "@styles/variables/fonts";
+
+.Header__container--left{
+    display:  none;
+}
+
+@media (min-width: 768px){
+    .menu{
+        position: relative;
+        left: 5%;
+    }
+}
+@media(min-width: 929px){    
+    .menu{
+        display: none;
+    }
+    .Header__container--left{
+        display: inline-block;
+        position: relative;
+        left: 3%;
+        .navigation__left{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            &--item{
+                margin-right: 18px;
+                a{
+                    font-family: fonts.$title;
+                    color: colors.$white;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+            &--last{
+                a{
+                    font-family: fonts.$title;
+                    color: colors.$white;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .navigation__left--item a:hover, .navigation__left--last a:hover{
+        text-decoration: underline;
+    }
+}
