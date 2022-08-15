@@ -3,10 +3,19 @@
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
 
-.Header__container--left{
-    display:  none;
+.menu{
+    width: 44px;
+    height: 37px;
 }
-
+.hidden__header--container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    background-color: colors.$secondary-black;
+    z-index: 200;
+}
 @media (min-width: 768px){
     .menu{
         position: relative;
@@ -17,7 +26,7 @@
     .menu{
         display: none;
     }
-    .Header__container--left{
+    .header__container--left{
         display: inline-block;
         position: relative;
         left: 3%;
@@ -27,6 +36,9 @@
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
+            .profileB{
+                display: none;
+            }
             &--item{
                 margin-right: 18px;
                 a{

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion, AnimatePresence } from "framer-motion";
 import question from '@icons/question.svg';
 import shoppingCart from '@icons/shopping_cart.svg';
 import '@styles/Header/RightMenu.scss';
