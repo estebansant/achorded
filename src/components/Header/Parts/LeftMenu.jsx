@@ -34,13 +34,16 @@ const LeftMenu = () => {
                             transition={{ duration: 0.35, ease: "easeInOut" }}
                             className="hidden__header--container"
                         >
-                            <img src={x} alt="close" className="hidden__x" onClick={onToggleMenuLeft}/>
+                            <div className="hidden__x">
+                                <img src={x} alt="close" className="hidden__x--image" onClick={onToggleMenuLeft}/>
+                            </div>
                             <ul className="hidden__navigation--left">
 
                                 <li className="hidden__profileB">
-                                    <div className="hidden__profileB--container" onClick={onToggleMenuB}>
-                                        <img src={arrow} alt="arrow down" className="hidden__profileB--container__arrow"/>
+                                    <label className="hidden__profileB--container" onClick={onToggleMenuB}>
                                         <p className="hidden__profileB--container__text">Profile</p>
+                                        <img src={arrow} alt="arrow down" className="hidden__profileB--container__arrow"/>
+                                    </label>
 
                                         {toggleMenuB && 
                                     
@@ -56,7 +59,6 @@ const LeftMenu = () => {
                                             </div>
                                             
                                         }
-                                    </div>
                                 </li>
 
                                 <li className="hidden__navigation--left__item">
@@ -65,7 +67,7 @@ const LeftMenu = () => {
                                 <li className="hidden__navigation--left__item">
                                     <a href="/acoustic-guitars">Acoustic Guitars</a>
                                 </li>
-                                <li className="hidden__navigation--left__last">
+                                <li className="hidden__navigation--left__item">
                                     <a href="/accessories">Accessories</a>
                                 </li>
                             </ul>

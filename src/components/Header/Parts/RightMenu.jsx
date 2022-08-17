@@ -23,40 +23,40 @@ const RightMenu = () => {
                 </li>
 
                 <li className="profile">
-                    <div className="profile__container" onClick={onToggleMenu}>
+                    <div className="profile__container">
 
-                        <label className="profile__container--main" htmlFor="checkbox">
+                        <label className="profile__container--main" htmlFor="checkbox" onClick={onToggleMenu}>
                             <input type="checkbox" className="profile__container--main__checkbox" />
                             <img src={arrow} alt="arrow down" className="profile__container--main__arrow"/>
                             <p className="profile__container--main__text">Profile</p>
                         </label>
 
-                    <AnimatePresence>
-                        {toggleMenu && 
-                        
-                            <motion.div
-                                key="profile"
-                                initial={{ opacity: 0, y: "-110%" }}
-                                animate={{ opacity: 1, y: "0%" }}
-                                exit={{ opacity: 0.2,
-                                        y: "-120%",
-                                        transition: {duration: 0.15}
-                                    }}
-                                transition={{ duration: 0.3, ease: "easeInOut" }}
-                                className="profile__menu"
-                            >
-                                <ul className="profile__inner--menu">
-                                <li className="inner__menu--item">
-                                    <a href="/orders">My orders</a>
-                                </li>
-                                <li className="inner__menu--item">
-                                    <p>Log out</p>
-                                </li>
-                                </ul>
-                            </motion.div>
+                        <AnimatePresence>
+                            {toggleMenu && 
                             
-                        }
-                    </AnimatePresence>
+                                <motion.div
+                                    key="profile"
+                                    initial={{ opacity: 0, y: "-110%" }}
+                                    animate={{ opacity: 1, y: "0%" }}
+                                    exit={{ opacity: 0.2,
+                                            y: "-120%",
+                                            transition: {duration: 0.15}
+                                        }}
+                                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                                    className="profile__menu"
+                                >
+                                    <ul className="profile__inner--menu">
+                                    <li className="inner__menu--item">
+                                        <a href="/orders">My orders</a>
+                                    </li>
+                                    <li className="inner__menu--item">
+                                        <p>Log out</p>
+                                    </li>
+                                    </ul>
+                                </motion.div>
+                                
+                            }
+                        </AnimatePresence>
                     </div>
                 </li>
 
