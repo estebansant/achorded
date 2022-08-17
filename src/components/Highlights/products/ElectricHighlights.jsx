@@ -9,7 +9,7 @@ const ElectricHighlights = () => {
       <React.Fragment>
         <section className="wrapper">
             <div className="showcase">
-                <a className="showcase-link" href="/electric-guitars/smokey">
+                <a className="showcase-link" href="/electric-guitars/stratocaster">
                     <img className="showcase__image" src={stratocaster} alt="stratocaster red electric guitar"/>
                     <div className="showcase__text--container">
                         <h4>The Stratocaster</h4>
@@ -19,7 +19,7 @@ const ElectricHighlights = () => {
             </div>
             
             <div className="showcase">
-                <a className="showcase-link" href="/electric-guitars/old-fashioned">
+                <a className="showcase-link" href="/electric-guitars/telecaster">
                     <img className="showcase__image" src={telecaster} alt="telecaster wooden guitar"/>
                     <div className="showcase__text--container">
                         <h4>Fender Telecaster</h4>
@@ -29,7 +29,7 @@ const ElectricHighlights = () => {
             </div>
             
             <div className="showcase">
-                <a className="showcase-link" href="/electric-guitars/classical-rock">
+                <a className="showcase-link" href="/electric-guitars/jackson-soloist">
                     <img className="showcase__image" src={jacksonSoloist} alt="jackson soloist black electric guitar"/>
                     <div className="showcase__text--container">
                         <h4>Jackson Soloist</h4>

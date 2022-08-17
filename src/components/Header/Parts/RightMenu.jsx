@@ -31,9 +31,20 @@ const RightMenu = () => {
                             <p className="profile__container--main__text">Profile</p>
                         </label>
 
+                    <AnimatePresence>
                         {toggleMenu && 
-                    
-                            <div className="profile__menu">
+                        
+                            <motion.div
+                                key="profile"
+                                initial={{ opacity: 0, y: "-110%" }}
+                                animate={{ opacity: 1, y: "0%" }}
+                                exit={{ opacity: 0.2,
+                                        y: "-120%",
+                                        transition: {duration: 0.15}
+                                    }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                className="profile__menu"
+                            >
                                 <ul className="profile__inner--menu">
                                 <li className="inner__menu--item">
                                     <a href="/orders">My orders</a>
@@ -42,9 +53,10 @@ const RightMenu = () => {
                                     <p>Log out</p>
                                 </li>
                                 </ul>
-                            </div>
+                            </motion.div>
                             
                         }
+                    </AnimatePresence>
                     </div>
                 </li>
 
