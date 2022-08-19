@@ -6,7 +6,7 @@ const AcousticDisplay = () => {
   return (
     <React.Fragment>
       <section className="displaybis">
-        <h1 className="displaybis__title">Shop for Acoustic Guitars.</h1>
+        <h1 className="displaybis__title">Shop Acoustic Guitars.</h1>
 
         <section className="displaybis__grid">
           {AcousticData.map((card, index) => {

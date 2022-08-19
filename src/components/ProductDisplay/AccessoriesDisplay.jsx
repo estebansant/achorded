@@ -6,7 +6,7 @@ const AccessoriesDisplay = () => {
   return (
     <React.Fragment>
       <section className="displays">
-        <h1 className="displays__titles">Shop for Guitar's Accessories.</h1>
+        <h1 className="displays__titles">Shop Guitar's Accessories.</h1>
 
         <section className="displays__grids">
           {AccessoriesData.map((card, index) => {

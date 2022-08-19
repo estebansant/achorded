@@ -41,24 +41,34 @@ const LeftMenu = () => {
 
                                 <li className="hidden__profileB">
                                     <label className="hidden__profileB--container" onClick={onToggleMenuB}>
+                                        <input type="checkbox" className="hidden__profileB--container__checkbox" />
                                         <p className="hidden__profileB--container__text">Profile</p>
                                         <img src={arrow} alt="arrow down" className="hidden__profileB--container__arrow"/>
                                     </label>
 
+                                    <AnimatePresence>
                                         {toggleMenuB && 
-                                    
-                                            <div className="profileB__menu">
+                                        
+                                            <motion.div
+                                                key="profile"
+                                                initial={{ opacity: 0, y: "-110%" }}
+                                                animate={{ opacity: 1, y: "0%" }}
+                                                exit={{ opacity: 0, x: "-110%" }}
+                                                transition={{ duration: 0.35, ease: "easeInOut" }}
+                                                className="profileB__menu"
+                                            >
                                                 <ul className="profileB__inner--menu">
                                                 <li className="innerB__menu--item">
                                                     <a href="/orders">My orders</a>
                                                 </li>
-                                                <li className="innerB__menu--item">
+                                                <li className="innerB__menu--item__last">
                                                     <p>Log out</p>
                                                 </li>
                                                 </ul>
-                                            </div>
+                                            </motion.div>
                                             
                                         }
+                                    </AnimatePresence>
                                 </li>
 
                                 <li className="hidden__navigation--left__item">
