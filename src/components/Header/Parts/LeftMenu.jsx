@@ -70,16 +70,16 @@ const LeftMenu = () => {
                                         }
                                     </AnimatePresence>
                                 </li>
-
-                                <li className="hidden__navigation--left__item">
-                                    <a href="/electric-guitars">Electric Guitars</a>
-                                </li>
-                                <li className="hidden__navigation--left__item">
-                                    <a href="/acoustic-guitars">Acoustic Guitars</a>
-                                </li>
-                                <li className="hidden__navigation--left__item">
-                                    <a href="/accessories">Accessories</a>
-                                </li>
+                                
+                                <a href="/electric-guitars" className="hidden__navigation--left__item">
+                                    <li>Electric Guitars</li>
+                                </a>
+                                <a href="/acoustic-guitars" className="hidden__navigation--left__item">
+                                    <li>Acoustic Guitars</li>
+                                </a>
+                                <a href="/accessories" className="hidden__navigation--left__item">
+                                    <li>Accessories</li>
+                                </a>
                             </ul>
                         </motion.div>
                         }
