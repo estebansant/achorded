@@ -2,7 +2,7 @@
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
 
-.login{
+.signup{
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,7 +22,7 @@
     
     }
 }
-.login__title{
+.signup__title{
     width: 100%;
     height: fit-content;
     &--content{
@@ -33,18 +33,18 @@
         text-align: center;
     }
 }
-.form{
+.signup__form{
     width: 100%;
     display: flex;
     flex-direction: column;
-    &__label{
+    &--label{
         font-size: size.$secondary-subtitle;
         font-family: fonts.$text;
         color: colors.$white;
         font-weight: 500;
         margin-bottom: 8px;
     }
-    &__input{
+    &--input{
         width: 100%;
         height: 50px;
         background-color: transparent;
@@ -59,7 +59,7 @@
         margin-bottom: 25px;
         transition: all 0.3s ease-in-out;
     }
-    &__login{
+    &--sign{
         background-color: rgba(255, 255, 255, 0.2);
         border-radius: 30px;
         cursor: pointer;
@@ -76,16 +76,8 @@
         color: #FFFFFF;
         transition: all 0.3s ease-in-out;
     }
-    &__forgot{
-        text-decoration: none;
-        color: colors.$light-white;
-        font-family: fonts.$text;
-        font-size: size.$text;
-        font-weight: 400;
-        text-align: center;
-    }
 }
-.create{
+.log{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -112,23 +104,19 @@
         }
     }
 }
-.form__login:hover{
+.signup__form--sign:hover{
     cursor: pointer;
     box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
 }
-.form__forgot:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-.create__link--content:hover{
+.log__link--content:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 @media(min-width: 768px){
-    .login{
+    .signup{
         padding: 30px;
     }
-    .login__container{
+    .signup__container{
         border: 2px solid colors.$white;
         border-radius: 30px;
         padding: 30px 45px;
