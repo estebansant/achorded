@@ -1,6 +1,7 @@
 import React from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { AppContext } from '../context/AppContext.js'; 
 
 // Website pages
 
@@ -54,59 +55,61 @@ import { GuitarPlectrum } from '../pages/sections/products/accessories/GuitarPle
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          {/* Website pages routes */}
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/orders" element={<MyOrders />} />
-            <Route exact path="/signup" element={<SignUp />} />
-            <Route exact path="/login" element={<Login />} />
-            <Route exact path="/checkout" element={<Checkout />} />
-            <Route exact path="/my-cart" element={<Cart />} />
-            <Route exact path="/questions" element={<Faqs />} />
-            <Route exact path="/accessories" element={<Accessories />} />
-            <Route exact path="/electric-guitars" element={<ElectricGuitars />} />
-            <Route exact path="/acoustic-guitars" element={<AcousticGuitars />} />
+    <AppContext.Provider value={''}>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            {/* Website pages routes */}
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/about" element={<About />} />
+              <Route exact path="/orders" element={<MyOrders />} />
+              <Route exact path="/signup" element={<SignUp />} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/checkout" element={<Checkout />} />
+              <Route exact path="/my-cart" element={<Cart />} />
+              <Route exact path="/questions" element={<Faqs />} />
+              <Route exact path="/accessories" element={<Accessories />} />
+              <Route exact path="/electric-guitars" element={<ElectricGuitars />} />
+              <Route exact path="/acoustic-guitars" element={<AcousticGuitars />} />
 
-            {/* Electric guitars routes */}
-            <Route exact path="/electric-guitars/stratocaster-as" element={<StratocasterAS />} />
-            <Route exact path="/electric-guitars/gibson-explorer" element={<GibsonExplorer />} />
-            <Route exact path="/electric-guitars/les-paul-black" element={<LesPaulBlack />} />
-            <Route exact path="/electric-guitars/les-paul-blue" element={<LesPaulBlue />} />
-            <Route exact path="/electric-guitars/jackson-rhoads" element={<JacksonRhoads />} />
-            <Route exact path="/electric-guitars/jackson-soloist" element={<JacksonSoloist />} />
-            <Route exact path="/electric-guitars/p-bass" element={<PBass />} />
-            <Route exact path="/electric-guitars/stratocaster" element={<Stratocaster />} />
-            <Route exact path="/electric-guitars/telecaster" element={<Telecaster />} />
-            <Route exact path="/electric-guitars/gibson-flying-v" element={<GibsonFlyingV />} />
+              {/* Electric guitars routes */}
+              <Route exact path="/electric-guitars/stratocaster-as" element={<StratocasterAS />} />
+              <Route exact path="/electric-guitars/gibson-explorer" element={<GibsonExplorer />} />
+              <Route exact path="/electric-guitars/les-paul-black" element={<LesPaulBlack />} />
+              <Route exact path="/electric-guitars/les-paul-blue" element={<LesPaulBlue />} />
+              <Route exact path="/electric-guitars/jackson-rhoads" element={<JacksonRhoads />} />
+              <Route exact path="/electric-guitars/jackson-soloist" element={<JacksonSoloist />} />
+              <Route exact path="/electric-guitars/p-bass" element={<PBass />} />
+              <Route exact path="/electric-guitars/stratocaster" element={<Stratocaster />} />
+              <Route exact path="/electric-guitars/telecaster" element={<Telecaster />} />
+              <Route exact path="/electric-guitars/gibson-flying-v" element={<GibsonFlyingV />} />
 
-            {/* Acoustic guitars routes */}
-            <Route exact path="/acoustic-guitars/dean-eab-bass" element={<DeanEAB />} />
-            <Route exact path="/acoustic-guitars/fender-concert-fa-135ce" element={<FenderConcert />} />
-            <Route exact path="/acoustic-guitars/fender-dreadnought" element={<FenderDreadnought />} />
-            <Route exact path="/acoustic-guitars/gibson-g-writer" element={<GibsonGWriter />} />
-            <Route exact path="/acoustic-guitars/gibson-j-45-6-chords" element={<J45_6Chords />} />
-            <Route exact path="/acoustic-guitars/gibson-j-45-12-chords" element={<J45_12Chords />} />
-            <Route exact path="/acoustic-guitars/yamaha-c-40" element={<YamahaC40 />} />
-            <Route exact path="/acoustic-guitars/cuatro" element={<Cuatro />} />
+              {/* Acoustic guitars routes */}
+              <Route exact path="/acoustic-guitars/dean-eab-bass" element={<DeanEAB />} />
+              <Route exact path="/acoustic-guitars/fender-concert-fa-135ce" element={<FenderConcert />} />
+              <Route exact path="/acoustic-guitars/fender-dreadnought" element={<FenderDreadnought />} />
+              <Route exact path="/acoustic-guitars/gibson-g-writer" element={<GibsonGWriter />} />
+              <Route exact path="/acoustic-guitars/gibson-j-45-6-chords" element={<J45_6Chords />} />
+              <Route exact path="/acoustic-guitars/gibson-j-45-12-chords" element={<J45_12Chords />} />
+              <Route exact path="/acoustic-guitars/yamaha-c-40" element={<YamahaC40 />} />
+              <Route exact path="/acoustic-guitars/cuatro" element={<Cuatro />} />
 
-            {/* Accessories routes */}
-            <Route exact path="/accessories/studio-amplifier" element={<BigAmplifier />} />
-            <Route exact path="/accessories/portable-amplifier" element={<SmallAmplifier />} />
-            <Route exact path="/accessories/plectrum-bundle" element={<PlectrumBundle />} />
-            <Route exact path="/accessories/plectrum-spider" element={<SpiderPlectrum />} />
-            <Route exact path="/accessories/plectrum-templar" element={<TemplarPlectrum />} />
-            <Route exact path="/accessories/plectrum-black" element={<BlackPlectrum />} />
-            <Route exact path="/accessories/plectrum-guitar" element={<GuitarPlectrum />} />
-            <Route exact path="/accessories/plectrum-rock" element={<RockPlectrum />} />
+              {/* Accessories routes */}
+              <Route exact path="/accessories/studio-amplifier" element={<BigAmplifier />} />
+              <Route exact path="/accessories/portable-amplifier" element={<SmallAmplifier />} />
+              <Route exact path="/accessories/plectrum-bundle" element={<PlectrumBundle />} />
+              <Route exact path="/accessories/plectrum-spider" element={<SpiderPlectrum />} />
+              <Route exact path="/accessories/plectrum-templar" element={<TemplarPlectrum />} />
+              <Route exact path="/accessories/plectrum-black" element={<BlackPlectrum />} />
+              <Route exact path="/accessories/plectrum-guitar" element={<GuitarPlectrum />} />
+              <Route exact path="/accessories/plectrum-rock" element={<RockPlectrum />} />
 
-            {/* Not found route */}
-            <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+              {/* Not found route */}
+              <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </AppContext.Provider>
   )
 }
 
