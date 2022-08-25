@@ -72,7 +72,7 @@ const LesPaulBlue = () => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = CarouselData.splice(0, 9);
+  const CarouselNewArray = CarouselData.filter(object => object.id <= 9);
   const RemoveCurrentGuitar = CarouselNewArray.splice(2, 1);
 
   return (

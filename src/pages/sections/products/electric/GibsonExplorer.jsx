@@ -10,15 +10,6 @@ import rightArrow from '@icons/arrow-right.svg';
 import leftArrow from '@icons/arrow-left.svg';
 
 const GibsonExplorer = ({product}) => {
-  
-  // Cart Context
-  const { addToCart } = React.useContext(AppContext);
-
-
-  const onHandleCart = item => {
-    addToCart(item)
-  }
-
   // Carousel settings
 
   function SampleNextArrow(props) {
@@ -81,8 +72,16 @@ const GibsonExplorer = ({product}) => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = CarouselData.splice(0, 9);
+  const CarouselNewArray = CarouselData.filter(object => object.id <= 9);
   const RemoveCurrentGuitar = CarouselNewArray.splice(1, 1);
+
+  // Cart Context
+  const { addToCart } = React.useContext(AppContext);
+
+
+  const onHandleCart = item => {
+    addToCart(item)
+  }
 
   return (
     <main>

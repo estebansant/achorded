@@ -18,6 +18,7 @@ import gibsonTwelveChords from '@images/acoustic/gibson_j-45_12chords.svg';
 export const CarouselData = [
     {
         title: 'Gibson Flying V',
+        id: 1,
         image: vModelGibson,
         alt: 'red gibson guitar flying v',
         description: 'The Gibson Flying V has taken flight over the years, with legions of followers.',
@@ -25,6 +26,7 @@ export const CarouselData = [
     },
     {
         title: 'Gibson Explorer',
+        id: 2,
         image: gibsonExplorer,
         alt: 'blue gibson explorer guitar',
         description: 'The Gibson Explorer traveled where no man had gone before and past every guitar design before it.',
@@ -32,6 +34,7 @@ export const CarouselData = [
     },
     {
         title: 'Gibson Les Paul',
+        id: 3,
         image: gibsonLesPaul,
         alt: 'black gibson les paul guitar',
         description: 'Originally introduced in 1955, the Les Paul has been embraced by musicians for over 60 years.',
@@ -39,6 +42,7 @@ export const CarouselData = [
     },
     {
         title: 'Fender P-Bass',
+        id: 4,
         image: pBass,
         alt: 'blue p bass from fender',
         description: 'The Precision Bass delivers the exceptional tone and feel you expect from an authentic Fender.',
@@ -46,6 +50,7 @@ export const CarouselData = [
     },
     {
         title: 'The Stratocaster',
+        id: 5,
         image: stratocaster,
         alt: 'stratocaster red guitar',
         description: 'The inspiring sound of a Stratocaster is one of the foundations of the iconic Fender.',
@@ -53,6 +58,7 @@ export const CarouselData = [
     },
     {
         title: 'Fender Telecaster',
+        id: 6,
         image: telecaster,
         alt: 'fender telecaster brown',
         description: 'The Telecaster launched a musical revolution when it released. Laying the foundation for modern music.',
@@ -60,6 +66,7 @@ export const CarouselData = [
     },
     {
         title: 'Stratocaster Affinity Series',
+        id: 7,
         image: stratocasterAS,
         alt: 'affinity series fender  stratocaster green',
         description: 'The Stratocaster Affinity Series has a legendary design and exquisite tone for today’s guitarist.',
@@ -67,6 +74,7 @@ export const CarouselData = [
     },
     {
         title: 'Jackson Soloist',
+        id: 8,
         image: jacksonSoloist,
         alt: 'black jackson soloist guitar',
         description: 'Melding classic style with modern materials, it is another bold step in the world of high-tech guitars.',
@@ -74,6 +82,7 @@ export const CarouselData = [
     },
     {
         title: 'Jackson Rhoads',
+        id: 9,
         image: jacksonRhoads,
         alt: 'red jackson rhoads guitar',
         description: 'Jackson’s first customer was the legendary guitarist Randy Rhoads. Thanks to it, this guitar was born.',
@@ -81,6 +90,7 @@ export const CarouselData = [
     },
     {
         title: 'Dean EAB Acoustic Bass',
+        id: 10,
         image: eabAcousticBass,
         alt: 'dean eab acoustic bass',
         description: 'The Dean EAB Bass Guitar produces a deeper, fuller tone than other acoustic bass guitars.',
@@ -88,6 +98,7 @@ export const CarouselData = [
     },
     {
         title: 'Yamaha Classic C-40',
+        id: 11,
         image: yamahaClassic,
         alt: 'classic yamaha guitar',
         description: 'The Yamaha Classic C-40 is the perfect basis to learn how to play guitar easily and successfully.',
@@ -95,6 +106,7 @@ export const CarouselData = [
     },
     {
         title: 'Fender Dreadnought',
+        id: 12,
         image: fenderDreadnought,
         alt: 'fender dreadnought brown guitar',
         description: 'It combines Fender tone and style with our electronics for a guitar that was made to take the stage.',
@@ -102,6 +114,7 @@ export const CarouselData = [
     },
     {
         title: 'Fender Concert Fa-135Ce',
+        id: 13,
         image: fenderConcert,
         alt: 'red fender concert guitar',
         description: 'Player-friendly features, attractive aesthetics and reliable Fender quality, for today’s acoustic player.',
@@ -109,6 +122,7 @@ export const CarouselData = [
     },
     {
         title: 'Gibson G-Writer',
+        id: 14,
         image: gibsonWriter,
         alt: 'red gibson writer guitar',
         description: 'With the Gibson G-Writer you can spend more time playing instead of tuning. Ideal for beginners.',
@@ -116,6 +130,7 @@ export const CarouselData = [
     },
     {
         title: 'Gibson J-45 with 6 Chords',
+        id: 15,
         image: gibsonSixChords,
         alt: 'gibson j45 with 6 chords',
         description: 'World-renowned for its full, balanced expression, warm bass, and excellent projection.',
@@ -123,6 +138,7 @@ export const CarouselData = [
     },
     {
         title: 'Gibson J-45 with 12 Chords',
+        id: 16,
         image: gibsonTwelveChords,
         alt: 'gibson j45 with 12 chords',
         description: 'Gibson J-45 is Gibson’s best-selling acoustic of all time. Available now in a new 12-string version.',

@@ -15,6 +15,7 @@ export const AccessoriesCarouselData = [
     // Accessories
     {
         title: 'Studio Amplifier',
+        id: 27,
         image: amplifierBig,
         alt: 'amplifier for concerts',
         price: '$2.999',
@@ -25,6 +26,7 @@ export const AccessoriesCarouselData = [
     },
     {
         title: 'Portable Amplifier',
+        id: 28,
         image: amplifierSmall,
         alt: 'portable amplifier',
         price: '$499',
@@ -35,6 +37,7 @@ export const AccessoriesCarouselData = [
     },
     {
         title: 'Plectrum Bundle',
+        id: 29,
         image: plectrumBundle,
         alt: 'bundle with multiple plectrums',
         price: '$15',
@@ -45,6 +48,7 @@ export const AccessoriesCarouselData = [
     },
     {
         title: 'Spider Plectrum',
+        id: 30,
         image: plectrumSpider,
         alt: 'plectrum with a spider',
         price: '$5',
@@ -55,6 +59,7 @@ export const AccessoriesCarouselData = [
     },
     {
         title: 'Templar Plectrum',
+        id: 31,
         image: plectrumTemplar,
         alt: 'plectrum with a templar cross',
         price: '$5',
@@ -65,6 +70,7 @@ export const AccessoriesCarouselData = [
     },
     {
         title: 'Pure Black Plectrum',
+        id: 32,
         image: plectrumBlack,
         alt: 'black color plectrum',
         price: '$5',
@@ -75,6 +81,7 @@ export const AccessoriesCarouselData = [
     },
     {
         title: 'Guitar Plectrum',
+        id: 33,
         image: plectrumGuitar,
         alt: 'plectrum with a guitar',
         price: '$5',
@@ -85,6 +92,7 @@ export const AccessoriesCarouselData = [
     },
     {
         title: 'Rock Plectrum',
+        id: 34,
         image: plectrumRock,
         alt: 'plectrum with rock',
         price: '$5',

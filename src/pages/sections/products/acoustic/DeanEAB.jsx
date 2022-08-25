@@ -72,7 +72,7 @@ const DeanEAB = () => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = CarouselData.splice(9, 7);
+  const CarouselNewArray = CarouselData.filter(object => object.id > 9);
   const RemoveCurrentGuitar = CarouselNewArray.splice(0, 1);
 
   return (

@@ -72,7 +72,7 @@ const J45_6Chords = () => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = CarouselData.splice(9, 7);
+  const CarouselNewArray = CarouselData.filter(object => object.id > 9);
   const RemoveCurrentGuitar = CarouselNewArray.splice(5, 1);
 
   return (
