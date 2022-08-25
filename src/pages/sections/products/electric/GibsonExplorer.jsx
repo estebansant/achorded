@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import { AppContext } from '@context/AppContext.js';
 import { ProductsData } from '../ProductsData/ProductsData';
 import { CarouselData } from '@components/Recommendations/carousel/CarouselData.jsx';
 import '@styles/Recommendations/Carousel.scss';
@@ -8,14 +9,14 @@ import addShoppingCart from '@icons/shopping_cart_add.svg';
 import rightArrow from '@icons/arrow-right.svg';
 import leftArrow from '@icons/arrow-left.svg';
 
-const GibsonExplorer = () => {
+const GibsonExplorer = ({product}) => {
   
-  // Cart State
+  // Cart Context
+  const { addToCart } = React.useContext(AppContext);
 
-  const [cart, setCart] = React.useState ('');
 
-  const onHandleCart = () => {
-    setCart ('Hello world');
+  const onHandleCart = item => {
+    addToCart(item)
   }
 
   // Carousel settings
@@ -140,7 +141,7 @@ const GibsonExplorer = () => {
                   <div className="price">
                       <div className="price__container">
                         <button className="price__button--buy">Buy Now</button>
-                        <button className="price__button--cart" onClick={onHandleCart}>
+                        <button className="price__button--cart" onClick={() => onHandleCart(product)}>
                           <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
                         </button>
                       </div>
@@ -181,6 +182,7 @@ const GibsonExplorer = () => {
         ))}
     </main>
   )
+
 }
 
 export {GibsonExplorer}

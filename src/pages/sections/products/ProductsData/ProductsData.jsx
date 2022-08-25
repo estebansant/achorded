@@ -40,6 +40,7 @@ export const ProductsData = [
         GibsonFlyingV: [
             {
                 title: 'Gibson Flying V',
+                id: 1,
                 image: vModelGibson,
                 alt: 'red gibson guitar flying v',
                 price: '$1.999',
@@ -57,6 +58,7 @@ export const ProductsData = [
         GibsonExplorer: [
             {
                 title: 'Gibson Explorer',
+                id: 2,
                 image: gibsonExplorer,
                 alt: 'blue gibson explorer guitar',
                 price: '$1.999',
@@ -74,6 +76,7 @@ export const ProductsData = [
         GibsonLesPaulBlack: [
             {
                 title: 'Gibson Les Paul',
+                id: 3,
                 image: gibsonLesPaulBlack,
                 alt: 'black gibson les paul guitar',
                 price: '$1.799',
@@ -91,6 +94,7 @@ export const ProductsData = [
         GibsonLesPaulBlue: [
             {
                 title: 'Gibson Les Paul',
+                id: 4,
                 image: gibsonLesPaulBlue,
                 alt: 'blue gibson les paul guitar',
                 price: '$1.799',
@@ -108,6 +112,7 @@ export const ProductsData = [
         PBass: [
             {
                 title: 'Fender P-Bass',
+                id: 5,
                 image: pBass,
                 alt: 'blue p bass from fender',
                 price: '$1.499',
@@ -125,6 +130,7 @@ export const ProductsData = [
         Stratocaster: [
             {
                 title: 'The Stratocaster',
+                id: 6,
                 image: stratocaster,
                 alt: 'stratocaster red guitar',
                 price: '$1.449',
@@ -142,6 +148,7 @@ export const ProductsData = [
         StratocasterAS: [
             {
                 title: 'Stratocaster AS',
+                id: 7,
                 image: stratocasterAS,
                 alt: 'affinity series fender stratocaster green',
                 price: '$350',
@@ -159,6 +166,7 @@ export const ProductsData = [
         Telecaster: [
             {
                 title: 'Fender Telecaster',
+                id: 8,
                 image: telecaster,
                 alt: 'fender telecaster brown',
                 price: '$1.699',
@@ -176,6 +184,7 @@ export const ProductsData = [
         JacksonRhoads: [
             {
                 title: 'Jackson Rhoads',
+                id: 9,
                 image: jacksonRhoads,
                 alt: 'red jackson rhoads guitar',
                 price: '$1.250',
@@ -193,6 +202,7 @@ export const ProductsData = [
         JacksonSoloist: [
             {
                 title: 'Jackson Soloist',
+                id: 10,
                 image: jacksonSoloist,
                 alt: 'black jackson soloist guitar',
                 price: '$850',
@@ -212,6 +222,7 @@ export const ProductsData = [
         DeanEAB: [
             {
                 title: 'Dean EAB Acoustic Bass',
+                id: 11,
                 image: eabAcousticBass,
                 alt: 'dean eab acoustic bass',
                 price: '$279',
@@ -228,6 +239,7 @@ export const ProductsData = [
         YamahaClassic: [
             {
                 title: 'Yamaha Classic C-40',
+                id: 12,
                 image: yamahaClassic,
                 alt: 'classic yamaha guitar',
                 price: '$199',
@@ -244,6 +256,7 @@ export const ProductsData = [
         FenderConcert: [
             {
                 title: 'Fender Concert FA-135CE',
+                id: 13,
                 image: fenderConcert,
                 alt: 'red fender concert guitar',
                 price: '$229',
@@ -260,6 +273,7 @@ export const ProductsData = [
         FenderDreadnought: [
             {
                 title: 'Fender Dreadnought FA-125CE',
+                id: 14,
                 image: fenderDreadnought,
                 alt: 'fender dreadnought brown guitar',
                 price: '$199',
@@ -276,6 +290,7 @@ export const ProductsData = [
         GibsonGWriter: [
             {
                 title: 'Gibson G-Writer',
+                id: 15,
                 image: gibsonWriter,
                 alt: 'red gibson writer guitar',
                 price: '$1.599',
@@ -292,6 +307,7 @@ export const ProductsData = [
         J45_6Chords: [
             {
                 title: 'Gibson J-45 with 6 Chords',
+                id: 16,
                 image: gibsonSixChords,
                 alt: 'gibson j45 with 6 chords',
                 price: '$2.849',
@@ -308,6 +324,7 @@ export const ProductsData = [
         J45_12Chords: [
             {
                 title: 'Gibson J-45 with 12C',
+                id: 17,
                 image: gibsonTwelveChords,
                 alt: 'gibson j45 with 12 chords',
                 price: '$3.399',
@@ -324,6 +341,7 @@ export const ProductsData = [
         Cuatro: [
             {
                 title: 'Venezuelan Cuatro',
+                id: 18,
                 image: cuatro,
                 alt: 'cuatro venezolano',
                 price: '$99',
@@ -342,6 +360,7 @@ export const ProductsData = [
         StudioAmplifier: [
             {
                 title: 'Studio Amplifier',
+                id: 19,
                 image: amplifierBig,
                 alt: 'amplifier for concerts',
                 price: '$2.999',
@@ -356,6 +375,7 @@ export const ProductsData = [
         SmallAmplifier: [
             {
                 title: 'Portable Amplifier',
+                id: 20,
                 image: amplifierSmall,
                 alt: 'portable amplifier',
                 price: '$499',
@@ -370,6 +390,7 @@ export const ProductsData = [
         PlectrumBundle: [
             {
                 title: 'Plectrum Bundle',
+                id: 21,
                 image: plectrumBundle,
                 alt: 'bundle with multiple plectrums',
                 price: '$15',
@@ -384,6 +405,7 @@ export const ProductsData = [
         SpiderPlectrum: [
             {
                 title: 'Spider Plectrum',
+                id: 22,
                 image: plectrumSpider,
                 alt: 'plectrum with a spider',
                 price: '$5',
@@ -398,6 +420,7 @@ export const ProductsData = [
         TemplarPlectrum: [
             {
                 title: 'Templar Plectrum',
+                id: 23,
                 image: plectrumTemplar,
                 alt: 'plectrum with a templar cross',
                 price: '$5',
@@ -412,6 +435,7 @@ export const ProductsData = [
         BlackPlectrum: [
             {
                 title: 'Pure Black Plectrum',
+                id: 24,
                 image: plectrumBlack,
                 alt: 'black color plectrum',
                 price: '$5',
@@ -426,6 +450,7 @@ export const ProductsData = [
         GuitarPlectrum: [
             {
                 title: 'Guitar Plectrum',
+                id: 25,
                 image: plectrumGuitar,
                 alt: 'plectrum with a guitar',
                 price: '$5',
@@ -440,6 +465,7 @@ export const ProductsData = [
         RockPlectrum: [
             {
                 title: 'Rock Plectrum',
+                id: 26,
                 image: plectrumRock,
                 alt: 'plectrum with rock',
                 price: '$5',

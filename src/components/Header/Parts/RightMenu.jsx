@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from "framer-motion";
+import { AppContext } from '@context/AppContext.js';
 import question from '@icons/question.svg';
 import shoppingCart from '@icons/shopping_cart.svg';
 import '@styles/Header/RightMenu.scss';
@@ -8,6 +9,7 @@ import arrow from '@icons/chevron_down.svg';
 const RightMenu = () => {
 
     const [toggleMenu, setToggleMenu] = React.useState (false);
+    const { state } = React.useContext(AppContext);
 
     const onToggleMenu = () => {
         setToggleMenu(!toggleMenu);
@@ -69,7 +71,7 @@ const RightMenu = () => {
                 <li className="shopping">
                     <a href="/my-cart">
                     <img src={shoppingCart} alt="shopping cart" className="shopping__icon"/>
-                    <div className="shopping__text">2</div>
+                    {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
                     </a>
                 </li>
                 </ul>

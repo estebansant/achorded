@@ -2,6 +2,7 @@ import React from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { AppContext } from '../context/AppContext.js'; 
+import { useInitialState } from '../hooks/useInitialState.js';
 
 // Website pages
 
@@ -54,8 +55,9 @@ import { GuitarPlectrum } from '../pages/sections/products/accessories/GuitarPle
 
 
 const App = () => {
+  const initial = useInitialState();
   return (
-    <AppContext.Provider value={''}>
+    <AppContext.Provider value={initial}>
       <BrowserRouter>
         <Layout>
           <Routes>
