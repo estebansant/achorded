@@ -12,7 +12,7 @@ import fiveStars from '@images/five_stars.svg';
 
 export const AcousticData = [
     {
-        title: 'Dean EAB Acoustic Bass',
+        title: 'EAB Acoustic Bass',
         image: eabAcousticBass,
         alt: 'dean eab acoustic bass',
         price: '279$ USD',

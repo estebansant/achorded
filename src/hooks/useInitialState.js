@@ -8,10 +8,12 @@ const useInitialState = () => {
     const [state, setState] = React.useState(initialState);
 
     const addToCart = (payload) => {
-        setState({
-            ...state,
-            cart: [...state.cart, payload],
-        });
+        if(!state.cart.includes(payload)){
+			setState({
+				...state,
+				cart: [...state.cart, payload]
+			});
+		}
         
         console.log(state);
     };

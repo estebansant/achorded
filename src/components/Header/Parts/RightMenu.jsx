@@ -9,6 +9,7 @@ import arrow from '@icons/chevron_down.svg';
 const RightMenu = () => {
 
     const [toggleMenu, setToggleMenu] = React.useState (false);
+    
     const { state } = React.useContext(AppContext);
 
     const onToggleMenu = () => {

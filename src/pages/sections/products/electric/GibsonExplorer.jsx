@@ -78,7 +78,6 @@ const GibsonExplorer = ({product}) => {
   // Cart Context
   const { addToCart } = React.useContext(AppContext);
 
-
   const onHandleCart = item => {
     addToCart(item)
   }

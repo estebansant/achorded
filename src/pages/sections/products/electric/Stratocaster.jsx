@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import { AppContext } from '@context/AppContext.js';
 import { ProductsData } from '../ProductsData/ProductsData';
 import { CarouselData } from '@components/Recommendations/carousel/CarouselData.jsx';
 import '@styles/Recommendations/Carousel.scss';
@@ -75,6 +76,13 @@ const Stratocaster = () => {
   const CarouselNewArray = CarouselData.filter(object => object.id <= 9);
   const RemoveCurrentGuitar = CarouselNewArray.splice(4, 1);
 
+  // Cart Context
+  const { addToCart } = React.useContext(AppContext);
+
+  const onHandleCart = item => {
+    addToCart(item)
+  }
+
   return (
     <main>
         {ProductsData.map((first) => first.Stratocaster?.map((product, index) => {
@@ -132,7 +140,7 @@ const Stratocaster = () => {
                   <div className="price">
                       <div className="price__container">
                         <button className="price__button--buy">Buy Now</button>
-                        <button className="price__button--cart">
+                        <button className="price__button--cart" onClick={() => onHandleCart(product)}>
                           <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
                         </button>
                       </div>

@@ -1,8 +1,17 @@
 import React from 'react';
 import '@styles/ProductDisplay/ElectricDisplay.scss';
+import { AppContext } from '@context/AppContext.js';
 import { ElectricData } from './DisplayData/ElectricData.jsx';
+import addShoppingCart from '@icons/shopping_cart_add.svg';
 
-const ElectricDisplay = () => {
+const ElectricDisplay = ({card}) => {
+  // Cart Context
+  const { addToCart } = React.useContext(AppContext);
+
+  const onHandleCart = item => {
+    addToCart(item)
+  }
+  
   return (
     <React.Fragment>
       <section className="display">
@@ -24,10 +33,16 @@ const ElectricDisplay = () => {
                                       <p className="grid__card--description__rating--value">{card.rating}</p>
                                     </div>
 
-                                    <p className="grid__card--description__price">{card.price}</p>
+                                    <div className="grid__card--description__price">
+                                      <p className="grid__card--description__price--content">{card.price}</p>
+                                    </div>
                                 </div>
-                            </a>
-                            
+                          </a>
+
+                            <button className="grid__card--button" onClick={() => onHandleCart(card)}>
+                                <img className="grid__card--button__image" src={addShoppingCart} alt="add to shopping cart"/>
+                            </button>
+
                         </div>
                     )
                 })}

@@ -1,8 +1,17 @@
 import React from 'react';
 import '@styles/ProductDisplay/AcousticDisplay.scss';
+import { AppContext } from '@context/AppContext.js';
 import { AcousticData } from './DisplayData/AcousticData.jsx';
+import addShoppingCart from '@icons/shopping_cart_add.svg';
 
 const AcousticDisplay = () => {
+
+  const { addToCart } = React.useContext(AppContext);
+
+  const onHandleCart = item => {
+    addToCart(item)
+  }
+
   return (
     <React.Fragment>
       <section className="displaybis">
@@ -27,6 +36,10 @@ const AcousticDisplay = () => {
                                     <p className="gridbis__card--description__price">{card.price}</p>
                                 </div>
                             </a>
+
+                            <button className="gridbis__card--button" onClick={() => onHandleCart(card)}>
+                                <img className="gridbis__card--button__image" src={addShoppingCart} alt="add to shopping cart"/>
+                            </button>
                             
                         </div>
                     )

@@ -1,8 +1,17 @@
 import React from 'react';
 import '@styles/ProductDisplay/AccessoriesDisplay.scss'
+import { AppContext } from '@context/AppContext.js';
 import { AccessoriesData } from './DisplayData/AccessoriesData.jsx';
+import addShoppingCart from '@icons/shopping_cart_add.svg';
 
 const AccessoriesDisplay = () => {
+
+  const { addToCart } = React.useContext(AppContext);
+
+  const onHandleCart = item => {
+    addToCart(item)
+  }
+
   return (
     <React.Fragment>
       <section className="displays">
@@ -28,6 +37,10 @@ const AccessoriesDisplay = () => {
                                 </div>
                             </a>
                             
+                            <button className="grid__cards--button" onClick={() => onHandleCart(card)}>
+                                <img className="grid__cards--button__image" src={addShoppingCart} alt="add to shopping cart"/>
+                            </button>
+
                         </div>
                     )
                 })}
