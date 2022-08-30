@@ -68,12 +68,6 @@
         }
     }
 }
-.banner__container--button a button:hover{
-    background-color: colors.$main-black;
-    box-shadow: 0px 0px 14px colors.$white;
-    cursor: pointer;
-    color: colors.$white;
-}
 @media(min-width:768px){
     .banner{
         width: 100%;
@@ -92,6 +86,12 @@
                 }
             }
         }
+    }
+    .banner__container--button a button:hover{
+        background-color: colors.$main-black;
+        box-shadow: 0px 0px 14px colors.$white;
+        cursor: pointer;
+        color: colors.$white;
     }
 }
 @media(min-width: 2560px){

@@ -200,17 +200,6 @@
         padding: 20px;
     }
 }
-.product__image--picture:hover{
-    transform: scale(1.05);
-}
-.price__button--buy:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-.price__button--cart:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
 @media (min-width: 360px){
     .product{
         height: 87vh;
@@ -287,6 +276,17 @@
     .recommendations__title{
         font-size: size.$main-title;
         padding: 0px 50px 0px 50px;
+    }
+    .product__image--picture:hover{
+        transform: scale(1.05);
+    }
+    .price__button--buy:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    .price__button--cart:hover{
+        cursor: pointer;
+        transform: scale(1.1);
     }
 }
 @media (min-width: 1024px) and (max-height: 800px){
