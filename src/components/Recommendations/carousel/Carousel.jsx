@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import '@styles/Recommendations/Carousel.scss';
-import { CarouselData } from './CarouselData';
+import { ProductData } from '@pages/sections/products/productData/ProductData';
 import rightArrow from '@icons/arrow-right.svg';
 import leftArrow from '@icons/arrow-left.svg';
 
@@ -69,7 +69,7 @@ const Carousel = () => {
     return (
 
         <Slider {...settings} className="carousel">
-            {CarouselData.map((slide, index) => {
+            {ProductData.map((slide, index) => {
                 return(
                     <div className="carousel__slide" key={index}>
                             <div className="slides">
