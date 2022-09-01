@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider from "react-slick";
-import { AppContext } from '@context/AppContext.js';
 import { ProductsData } from '../ProductsData/ProductsData';
 import { CarouselData } from '@components/Recommendations/carousel/CarouselData.jsx';
 import '@styles/Recommendations/Carousel.scss';
@@ -77,7 +76,6 @@ const Stratocaster = () => {
   const RemoveCurrentGuitar = CarouselNewArray.splice(4, 1);
 
   // Cart Context
-  const { addToCart } = React.useContext(AppContext);
 
   const onHandleCart = item => {
     addToCart(item)

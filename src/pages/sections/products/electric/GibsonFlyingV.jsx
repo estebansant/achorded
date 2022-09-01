@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider from "react-slick";
-import { AppContext } from '@context/AppContext.js';
 import { ProductsData } from '../ProductsData/ProductsData';
 import { CarouselData } from '@components/Recommendations/carousel/CarouselData.jsx';
 import '@styles/Recommendations/Carousel.scss';
@@ -9,7 +8,7 @@ import addShoppingCart from '@icons/shopping_cart_add.svg';
 import rightArrow from '@icons/arrow-right.svg';
 import leftArrow from '@icons/arrow-left.svg';
 
-const GibsonFlyingV = () => {
+const GibsonFlyingV = ({ addToCart, product }) => {
 
   // Carousel settings
 
@@ -77,7 +76,6 @@ const GibsonFlyingV = () => {
   const RemoveCurrentGuitar = CarouselNewArray.splice(0, 1);
   
   // Cart Context
-  const { addToCart } = React.useContext(AppContext);
 
   const onHandleCart = item => {
     addToCart(item)

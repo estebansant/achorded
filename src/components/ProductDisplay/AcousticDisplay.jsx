@@ -1,12 +1,9 @@
 import React from 'react';
 import '@styles/ProductDisplay/AcousticDisplay.scss';
-import { AppContext } from '@context/AppContext.js';
 import { AcousticData } from './DisplayData/AcousticData.jsx';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 
-const AcousticDisplay = () => {
-
-  const { addToCart } = React.useContext(AppContext);
+const AcousticDisplay = ({ addToCart }) => {
 
   const onHandleCart = item => {
     addToCart(item)

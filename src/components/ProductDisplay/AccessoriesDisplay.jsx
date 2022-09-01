@@ -1,12 +1,9 @@
 import React from 'react';
 import '@styles/ProductDisplay/AccessoriesDisplay.scss'
-import { AppContext } from '@context/AppContext.js';
 import { AccessoriesData } from './DisplayData/AccessoriesData.jsx';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 
-const AccessoriesDisplay = () => {
-
-  const { addToCart } = React.useContext(AppContext);
+const AccessoriesDisplay = ({ addToCart }) => {
 
   const onHandleCart = item => {
     addToCart(item)

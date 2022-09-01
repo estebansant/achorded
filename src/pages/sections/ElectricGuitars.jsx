@@ -1,10 +1,9 @@
 import React from 'react';
-import { ElectricDisplay } from '@components/ProductDisplay/ElectricDisplay';
 
-const ElectricGuitars = () => {
+const ElectricGuitars = ({ children }) => {
   return (
     <main>
-      <ElectricDisplay />
+      {children}
     </main>
   )
 }

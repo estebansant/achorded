@@ -1,13 +1,15 @@
 import React from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { useInitialState } from './useInitialState.js';
 import { AppContext } from '../context/AppContext.js'; 
-import { useInitialState } from '../hooks/useInitialState.js';
 
 // Website pages
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../containers/Layout';
+import { Header } from '@components/Header/Header.jsx';
+import { Footer } from '@components/Footer/Footer.jsx';
 import { Login } from '../pages/Login';
 import { Home } from '../pages/Home';
 import { About } from '../pages/About';
@@ -18,8 +20,11 @@ import { Checkout } from '../pages/Checkout';
 import { Cart } from '../pages/Cart';
 import { Faqs } from '../pages/Faqs';
 import { Accessories } from '../pages/sections/Accessories';
+import { AccessoriesDisplay } from '@components/ProductDisplay/AccessoriesDisplay';
 import { ElectricGuitars } from '../pages/sections/ElectricGuitars';
+import { ElectricDisplay } from '@components/ProductDisplay/ElectricDisplay';
 import { AcousticGuitars } from '../pages/sections/AcousticGuitars';
+import { AcousticDisplay } from '@components/ProductDisplay/AcousticDisplay';
 
 // Electric guitars
 import { StratocasterAS } from '../pages/sections/products/electric/StratocasterAS';
@@ -55,11 +60,21 @@ import { GuitarPlectrum } from '../pages/sections/products/accessories/GuitarPle
 
 
 const App = () => {
+
+  const {
+    state,
+    addToCart,
+  } = useInitialState();
+
   const initial = useInitialState();
+
   return (
     <AppContext.Provider value={initial}>
       <BrowserRouter>
         <Layout>
+          <Header
+            state={state}
+          />
           <Routes>
             {/* Website pages routes */}
               <Route exact path="/" element={<Home />} />
@@ -70,21 +85,54 @@ const App = () => {
               <Route exact path="/checkout" element={<Checkout />} />
               <Route exact path="/my-cart" element={<Cart />} />
               <Route exact path="/questions" element={<Faqs />} />
-              <Route exact path="/accessories" element={<Accessories />} />
-              <Route exact path="/electric-guitars" element={<ElectricGuitars />} />
-              <Route exact path="/acoustic-guitars" element={<AcousticGuitars />} />
+              <Route exact path="/accessories" element={<Accessories>
+                <AccessoriesDisplay
+                  addToCart={addToCart}
+                />
+              </Accessories>} />
+              <Route exact path="/electric-guitars" element={<ElectricGuitars>
+                <ElectricDisplay
+                  addToCart={addToCart}
+                />
+              </ElectricGuitars>
+              } />
+              <Route exact path="/acoustic-guitars" element={<AcousticGuitars>
+                <AcousticDisplay
+                  addToCart={addToCart}
+                />
+              </AcousticGuitars>} />
 
               {/* Electric guitars routes */}
-              <Route exact path="/electric-guitars/stratocaster-as" element={<StratocasterAS />} />
-              <Route exact path="/electric-guitars/gibson-explorer" element={<GibsonExplorer />} />
-              <Route exact path="/electric-guitars/les-paul-black" element={<LesPaulBlack />} />
-              <Route exact path="/electric-guitars/les-paul-blue" element={<LesPaulBlue />} />
-              <Route exact path="/electric-guitars/jackson-rhoads" element={<JacksonRhoads />} />
-              <Route exact path="/electric-guitars/jackson-soloist" element={<JacksonSoloist />} />
-              <Route exact path="/electric-guitars/p-bass" element={<PBass />} />
-              <Route exact path="/electric-guitars/stratocaster" element={<Stratocaster />} />
-              <Route exact path="/electric-guitars/telecaster" element={<Telecaster />} />
-              <Route exact path="/electric-guitars/gibson-flying-v" element={<GibsonFlyingV />} />
+              <Route exact path="/electric-guitars/stratocaster-as" element={<StratocasterAS
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/gibson-explorer" element={<GibsonExplorer
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/les-paul-black" element={<LesPaulBlack
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/les-paul-blue" element={<LesPaulBlue
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/jackson-rhoads" element={<JacksonRhoads
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/jackson-soloist" element={<JacksonSoloist
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/p-bass" element={<PBass
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/stratocaster" element={<Stratocaster
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/telecaster" element={<Telecaster
+                addToCart={addToCart}
+              />} />
+              <Route exact path="/electric-guitars/gibson-flying-v" element={<GibsonFlyingV
+                addToCart={addToCart}
+              />} />
 
               {/* Acoustic guitars routes */}
               <Route exact path="/acoustic-guitars/dean-eab-bass" element={<DeanEAB />} />
@@ -109,6 +157,7 @@ const App = () => {
               {/* Not found route */}
               <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer />
         </Layout>
       </BrowserRouter>
     </AppContext.Provider>

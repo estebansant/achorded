@@ -1,10 +1,9 @@
 import React from 'react';
-import { AccessoriesDisplay } from '@components/ProductDisplay/AccessoriesDisplay';
 
-const Accessories = () => {
+const Accessories = ({ children }) => {
   return (
     <main>
-      <AccessoriesDisplay />
+      { children }
     </main>
   )
 }

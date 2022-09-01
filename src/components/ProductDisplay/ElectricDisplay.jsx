@@ -1,12 +1,10 @@
 import React from 'react';
 import '@styles/ProductDisplay/ElectricDisplay.scss';
-import { AppContext } from '@context/AppContext.js';
 import { ElectricData } from './DisplayData/ElectricData.jsx';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 
-const ElectricDisplay = ({card}) => {
+const ElectricDisplay = ({ addToCart }) => {
   // Cart Context
-  const { addToCart } = React.useContext(AppContext);
 
   const onHandleCart = item => {
     addToCart(item)
