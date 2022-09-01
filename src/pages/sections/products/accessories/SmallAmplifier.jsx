@@ -70,12 +70,9 @@ const SmallAmplifier = () => {
     ]
   };
 
-  // Sort recommended items on the carousel
-  const CarouselNewArray = AccessoriesCarouselData.splice(1, 1);
-
   return (
     <main>
-        {ProductsData.map((first) => first.SmallAmplifier?.map((product, index) => {
+        {ProductData.filter(item => item.id === 20).map(((product, index) => {
           return (
             <section key={index} className="main__containerB">
 
@@ -135,7 +132,7 @@ const SmallAmplifier = () => {
                   <h2 className="suggested__title">Similar Products</h2>
 
                   <Slider {...settings} className="carouselAC">
-                    {AccessoriesCarouselData.map((slide, index) => {
+                    {ProductData.filter(item => item.id === 19 || item.id > 20).map((slide, index) => {
                         return(
                             <div className="carouselAC__slide" key={index}>
                                     <div className="slidesAC">

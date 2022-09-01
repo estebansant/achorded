@@ -70,12 +70,9 @@ const GuitarPlectrum = () => {
     ]
   };
 
-  // Sort recommended items on the carousel
-  const CarouselNewArray = AccessoriesCarouselData.splice(6, 1);
-
   return (
     <main>
-        {ProductsData.map((first) => first.GuitarPlectrum?.map((product, index) => {
+        {ProductData.filter(item => item.id === 25).map(((product, index) => {
           return (
             <section key={index} className="main__containerB">
 
@@ -135,7 +132,7 @@ const GuitarPlectrum = () => {
                   <h2 className="suggested__title">Similar Products</h2>
 
                   <Slider {...settings} className="carouselAC">
-                    {AccessoriesCarouselData.map((slide, index) => {
+                  {ProductData.filter(item => item.id > 18 && item.id < 25 || item.id > 25).map((slide, index) => {
                         return(
                             <div className="carouselAC__slide" key={index}>
                                     <div className="slidesAC">

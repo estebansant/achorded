@@ -70,12 +70,9 @@ const SpiderPlectrum = () => {
     ]
   };
 
-  // Sort recommended items on the carousel
-  const CarouselNewArray = AccessoriesCarouselData.splice(3, 1);
-
   return (
     <main>
-        {ProductsData.map((first) => first.SpiderPlectrum?.map((product, index) => {
+        {ProductData.filter(item => item.id === 22).map(((product, index) => {
           return (
             <section key={index} className="main__containerB">
 
@@ -135,7 +132,7 @@ const SpiderPlectrum = () => {
                   <h2 className="suggested__title">Similar Products</h2>
 
                   <Slider {...settings} className="carouselAC">
-                    {AccessoriesCarouselData.map((slide, index) => {
+                  {ProductData.filter(item => item.id > 18 && item.id < 22 || item.id > 22).map((slide, index) => {
                         return(
                             <div className="carouselAC__slide" key={index}>
                                     <div className="slidesAC">
