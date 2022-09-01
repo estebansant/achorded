@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { ProductsData } from '../ProductsData/ProductsData';
+import { ProductData } from '../productData/ProductData';
 import { CarouselData } from '@components/Recommendations/carousel/CarouselData.jsx';
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';

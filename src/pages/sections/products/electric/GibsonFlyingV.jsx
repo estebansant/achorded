@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { ProductsData } from '../ProductsData/ProductsData';
+import { ProductData } from '../productData/ProductData';
 import { CarouselData } from '@components/Recommendations/carousel/CarouselData.jsx';
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';
@@ -72,7 +72,7 @@ const GibsonFlyingV = ({ addToCart, product }) => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = CarouselData.filter(object => object.id <= 9);
+  const CarouselNewArray = ProductData.filter(object => object.id <= 9);
   const RemoveCurrentGuitar = CarouselNewArray.splice(0, 1);
   
   // Cart Context

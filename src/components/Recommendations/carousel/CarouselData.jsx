@@ -21,7 +21,7 @@ export const CarouselData = [
         id: 1,
         image: vModelGibson,
         alt: 'red gibson guitar flying v',
-        description: 'The Gibson Flying V has taken flight over the years, with legions of followers.',
+        sinopsis: 'The Gibson Flying V has taken flight over the years, with legions of followers.',
         link: '/electric-guitars/gibson-flying-v'
     },
     {
@@ -29,7 +29,7 @@ export const CarouselData = [
         id: 2,
         image: gibsonExplorer,
         alt: 'blue gibson explorer guitar',
-        description: 'The Gibson Explorer traveled where no man had gone before and past every guitar design before it.',
+        sinopsis: 'The Gibson Explorer traveled where no man had gone before and past every guitar design before it.',
         link: '/electric-guitars/gibson-explorer'
     },
     {
@@ -37,7 +37,7 @@ export const CarouselData = [
         id: 3,
         image: gibsonLesPaul,
         alt: 'black gibson les paul guitar',
-        description: 'Originally introduced in 1955, the Les Paul has been embraced by musicians for over 60 years.',
+        sinopsis: 'Originally introduced in 1955, the Les Paul has been embraced by musicians for over 60 years.',
         link: '/electric-guitars/les-paul-black'
     },
     {
@@ -45,7 +45,7 @@ export const CarouselData = [
         id: 4,
         image: pBass,
         alt: 'blue p bass from fender',
-        description: 'The Precision Bass delivers the exceptional tone and feel you expect from an authentic Fender.',
+        sinopsis: 'The Precision Bass delivers the exceptional tone and feel you expect from an authentic Fender.',
         link: '/electric-guitars/p-bass'
     },
     {
@@ -53,7 +53,7 @@ export const CarouselData = [
         id: 5,
         image: stratocaster,
         alt: 'stratocaster red guitar',
-        description: 'The inspiring sound of a Stratocaster is one of the foundations of the iconic Fender.',
+        sinopsis: 'The inspiring sound of a Stratocaster is one of the foundations of the iconic Fender.',
         link: '/electric-guitars/stratocaster'
     },
     {
@@ -61,7 +61,7 @@ export const CarouselData = [
         id: 6,
         image: telecaster,
         alt: 'fender telecaster brown',
-        description: 'The Telecaster launched a musical revolution when it released. Laying the foundation for modern music.',
+        sinopsis: 'The Telecaster launched a musical revolution when it released. Laying the foundation for modern music.',
         link: 'electric-guitars/telecaster'
     },
     {
@@ -69,7 +69,7 @@ export const CarouselData = [
         id: 7,
         image: stratocasterAS,
         alt: 'affinity series fender  stratocaster green',
-        description: 'The Stratocaster Affinity Series has a legendary design and exquisite tone for today’s guitarist.',
+        sinopsis: 'The Stratocaster Affinity Series has a legendary design and exquisite tone for today’s guitarist.',
         link: '/electric-guitars/stratocaster-as'
     },
     {
@@ -77,7 +77,7 @@ export const CarouselData = [
         id: 8,
         image: jacksonSoloist,
         alt: 'black jackson soloist guitar',
-        description: 'Melding classic style with modern materials, it is another bold step in the world of high-tech guitars.',
+        sinopsis: 'Melding classic style with modern materials, it is another bold step in the world of high-tech guitars.',
         link: '/electric-guitars/jackson-soloist'
     },
     {
@@ -85,7 +85,7 @@ export const CarouselData = [
         id: 9,
         image: jacksonRhoads,
         alt: 'red jackson rhoads guitar',
-        description: 'Jackson’s first customer was the legendary guitarist Randy Rhoads. Thanks to it, this guitar was born.',
+        sinopsis: 'Jackson’s first customer was the legendary guitarist Randy Rhoads. Thanks to it, this guitar was born.',
         link: '/electric-guitars/jackson-rhoads'
     },
     {
@@ -93,7 +93,7 @@ export const CarouselData = [
         id: 10,
         image: eabAcousticBass,
         alt: 'dean eab acoustic bass',
-        description: 'The Dean EAB Bass Guitar produces a deeper, fuller tone than other acoustic bass guitars.',
+        sinopsis: 'The Dean EAB Bass Guitar produces a deeper, fuller tone than other acoustic bass guitars.',
         link: '/acoustic-guitars/dean-eab-bass'
     },
     {
@@ -101,7 +101,7 @@ export const CarouselData = [
         id: 11,
         image: yamahaClassic,
         alt: 'classic yamaha guitar',
-        description: 'The Yamaha Classic C-40 is the perfect basis to learn how to play guitar easily and successfully.',
+        sinopsis: 'The Yamaha Classic C-40 is the perfect basis to learn how to play guitar easily and successfully.',
         link: '/acoustic-guitars/yamaha-c-40'
     },
     {
@@ -109,7 +109,7 @@ export const CarouselData = [
         id: 12,
         image: fenderDreadnought,
         alt: 'fender dreadnought brown guitar',
-        description: 'It combines Fender tone and style with our electronics for a guitar that was made to take the stage.',
+        sinopsis: 'It combines Fender tone and style with our electronics for a guitar that was made to take the stage.',
         link: '/acoustic-guitars/fender-dreadnought'
     },
     {
@@ -117,7 +117,7 @@ export const CarouselData = [
         id: 13,
         image: fenderConcert,
         alt: 'red fender concert guitar',
-        description: 'Player-friendly features, attractive aesthetics and reliable Fender quality, for today’s acoustic player.',
+        sinopsis: 'Player-friendly features, attractive aesthetics and reliable Fender quality, for today’s acoustic player.',
         link: '/acoustic-guitars/fender-concert-fa-135ce'
     },
     {
@@ -125,7 +125,7 @@ export const CarouselData = [
         id: 14,
         image: gibsonWriter,
         alt: 'red gibson writer guitar',
-        description: 'With the Gibson G-Writer you can spend more time playing instead of tuning. Ideal for beginners.',
+        sinopsis: 'With the Gibson G-Writer you can spend more time playing instead of tuning. Ideal for beginners.',
         link: '/acoustic-guitars/gibson-g-writer'
     },
     {
@@ -133,7 +133,7 @@ export const CarouselData = [
         id: 15,
         image: gibsonSixChords,
         alt: 'gibson j45 with 6 chords',
-        description: 'World-renowned for its full, balanced expression, warm bass, and excellent projection.',
+        sinopsis: 'World-renowned for its full, balanced expression, warm bass, and excellent projection.',
         link: '/acoustic-guitars/gibson-j-45-6-chords'
     },
     {
@@ -141,7 +141,7 @@ export const CarouselData = [
         id: 16,
         image: gibsonTwelveChords,
         alt: 'gibson j45 with 12 chords',
-        description: 'Gibson J-45 is Gibson’s best-selling acoustic of all time. Available now in a new 12-string version.',
+        sinopsis: 'Gibson J-45 is Gibson’s best-selling acoustic of all time. Available now in a new 12-string version.',
         link: '/acoustic-guitars/gibson-j-45-12-chords'
     }
 ]

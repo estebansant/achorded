@@ -136,7 +136,7 @@ export const ProductsData = [
                 price: '$1.449',
                 stars: fiveStars,
                 rating: '5',
-                pickups: 'Vintage Noiseless Single-Coil Strat',
+                pickups: 'Vintage Single-Coil Strat',
                 neck: 'Modern "C"',
                 frets: '22 Frets',
                 fretSize: 'Medium Jumbo',

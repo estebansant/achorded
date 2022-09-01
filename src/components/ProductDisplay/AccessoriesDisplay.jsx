@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/ProductDisplay/AccessoriesDisplay.scss'
-import { AccessoriesData } from './DisplayData/AccessoriesData.jsx';
+import { ProductData } from '@pages/sections/products/productData/ProductData';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 
 const AccessoriesDisplay = ({ addToCart }) => {
@@ -15,7 +15,7 @@ const AccessoriesDisplay = ({ addToCart }) => {
         <h1 className="displays__titles">Shop Guitar's Accessories.</h1>
 
         <section className="displays__grids">
-          {AccessoriesData.map((card, index) => {
+          {ProductData.map((card, index) => {
                     return(
                         <div className="grid__cards" key={index}>
 

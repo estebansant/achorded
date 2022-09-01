@@ -77,7 +77,7 @@ const Carousel = () => {
                                     <h3 className="slides__link--title">{slide.title}</h3>
                                     <img className="slides__link--image"src={slide.image} alt={slide.alt}/>
                                     <div className="slides__link--description">
-                                        <p>{slide.description}</p>
+                                        <p>{slide.sinopsis}</p>
                                     </div>
                                 </a>
                             </div>
