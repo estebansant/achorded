@@ -9,13 +9,15 @@ const AccessoriesDisplay = ({ addToCart }) => {
     addToCart(item)
   }
 
+  const AccessoriesData = ProductData.filter(object => object.id > 18);
+
   return (
     <React.Fragment>
       <section className="displays">
         <h1 className="displays__titles">Shop Guitar's Accessories.</h1>
 
         <section className="displays__grids">
-          {ProductData.map((card, index) => {
+          {AccessoriesData.map((card, index) => {
                     return(
                         <div className="grid__cards" key={index}>
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
 import { ProductData } from '../productData/ProductData';
-import { AccessoriesCarouselData } from '../ProductData/AccessoriesCarouselData';
 import '@styles/Recommendations/AccessoriesCarousel.scss';
 import '@styles/Products/Accessories.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
@@ -76,7 +75,7 @@ const BigAmplifier = () => {
 
   return (
     <main>
-        {ProductsData.map((first) => first.StudioAmplifier?.map((product, index) => {
+        {ProductData.map((first) => first.StudioAmplifier?.map((product, index) => {
           return (
             <section key={index} className="main__containerB">
 
@@ -136,7 +135,7 @@ const BigAmplifier = () => {
                   <h2 className="suggested__title">Similar Products</h2>
 
                   <Slider {...settings} className="carouselAC">
-                    {AccessoriesCarouselData.map((slide, index) => {
+                    {ProductData.map((slide, index) => {
                         return(
                             <div className="carouselAC__slide" key={index}>
                                     <div className="slidesAC">

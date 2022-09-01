@@ -71,7 +71,7 @@ const GibsonExplorer = ({ addToCart, product }) => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = CarouselData.filter(object => object.id <= 9);
+  const CarouselNewArray = ProductData.filter(object => object.id <= 9);
   const RemoveCurrentGuitar = CarouselNewArray.splice(1, 1);
 
   // Cart Context
@@ -82,7 +82,7 @@ const GibsonExplorer = ({ addToCart, product }) => {
 
   return (
     <main>
-        {ProductsData.map((first) => first.GibsonExplorer?.map((product, index) => {
+        {ProductData.map((first) => first.GibsonExplorer?.map((product, index) => {
           return (
             <section key={index} className="main__container">
 

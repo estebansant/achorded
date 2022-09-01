@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/ProductDisplay/ElectricDisplay.scss';
-import { ElectricData } from './DisplayData/ElectricData.jsx';
+import { ProductData } from '@pages/sections/products/productData/ProductData';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 
 const ElectricDisplay = ({ addToCart }) => {
@@ -9,6 +9,8 @@ const ElectricDisplay = ({ addToCart }) => {
   const onHandleCart = item => {
     addToCart(item)
   }
+
+  const ElectricData = ProductData.filter(object => object.id <= 10)
   
   return (
     <React.Fragment>

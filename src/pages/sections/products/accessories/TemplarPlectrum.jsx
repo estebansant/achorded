@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
 import { ProductData } from '../productData/ProductData';
-import { AccessoriesCarouselData } from '../ProductData/AccessoriesCarouselData';
 import '@styles/Recommendations/AccessoriesCarousel.scss';
 import '@styles/Products/Accessories.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
