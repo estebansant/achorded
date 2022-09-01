@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
 import { ProductData } from '../productData/ProductData';
-import { CarouselData } from '@components/Recommendations/carousel/CarouselData.jsx';
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
@@ -72,12 +71,12 @@ const DeanEAB = () => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = CarouselData.filter(object => object.id > 9);
+  const CarouselNewArray = ProductData.filter(object => object.id > 10 && object.id < 19);
   const RemoveCurrentGuitar = CarouselNewArray.splice(0, 1);
 
   return (
     <main>
-        {ProductsData.map((first) => first.DeanEAB?.map((product, index) => {
+        {ProductData.filter(item => item.id === 11).map(((product, index) => {
           return (
             <section key={index} className="main__container">
 
@@ -103,12 +102,12 @@ const DeanEAB = () => {
 
                       <div className="specs">
                         <div className="specs__container">
-                          <p className="specs__container--text">{product.pickups}</p>
-                          <h3 className="specs__container--subtitle">Pickups</h3>
+                          <p className="specs__container--text">{product.bridge}</p>
+                          <h3 className="specs__container--subtitle">Bridge</h3>
                         </div>
                         <div className="specs__container">
                           <p className="specs__container--text">{product.neck}</p>
-                          <h3 className="specs__container--subtitle">Neck Profile</h3>
+                          <h3 className="specs__container--subtitle">Neck</h3>
                         </div>
                         <div className="specs__container">
                           <p className="specs__container--text">{product.frets}</p>
@@ -159,7 +158,7 @@ const DeanEAB = () => {
                                             <h3 className="slides__link--title">{slide.title}</h3>
                                             <img className="slides__link--image"src={slide.image} alt={slide.alt}/>
                                             <div className="slides__link--description">
-                                                <p>{slide.description}</p>
+                                                <p>{slide.sinopsis}</p>
                                             </div>
                                         </a>
                                     </div>

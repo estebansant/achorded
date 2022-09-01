@@ -66,10 +66,13 @@ const Carousel = () => {
         ]
       };
 
+      const CarouselData = ProductData.filter(object => object.id < 18);
+      const spliceData = CarouselData.splice(3,1);
+
     return (
 
         <Slider {...settings} className="carousel">
-            {ProductData.map((slide, index) => {
+            {CarouselData.map((slide, index) => {
                 return(
                     <div className="carousel__slide" key={index}>
                             <div className="slides">

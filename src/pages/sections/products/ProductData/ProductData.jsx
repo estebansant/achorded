@@ -209,6 +209,7 @@ export const ProductData = [
         bridge: 'Balsamo',
         neck: '"C"',
         frets: '24 Frets',
+        fretSize: 'standard',
         description: 'The Dean EAB Bass Guitar is a full-sized instrument with 34" scale that produces a deeper, fuller tone than other acoustic bass guitars that cost much more. Equipped with Dean’s new DMT G03 Preamp system you can easily dial in any tonal options you desire. This bass also features an on-board tuner and comfortable C-shaped neck.'
     },
     {
@@ -224,6 +225,7 @@ export const ProductData = [
         bridge: 'Rosewood',
         neck: '"C"',
         frets: '18 Frets',
+        fretSize: 'standard',
         description: 'The Yamaha Classic C-40 is the perfect basis to learn how to play guitar easily and successfully. It has an outsanding quality; instrument produces a powerful sound that is interspersed with warm bass frequencies and, thanks to its  light weight , unfolds quickly and persistently.'
     },
     {
@@ -239,6 +241,7 @@ export const ProductData = [
         bridge: 'Walnut',
         neck: '"C"',
         frets: '20 Frets',
+        fretSize: 'standard',
         description: 'With a combination of player-friendly features, attractive aesthetics and reliable Fender quality, the FA-135CE is a value-packed option for today’s acoustic player. This Fender Alternative series concert model features a durable all-laminate body with a spruce top and cutaway for upper fret access, and an easy-to-play “C”-shape neck with a walnut fingerboard for a smooth and comfortable playing feel.'
     },
     {
@@ -254,6 +257,7 @@ export const ProductData = [
         bridge: 'Laminated Hardwood',
         neck: '"C"',
         frets: '20 Frets',
+        fretSize: 'standard',
         description: 'The single-cutaway FA-125CE combines Fender tone and style with our FE-A2 electronics for a guitar that was made to take the stage. Beginners and developing players will appreciate the nato neck that gives the guitar a lively tone and smooth, easy playing feel.'
     },
     {
@@ -269,6 +273,7 @@ export const ProductData = [
         bridge: 'Striped Ebony',
         neck: 'Advanced Response',
         frets: '20 Frets',
+        fretSize: 'standard',
         description: 'With the Gibson G-Writer you can spend more time playing instead of tuning, and the utile neck with its easy-playing Advanced Response neck profile is so comfortable you won’t want to put it down.'
     },
     {
@@ -284,6 +289,7 @@ export const ProductData = [
         bridge: 'Rosewood',
         neck: 'SlimTaper',
         frets: '20 Frets',
+        fretSize: 'standard',
         description: 'The J-45 is Gibson’s best-selling acoustic of all time. World-renowned for its full, balanced expression, warm bass, and excellent projection, the J-45 has been refined to carry this legacy to new heights.'
     },
     {
@@ -299,6 +305,7 @@ export const ProductData = [
         bridge: 'Rosewood',
         neck: 'SlimTaper',
         frets: '20 Frets',
+        fretSize: 'standard',
         description: 'The world-famous Workhorse is Gibson’s best-selling acoustic of all time. Now it is available in a new 12-string version.'
     },
     {
@@ -313,6 +320,7 @@ export const ProductData = [
         bridge: 'Cedar wood',
         chords: 'Nylon',
         frets: '14 Frets',
+        fretSize: 'standard',
         description: 'The Venezuelan Cuatro is the most emblematic instrument of the Venezuelan music. It has the peculiarity of only having 4 chords and being smaller than a normal guitar. It is most used in the rural areas of the country, and it has a roll in almost all native music genres, like "joropo" and the "gaita zuliana".'
     },
 
