@@ -61,6 +61,18 @@ import { GuitarPlectrum } from '../pages/sections/products/accessories/GuitarPle
 
 const App = () => {
 
+  const localStorageProducts = localStorage.getItem('GUITARS_V1');
+  let parsedProducts;
+
+  if(!localStorageProducts){
+    localStorage.setItem('GUITARS_V1', JSON.stringify([]));
+    parsedProducts = [];
+  } else{
+    parsedProducts = JSON.parse(localStorageProducts);
+  }
+
+  const [products, setProducts] = React.useState(parsedProducts);
+
   const {
     state,
     addToCart,
