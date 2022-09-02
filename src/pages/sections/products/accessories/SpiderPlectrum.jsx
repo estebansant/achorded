@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { ProductData } from '../productData/ProductData';
+import { ItemData } from '../ProductData/ItemData';
 import '@styles/Recommendations/AccessoriesCarousel.scss';
 import '@styles/Products/Accessories.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
@@ -72,7 +72,7 @@ const SpiderPlectrum = () => {
 
   return (
     <main>
-        {ProductData.filter(item => item.id === 22).map(((product, index) => {
+        {ItemData.filter(item => item.id === 22).map(((product, index) => {
           return (
             <section key={index} className="main__containerB">
 
@@ -132,7 +132,7 @@ const SpiderPlectrum = () => {
                   <h2 className="suggested__title">Similar Products</h2>
 
                   <Slider {...settings} className="carouselAC">
-                  {ProductData.filter(item => item.id > 18 && item.id < 22 || item.id > 22).map((slide, index) => {
+                  {ItemData.filter(item => item.id > 18 && item.id < 22 || item.id > 22).map((slide, index) => {
                         return(
                             <div className="carouselAC__slide" key={index}>
                                     <div className="slidesAC">

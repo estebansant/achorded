@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { ProductData } from '../productData/ProductData';
+import { ItemData } from '../ProductData/ItemData';
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
@@ -71,7 +71,7 @@ const Stratocaster = () => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = ProductData.filter(object => object.id <= 10);
+  const CarouselNewArray = ItemData.filter(object => object.id <= 10);
   const RemoveCurrentGuitar = CarouselNewArray.splice(5, 1);
 
   // Cart Context
@@ -82,7 +82,7 @@ const Stratocaster = () => {
 
   return (
     <main>
-        {ProductData.filter(item => item.id === 6).map(((product, index) => {
+        {ItemData.filter(item => item.id === 6).map(((product, index) => {
           return (
             <section key={index} className="main__container">
 

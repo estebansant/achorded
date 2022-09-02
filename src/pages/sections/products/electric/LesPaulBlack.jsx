@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { ProductData } from '../productData/ProductData';
+import { ItemData } from '../ProductData/ItemData';
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
@@ -71,7 +71,7 @@ const LesPaulBlack = ({ addToCart, product }) => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = ProductData.filter(object => object.id <= 10);
+  const CarouselNewArray = ItemData.filter(object => object.id <= 10);
   const RemoveCurrentGuitar = CarouselNewArray.splice(2, 1);
 
   // Cart Context
@@ -82,7 +82,7 @@ const LesPaulBlack = ({ addToCart, product }) => {
 
   return (
     <main>
-        {ProductData.filter(item => item.id == 3).map(((product, index) => {
+        {ItemData.filter(item => item.id === 3).map((product, index) => {
           return (
             <section key={index} className="main__container">
 
@@ -156,9 +156,9 @@ const LesPaulBlack = ({ addToCart, product }) => {
                   <h2 className="suggested__title">Similar Products</h2>
 
                   <Slider {...settings} className="carousel">
-                    {CarouselNewArray.map((slide, index) => {
+                    {CarouselNewArray.map((slide, i) => {
                         return(
-                            <div className="carousel__slide" key={index}>
+                            <div className="carousel__slide" key={i}>
                                     <div className="slides">
                                         <a href={slide.link} className="slides__link">
                                             <h3 className="slides__link--title">{slide.title}</h3>
@@ -175,7 +175,7 @@ const LesPaulBlack = ({ addToCart, product }) => {
                 </section>
             </section>
           )}
-        ))}
+        )}
     </main>
   )
 }

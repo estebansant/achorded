@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/ProductDisplay/AccessoriesDisplay.scss'
-import { ProductData } from '@pages/sections/products/productData/ProductData';
+import { ItemData } from '@pages/sections/products/ProductData/ItemData';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 
 const AccessoriesDisplay = ({ addToCart }) => {
@@ -9,7 +9,7 @@ const AccessoriesDisplay = ({ addToCart }) => {
     addToCart(item)
   }
 
-  const AccessoriesData = ProductData.filter(object => object.id > 18);
+  const AccessoriesData = ItemData.filter(object => object.id > 18);
 
   return (
     <React.Fragment>

@@ -33,7 +33,7 @@ import fourStars from '@images/four_stars.svg';
 import fourHalfStars from '@images/four_half_stars.svg';
 import fiveStars from '@images/five_stars.svg';
 
-export const ProductData = [
+export const ItemData = [
     {
         title: 'Gibson Flying V',
         id: 1,

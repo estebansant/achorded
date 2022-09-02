@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
-import { ProductData } from '../productData/ProductData';
+import { ItemData } from '../ProductData/ItemData';
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
@@ -70,13 +70,9 @@ const DeanEAB = () => {
     ]
   };
 
-  // Sort recommended items on the carousel
-  const CarouselNewArray = ProductData.filter(object => object.id > 10 && object.id < 19);
-  const RemoveCurrentGuitar = CarouselNewArray.splice(0, 1);
-
   return (
     <main>
-        {ProductData.filter(item => item.id === 11).map(((product, index) => {
+        {ItemData.filter(item => item.id === 11).map((product, index) => {
           return (
             <section key={index} className="main__container">
 
@@ -89,7 +85,7 @@ const DeanEAB = () => {
                     <div className="product__wrapper">
 
                       <div className="information">
-                        <h1 className="information__title">{product.title}</h1>
+                        <h1 className="information__title">Dean {product.title}</h1>
                         
                         {/* Rating */}
                         <div className="information__rating">
@@ -150,7 +146,7 @@ const DeanEAB = () => {
                   <h2 className="suggested__title">Similar Products</h2>
 
                   <Slider {...settings} className="carousel">
-                    {CarouselNewArray.map((slide, index) => {
+                    {ItemData.filter(object => object.id > 11 && object.id < 19).map((slide, index) => {
                         return(
                             <div className="carousel__slide" key={index}>
                                     <div className="slides">
@@ -169,7 +165,7 @@ const DeanEAB = () => {
                 </section>
             </section>
           )}
-        ))}
+        )}
     </main>
   )
 }

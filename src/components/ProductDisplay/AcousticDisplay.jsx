@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/ProductDisplay/AcousticDisplay.scss';
-import { ProductData } from '@pages/sections/products/productData/ProductData';
+import { ItemData } from '@pages/sections/products/ProductData/ItemData';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 
 const AcousticDisplay = ({ addToCart }) => {
@@ -9,7 +9,7 @@ const AcousticDisplay = ({ addToCart }) => {
     addToCart(item)
   }
 
-  const AcousticData = ProductData.filter(object => object.id > 10 && object.id < 19)
+  const AcousticData = ItemData.filter(object => object.id > 10 && object.id < 19)
 
   return (
     <React.Fragment>
