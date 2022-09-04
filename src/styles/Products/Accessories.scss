@@ -120,11 +120,11 @@
         height: 70px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         position: relative;
         .priceB__button--buy{
-            width: 125px;
+            width: 40%;
             height: 45px;
             background-color: colors.$yellow;
             border: none;
@@ -137,17 +137,15 @@
             box-shadow:  0px 0px 10px rgba(238, 175, 41, 0.5);
         }     
         .priceB__button--cart{
-            width: 35px;
-            height: 35px;
+            width: 40%;
+            height: 45px;
             border: 1px solid colors.$white;
-            border-radius: 50%;
+            border-radius: 8px;
             background-color: transparent;
             padding: 2px;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            right: 15%;
             transition: all 0.5s ease-in-out;
             &__image{
                 width: 90%;
@@ -238,17 +236,22 @@
         }
     }
     .priceB{
-        width: 90%;
+        width: 78%;
         position: absolute;
         bottom: -80px;
         border-radius: 16px;
+        padding: 10px;
         &__container{
             width: 100%;
             border-radius: 16px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
+            .priceB__button--buy{
+                width: 125px;
+            }
             .priceB__button--cart{
-                position: static;
+                width: 60px;
+                position: relative;
             }
         }
     }
@@ -263,15 +266,33 @@
         padding: 0px 50px 0px 50px;
     }
 }
-@media (min-width: 1024px) and (max-height: 800px){
+@media(min-width: 1024px){
+    .priceB{
+        width: 80%;
+        &__container{
+            .priceB__button--buy{
+                width: 125px;
+            }
+            .priceB__button--cart{
+                width: 125px;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (min-height: 600px){
     .main__containerB--wrapper{
         height: 90vh;
     }
     .suggested__title{
-        padding: 0px 100px 0px 100px;
+        padding: 0px 50px 0px 50px;
+    }
+    .priceB{
+        width: 65%;
+        bottom: -95px;
+        left: 45px; 
     }
 }
-@media (min-width: 1024px){
+@media (min-width: 1024px) and (min-height: 1300px){
     .main__containerB--wrapper{
         height: 50vh;
     }
@@ -292,8 +313,9 @@
         padding-right: 8%;
     }
     .priceB{
-        width: 70%;
+        width: 50%;
         bottom: -95px;
+        left: 55px;
     }
 }
 @media (min-width: 2560px){
