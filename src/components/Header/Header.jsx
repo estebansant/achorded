@@ -4,12 +4,14 @@ import { LeftMenu } from './Parts/LeftMenu.jsx';
 import { MainLogo } from './Parts/MainLogo.jsx';
 import { RightMenu } from './Parts/RightMenu.jsx';
 
-const Header = () => {
+const Header = ({state}) => {
   return (
     <nav className="Header__container">
       <LeftMenu />
       <MainLogo />
-      <RightMenu />
+      <RightMenu 
+        state={state}
+      />
     </nav>
   )
 }

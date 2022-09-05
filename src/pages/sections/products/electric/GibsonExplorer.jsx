@@ -75,8 +75,15 @@ const GibsonExplorer = ({ addToCart, product }) => {
 
   // Cart Context
 
+  const inCart = (id) => {
+      const productIndex = ItemData.findIndex(product => product.id === id);
+      ItemData[productIndex] = {
+
+      }
+  }
+
   const onHandleCart = item => {
-    addToCart(item)
+    addToCart(item);
   }
 
   return (

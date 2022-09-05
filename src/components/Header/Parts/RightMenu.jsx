@@ -1,16 +1,13 @@
 import React from 'react';
 import { motion, AnimatePresence } from "framer-motion";
-import { AppContext } from '@context/AppContext.js';
 import question from '@icons/question.svg';
 import shoppingCart from '@icons/shopping_cart.svg';
 import '@styles/Header/RightMenu.scss';
 import arrow from '@icons/chevron_down.svg';
 
-const RightMenu = () => {
+const RightMenu = ({state}) => {
 
     const [toggleMenu, setToggleMenu] = React.useState (false);
-
-    const { state } = React.useContext(AppContext);
 
     const onToggleMenu = () => {
         setToggleMenu(!toggleMenu);
