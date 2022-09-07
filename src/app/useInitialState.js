@@ -1,30 +1,37 @@
 import React from 'react';
 
-const cartLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]')
+// const cartLocalStorage = JSON.parse(localStorage.getItem('GUITARS_V1') || '[]');
+const products = JSON.parse(localStorage.getItem('products'));
+const cart = JSON.parse(localStorage.getItem('cart'))
 
 const useInitialState = () => {
     const [state, setState] = React.useState(cartLocalStorage);
 
-    React.useEffect(() => {
+    localStorage.setItem('products', JSON.stringify(state));
 
-        localStorage.setItem('cart', JSON.stringify(state));
+    if(!localStorage.getItem('cart')){
+        localStorage.setItem('cart', '[]')
+    }
 
-    }, [state]);
+    // React.useEffect(() => {
 
-    const addToCart = (payload) => {
-        if(!state.cart.includes(payload)){
-			setState({
-				...state,
-				cart: [...state.cart, payload]
-			});
-		}
+    //     localStorage.setItem('GUITARS_V1', JSON.stringify(state));
+
+    // }, [state]);
+
+    // const addToCart = (payload) => {
+
+	// 		setState([
+    //             ...state,
+	// 			payload
+    //         ]);
         
-        console.log(state);
-    };
+    //     console.log(state);
+    // };
 
     return {
         state,
-        addToCart
+        addToCart,
     };
 }
 

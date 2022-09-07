@@ -69,7 +69,7 @@ const RightMenu = ({state}) => {
                 <li className="shopping">
                     <a href="/my-cart">
                     <img src={shoppingCart} alt="shopping cart" className="shopping__icon"/>
-                    {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
+                    {state.length > 0 ? <div>{state.length}</div> : null}
                     </a>
                 </li>
                 </ul>
