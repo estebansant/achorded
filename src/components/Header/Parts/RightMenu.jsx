@@ -5,7 +5,7 @@ import shoppingCart from '@icons/shopping_cart.svg';
 import '@styles/Header/RightMenu.scss';
 import arrow from '@icons/chevron_down.svg';
 
-const RightMenu = ({state}) => {
+const RightMenu = ({cart}) => {
 
     const [toggleMenu, setToggleMenu] = React.useState (false);
 
@@ -69,7 +69,7 @@ const RightMenu = ({state}) => {
                 <li className="shopping">
                     <a href="/my-cart">
                     <img src={shoppingCart} alt="shopping cart" className="shopping__icon"/>
-                    {state.length > 0 ? <div>{state.length}</div> : null}
+                    {cart.length > 0 ? <div>{cart.length}</div> : null}
                     </a>
                 </li>
                 </ul>

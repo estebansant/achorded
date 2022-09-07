@@ -61,7 +61,7 @@ import { GuitarPlectrum } from '../pages/sections/products/accessories/GuitarPle
 const App = () => {
 
   const {
-    state,
+    cart,
     addToCart,
   } = useInitialState();
 
@@ -69,7 +69,7 @@ const App = () => {
       <BrowserRouter>
         <Layout>
           <Header
-            state={state}
+            cart={cart}
           />
           <Routes>
             {/* Website pages routes */}
