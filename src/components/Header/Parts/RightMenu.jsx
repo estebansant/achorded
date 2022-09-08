@@ -1,4 +1,5 @@
 import React from 'react';
+import { Basket } from './Basket';
 import { motion, AnimatePresence } from "framer-motion";
 import question from '@icons/question.svg';
 import shoppingCart from '@icons/shopping_cart.svg';
@@ -8,9 +9,13 @@ import arrow from '@icons/chevron_down.svg';
 const RightMenu = ({cart}) => {
 
     const [toggleMenu, setToggleMenu] = React.useState (false);
+    const [toggleBasket, setToggleBasket] = React.useState(false);
 
     const onToggleMenu = () => {
         setToggleMenu(!toggleMenu);
+    }
+    const onToggleBasket = () => {
+        setToggleBasket(!toggleBasket);
     }
 
     return (
@@ -66,14 +71,28 @@ const RightMenu = ({cart}) => {
                     </a>
                 </li>
 
-                <li className="shopping">
-                    <a href="/my-cart">
+                <li className="shopping" onClick={onToggleBasket}>
                     <img src={shoppingCart} alt="shopping cart" className="shopping__icon"/>
-                    {cart.length > 0 ? <div>{cart.length}</div> : null}
-                    </a>
+                    {cart.length > 0 ? <div className="shopping__number">{cart.length}</div> : null}
                 </li>
                 </ul>
             </div>
+            <AnimatePresence>
+                {toggleBasket &&
+                    <motion.div
+                        key="cart"
+                        initial={{ opacity: 0, x: "110%" }}
+                        animate={{ opacity: 1, x: "0%" }}
+                        exit={{ opacity: 0.2,
+                                x: "120%"
+                            }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="basket__container"
+                    >
+                        <Basket cart={cart} onToggleBasket={onToggleBasket}/>
+                    </motion.div>
+                }
+            </AnimatePresence>
         </React.Fragment>
     )
 }

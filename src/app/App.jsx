@@ -16,7 +16,6 @@ import { NotFound } from '../pages/NotFound';
 import { SignUp } from '../pages/SignUp';
 import { MyOrders } from '../pages/MyOrders';
 import { Checkout } from '../pages/Checkout';
-import { Cart } from '../pages/Cart';
 import { Faqs } from '../pages/Faqs';
 import { Accessories } from '../pages/sections/Accessories';
 import { AccessoriesDisplay } from '@components/ProductDisplay/AccessoriesDisplay';
@@ -79,7 +78,6 @@ const App = () => {
               <Route exact path="/signup" element={<SignUp />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/checkout" element={<Checkout />} />
-              <Route exact path="/my-cart" element={<Cart />} />
               <Route exact path="/questions" element={<Faqs />} />
               <Route exact path="/accessories" element={<Accessories>
                 <AccessoriesDisplay

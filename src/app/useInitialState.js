@@ -14,8 +14,8 @@ const useInitialState = () => {
     const addToCart = (payload) => {
         const duplicates = cart.findIndex(object => object.id === payload.id);
         if(duplicates === -1){
-        setCart([...cart, payload]);
-
+            setCart([...cart, payload]);
+            setAdded(true);
         }
 
         console.log(cart);

@@ -73,14 +73,7 @@ const GibsonExplorer = ({ addToCart, product }) => {
   const CarouselNewArray = ItemData.filter(object => object.id <= 10);
   const RemoveCurrentGuitar = CarouselNewArray.splice(1, 1);
 
-  // Cart Context
-
-  const inCart = (id) => {
-      const productIndex = ItemData.findIndex(product => product.id === id);
-      ItemData[productIndex] = {
-
-      }
-  }
+  // Cart
 
   const onHandleCart = item => {
     addToCart(item);

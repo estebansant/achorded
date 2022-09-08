@@ -2,6 +2,7 @@ import React from 'react';
 import '@styles/ProductDisplay/ElectricDisplay.scss';
 import { ItemData } from '@pages/sections/products/ProductData/ItemData';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
+import checkShoppingCart from '@icons/shopping_cart_check.svg';
 
 const ElectricDisplay = ({ addToCart }) => {
   // Cart Context
@@ -39,9 +40,9 @@ const ElectricDisplay = ({ addToCart }) => {
                                 </div>
                           </a>
 
-                            <button className="grid__card--button" onClick={() => onHandleCart(card)}>
-                                <img className="grid__card--button__image" src={addShoppingCart} alt="add to shopping cart"/>
-                            </button>
+                          <button className="grid__card--button" onClick={() => onHandleCart(card)}>
+                              <img className="grid__card--button__image" src={addShoppingCart} alt="add to shopping cart"/>
+                          </button>
 
                         </div>
                     )
