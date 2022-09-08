@@ -36,6 +36,7 @@
     width: 100%;
     height: 100%;
     top: 0;
+    right: 0;
     bottom: 0;
     background-color: colors.$secondary-red;
     z-index: 200;
@@ -48,6 +49,9 @@
     .Header__container--right{
         position: relative;
         right: 5%;
+    }
+    .basket__container{
+        width: 420px;
     }
 }
 @media(min-width: 929px){
