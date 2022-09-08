@@ -1,4 +1,5 @@
 import React from 'react';
+import { BasketItem } from './BasketItem';
 import '@styles/Header/Basket.scss';
 import x from '@icons/x_icon.svg';
 
@@ -12,9 +13,9 @@ const Basket = ({cart, onToggleBasket}) => {
             <h4 className="basket__header--title">My Cart</h4>
         </div>
         <div className="basket__content">
-            {/* {cart.map(product => (
-                <OrderItem product={product} key={`orderItem-${product.id}`} />
-            ))} */}
+            {cart.map(product => (
+                <BasketItem product={product} key={`basketItem-${product.id}`} />
+            ))}
             <div className="basket__content--order">
                 <p>Total</p>
                 <p>$560.00</p>
