@@ -13,14 +13,6 @@
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: colors.$main-black;
-    &__title{
-        font-size: size.$title;
-        font-family: fonts.$title;
-        color: colors.$white;
-        font-weight: bold;
-        margin-top: 12px;
-        width: 95%;
-    }
     &__container{
         display: flex;
         flex-direction: column;
@@ -28,9 +20,13 @@
         align-items: center;
         margin-top: 20px;
         margin-bottom: 20px;
-        &--image{
-            max-width: 95%;
-            height: auto;
+        &--title{
+            font-size: size.$title;
+            font-family: fonts.$title;
+            color: colors.$white;
+            font-weight: bold;
+            margin-bottom: 12px;
+            width: 95%;
         }
         &--text{
             width: 95%;
@@ -43,53 +39,66 @@
             text-align: left;
         }
     }
+    &__image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--picture{
+            max-width: 95%;
+            height: auto;
+        }
+    }
 }
 @media (min-width: 768px){
     .info{
-        display: block;
-        padding-left: 50px;
-        padding-right: 50px;
-        &__title{
-            font-size: size.$main-title;
-            text-align: left;
-        }
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-direction: row;
         &__container{
-            flex-direction: row;
+            width: 45%;
+            flex-direction: column;
             justify-content: space-around;
-            &--image{
-                max-width: 40%;
+            align-items: flex-start;
+            &--title{
+                font-size: size.$main-title;
+                text-align: left;
             }
             &--text{
-                width: 55%;
                 margin-top: 0px;
                 margin-bottom: 0px;
                 font-size: size.$secondary-subtitle;
+                text-align: justify;
+            }
+        }
+        &__image{
+            width: 45%;
+            &--picture{
+                max-width: 100%;
             }
         }
     }
 }
-@media (min-width: 1024px){
+@media (min-width: 900px){
     .info{
-        padding-left: 100px;
-        padding-right: 100px;
+        height: 650px;
         &__container{
             justify-content: space-between;
-            &--image{
-                max-width: 50%; 
-            }
-            &--text{
-                width: 43%;
-            }
         }
     }
 }
-@media (min-width: 1440px){
+@media(min-width: 1440px){
     .info{
-        padding-left: 8%;
-        padding-right: 8%;
-        &__container{
-            &--image{
-                max-width: 40%; 
+        height: 750px;
+    }
+}
+@media(min-width: 2560px){
+    .info{
+        height: 650px;
+        &__image{
+            width: 30%;
+            &--picture{
+                max-width: 80%;
             }
         }
     }

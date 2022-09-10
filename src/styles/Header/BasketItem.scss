@@ -11,7 +11,7 @@
     align-items: center;
     background: linear-gradient(140deg, rgba(22,20,20,1) 0%, rgba(25,30,37,1) 62%, rgba(36,45,53,1) 100%);
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     border-radius: 16px;
     &--item{
         width: 50%;
@@ -23,11 +23,12 @@
         &__image{
             width: 40%;
             height: 100%;
-            rotate: -18deg;
-            transform: translate(-10px, -20px);
+            rotate: -15deg;
+            transform: translate(0px, -20px);
         }
         &__details{
             height: 100%;
+            padding-left: 10px;
             h4{
                 font-size: size.$subtitle;
                 font-family: fonts.$title;
@@ -42,5 +43,32 @@
                 margin-bottom: 15px;
             }
         }
+    }
+    &--trash{
+        width: 35px;
+        height: 50px;
+        &__image{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media(min-width: 768px){
+    .basket__card{
+        margin-bottom: 40px;
+        &--item{
+            &__image{
+                rotate: -18deg;
+                transform: translate(-10px, -20px);
+            }
+            &__details{
+                padding-left: 0px;
+            }
+        }
+    }
+}
+@media(min-width: 912px) and (min-height: 1300px){
+    .basket__card{
+        margin-bottom: 0px;
     }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '@styles/Header/BasketItem.scss';
+import trash from '@icons/trash.svg';
 
 const BasketItem = ({product}) => {
   return (
@@ -13,7 +14,7 @@ const BasketItem = ({product}) => {
             </div>
         </div>
         <div className="basket__card--trash">
-            <img />
+            <img src={trash} alt="delete item" className="basket__card--trash__image"/>
         </div>
     </div>
   )
