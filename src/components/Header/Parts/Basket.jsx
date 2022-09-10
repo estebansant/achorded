@@ -3,7 +3,8 @@ import { BasketItem } from './BasketItem';
 import '@styles/Header/Basket.scss';
 import x from '@icons/x_icon.svg';
 
-const Basket = ({cart, onToggleBasket}) => {
+const Basket = ({cart, onToggleBasket, price, changeAmount, removeItem}) => {
+
   return (
     <aside className="basket">
         <div className="basket__scroll">
@@ -15,11 +16,16 @@ const Basket = ({cart, onToggleBasket}) => {
             </div>
             <div className="basket__content">
                 {cart.map(product => (
-                    <BasketItem product={product} key={`basketItem-${product.id}`} />
+                    <BasketItem
+                        removeItem={removeItem}
+                        changeAmount={changeAmount}
+                        product={product}
+                        key={`basketItem-${product.id}`}
+                    />
                 ))}
                 <div className="basket__content--order">
                     <p>Total</p>
-                    <p>$560.00</p>
+                    <p>{price}$ USD</p>
                 </div>
                 <button className="basket__content--checkout">
                     <a href="/checkout">

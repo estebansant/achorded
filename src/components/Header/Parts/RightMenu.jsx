@@ -6,7 +6,7 @@ import shoppingCart from '@icons/shopping_cart.svg';
 import '@styles/Header/RightMenu.scss';
 import arrow from '@icons/chevron_down.svg';
 
-const RightMenu = ({cart}) => {
+const RightMenu = ({cart, price, changeAmount, removeItem}) => {
 
     const [toggleMenu, setToggleMenu] = React.useState (false);
     const [toggleBasket, setToggleBasket] = React.useState(false);
@@ -89,7 +89,13 @@ const RightMenu = ({cart}) => {
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         className="basket__container"
                     >
-                        <Basket cart={cart} onToggleBasket={onToggleBasket}/>
+                        <Basket
+                            cart={cart} 
+                            price={price}
+                            changeAmount={changeAmount}
+                            removeItem={removeItem}
+                            onToggleBasket={onToggleBasket}
+                        />
                     </motion.div>
                 }
             </AnimatePresence>

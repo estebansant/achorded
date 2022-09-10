@@ -103,7 +103,7 @@ const GibsonFlyingV = ({ addToCart, product }) => {
                           <p className="information__rating--value">{product.rating}</p>
                         </div>
 
-                        <p className="information__price">{product.price}</p>
+                        <p className="information__price">{product.price}$ USD</p>
                       </div>
 
                       <div className="specs">

@@ -35,7 +35,7 @@ const ElectricDisplay = ({ addToCart }) => {
                                     </div>
 
                                     <div className="grid__card--description__price">
-                                      <p className="grid__card--description__price--content">{card.price}</p>
+                                      <p className="grid__card--description__price--content">{card.price}$ USD</p>
                                     </div>
                                 </div>
                           </a>

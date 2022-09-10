@@ -61,7 +61,10 @@ const App = () => {
 
   const {
     cart,
+    price,
     addToCart,
+    changeAmount,
+    removeItem,
   } = useInitialState();
 
   return (
@@ -69,6 +72,9 @@ const App = () => {
         <Layout>
           <Header
             cart={cart}
+            price={price}
+            changeAmount={changeAmount}
+            removeItem={removeItem}
           />
           <Routes>
             {/* Website pages routes */}

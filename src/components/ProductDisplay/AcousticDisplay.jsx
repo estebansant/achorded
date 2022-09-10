@@ -32,7 +32,7 @@ const AcousticDisplay = ({ addToCart }) => {
                                       <p className="gridbis__card--description__rating--value">{card.rating}</p>
                                     </div>
 
-                                    <p className="gridbis__card--description__price">{card.price}</p>
+                                    <p className="gridbis__card--description__price">{card.price}$ USD</p>
                                 </div>
                             </a>
 

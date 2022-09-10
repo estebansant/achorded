@@ -93,7 +93,7 @@ const SpiderPlectrum = () => {
                           <p className="informationB__rating--value">{product.rating}</p>
                         </div>
 
-                        <p className="informationB__price">{product.price}</p>
+                        <p className="informationB__price">{product.price}$ USD</p>
                       </div>
 
                     </div>

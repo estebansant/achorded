@@ -32,7 +32,7 @@ const AccessoriesDisplay = ({ addToCart }) => {
                                       <p className="grid__cards--descriptions__ratings--values">{card.rating}</p>
                                     </div>
 
-                                    <p className="grid__cards--descriptions__prices">{card.price}</p>
+                                    <p className="grid__cards--descriptions__prices">{card.price}$ USD</p>
                                 </div>
                             </a>
                             
