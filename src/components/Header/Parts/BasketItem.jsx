@@ -9,7 +9,7 @@ const BasketItem = ({product, removeItem, changeAmount}) => {
             <img src={product.image} alt={product.alt} className="basket__card--item__image"/>
             <div className="basket__card--item__details">
                 <h4>{product.title}</h4>
-                <p>{product.price}</p>
+                <p>{product.price}$ USD</p>
                 <div className="basket__card--item__quantity">
                   <button
                     className="basket__card--item__quantity--minus"

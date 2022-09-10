@@ -30,13 +30,32 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        &--order{
+        &--message{
+            width: 80%;
+            font-size: size.$text;
+            font-family: fonts.$text;
+            font-weight: 500;
+            color: colors.$white;
+            text-align: center;
+            white-space: initial;
+            margin-bottom: 25px;
+        }
+        &--price{
             width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: colors.$secondary-black;
+            border: 2px solid colors.$main-black;
+            border-radius: 12px;
+            margin-bottom: 25px;
             p{
-                font-family: fonts.$text;
-                font-size: size.$text;
+                font-family: fonts.$title;
+                font-size: size.$subtitle;
                 font-weight: 500;
-                color: colors.$light-white;
+                color: colors.$white;
             }
         }
         &--checkout{
@@ -45,7 +64,10 @@
             border: 2px solid colors.$main-black;
             border-radius: 12px;
             background-color: colors.$yellow;
-            a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
                 font-size: size.$subtitle;
                 font-family: fonts.$title;
                 color: colors.$main-black;
@@ -58,12 +80,14 @@
     display: none;
 }
 .x__container{
+    position: sticky;
+    background-color: colors.$secondary-red;
+    top: 0;
     width: 96%;
-    height: 30px;
+    height: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 5px;
     &--image{
         width: 30px;
         height: 30px;

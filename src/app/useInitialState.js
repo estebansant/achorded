@@ -16,7 +16,6 @@ const useInitialState = () => {
         const duplicates = cart.findIndex(object => object.id === payload.id);
         if(duplicates === -1){
             setCart([...cart, payload]);
-            setAdded(true);
         }
 
         console.log(cart);
@@ -39,7 +38,7 @@ const useInitialState = () => {
 
     React.useEffect(() => {
         handlePrice();
-      });
+      }, [cart]);
 
     const removeItem = (id) =>{
         const arr = cart.filter((item) => item.id !== id);
