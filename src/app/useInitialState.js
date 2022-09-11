@@ -21,6 +21,14 @@ const useInitialState = () => {
         console.log(cart);
     }
 
+    // const addItem = (payload) => {
+    //     const index = cart.findIndex(object => object.id === payload.id);
+    //     const array = cart;
+    //     array[index].inCart = true;
+
+    //     setCart([...array]);
+    // }
+
     const changeAmount = (product, sum) => {
         const index = cart.findIndex(object => object.id === product.id);
         const array = cart;
