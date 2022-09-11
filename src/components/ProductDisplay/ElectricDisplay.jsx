@@ -1,26 +1,15 @@
 import React from 'react';
 import '@styles/ProductDisplay/ElectricDisplay.scss';
-import { ItemData } from '@pages/sections/products/ProductData/ItemData';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 import checkShoppingCart from '@icons/shopping_cart_check.svg';
 
-const ElectricDisplay = ({ addToCart }) => {
+const ElectricDisplay = ({ addToCart, added, addItem }) => {
 
-    const [added, setAdded] = React.useState(ItemData);
+  const ElectricData = added.filter(object => object.id <= 10)
 
-  const addItem = (id) => {
-
-      const index = added.findIndex(object => object.id === id);
-        const array = added;
-        array[index].inCart = true;
-
-        setAdded([...array]);
-}
   const onHandleCart = item => {
     addToCart(item)
   }
-
-  const ElectricData = added.filter(object => object.id <= 10)
   
   return (
     <React.Fragment>
@@ -49,14 +38,16 @@ const ElectricDisplay = ({ addToCart }) => {
                                 </div>
                           </a>
 
-                          <button className="grid__card--button" onClick={() => {onHandleCart(card); addItem(card.id);}}>
                             {card.inCart &&
-                              <img className="grid__card--button__image" src={checkShoppingCart} alt="add to shopping cart"/>
+                              <button className="grid__card--button__check" onClick={() => {onHandleCart(card); addItem(card.id)}}>
+                                <img className="grid__card--button__image" src={checkShoppingCart} alt="add to shopping cart"/>
+                              </button>
                             }
                             {!card.inCart && 
-                              <img className="grid__card--button__image" src={addShoppingCart} alt="add to shopping cart"/>
+                              <button className="grid__card--button" onClick={() => {onHandleCart(card); addItem(card.id)}}>
+                                <img className="grid__card--button__image" src={addShoppingCart} alt="add to shopping cart"/>
+                              </button>
                             }
-                          </button>
 
                         </div>
                     )

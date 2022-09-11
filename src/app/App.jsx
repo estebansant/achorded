@@ -62,6 +62,8 @@ const App = () => {
   const {
     cart,
     price,
+    added,
+    addItem,
     addToCart,
     changeAmount,
     removeItem,
@@ -93,6 +95,8 @@ const App = () => {
               <Route exact path="/electric-guitars" element={<ElectricGuitars>
                 <ElectricDisplay
                   addToCart={addToCart}
+                  added={added}
+                  addItem={addItem}
                 />
               </ElectricGuitars>
               } />
@@ -108,6 +112,8 @@ const App = () => {
               />} />
               <Route exact path="/electric-guitars/gibson-explorer" element={<GibsonExplorer
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/les-paul-black" element={<LesPaulBlack
                 addToCart={addToCart}

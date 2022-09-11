@@ -206,6 +206,18 @@
         padding: 20px;
     }
 }
+.price__button--cart__check{
+    width: 40%;
+    height: 45px;
+    border: 1px solid #00A606;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
 @media (min-width: 360px){
     .product{
         height: 87vh;

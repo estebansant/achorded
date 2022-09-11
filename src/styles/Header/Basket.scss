@@ -93,6 +93,9 @@
         height: 30px;
     }
 }
+.x__container:hover{
+    cursor: pointer;
+}
 @media(min-width: 912px) and (min-height: 1300px){
     .basket{
         &__content{

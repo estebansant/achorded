@@ -1,16 +1,23 @@
 import React from 'react';
+import { ItemData } from '@pages/sections/products/ProductData/ItemData';
 
 const cartLocalStorage = JSON.parse(localStorage.getItem('GUITARS_V1') || '[]');
+const dataLocalStorage = JSON.parse(localStorage.getItem('GUITARS_DATA') || JSON.stringify(ItemData));
 
 const useInitialState = () => {
     const [cart, setCart] = React.useState(cartLocalStorage);
     const [price, setPrice] = React.useState(cartLocalStorage);
+    const [added, setAdded] = React.useState(dataLocalStorage);
 
     React.useEffect(() => {
 
         localStorage.setItem('GUITARS_V1', JSON.stringify(cart));
 
     }, [cart]);
+
+    React.useEffect(() => {
+        localStorage.setItem('GUITARS_DATA', JSON.stringify(added));
+    }, [added])
 
     const addToCart = (payload) => {
         const duplicates = cart.findIndex(object => object.id === payload.id);
@@ -21,13 +28,20 @@ const useInitialState = () => {
         console.log(cart);
     }
 
-    // const addItem = (payload) => {
-    //     const index = cart.findIndex(object => object.id === payload.id);
-    //     const array = cart;
-    //     array[index].inCart = true;
+    const addItem = (id) => {
 
-    //     setCart([...array]);
-    // }
+        const itemAdded = added.map((product) => {
+            if(product.id === id){
+              return {
+                ...product,
+                inCart: true,
+              }
+            }
+            return product;
+          })
+          
+          setAdded([...itemAdded]);
+    }
 
     const changeAmount = (product, sum) => {
         const index = cart.findIndex(object => object.id === product.id);
@@ -50,6 +64,17 @@ const useInitialState = () => {
 
     const removeItem = (id) =>{
         const arr = cart.filter((item) => item.id !== id);
+
+        const itemRemoved = added.map((product) => {
+            if(product.id === id){
+              return {
+                ...product,
+                inCart: false,
+              }
+            }
+            return product;
+          }) 
+        setAdded([...itemRemoved]);
         setCart(arr);
         changeAmount();
     }
@@ -57,6 +82,8 @@ const useInitialState = () => {
     return {
         cart,
         price,
+        added,
+        addItem,
         addToCart,
         changeAmount,
         removeItem,
