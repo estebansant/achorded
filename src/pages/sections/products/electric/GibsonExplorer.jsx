@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';
+import { motion, AnimatePresence } from "framer-motion";
 import addShoppingCart from '@icons/shopping_cart_add.svg';
 import checkShoppingCart from '@icons/shopping_cart_check.svg';
 import rightArrow from '@icons/arrow-right.svg';
@@ -137,16 +138,48 @@ const GibsonExplorer = ({ addToCart, added, addItem }) => {
                       <div className="price__container">
                         <button className="price__button--buy">Buy Now</button>
                         
+                        <AnimatePresence>
                           {product.inCart &&
-                            <button className="price__button--cart__check" onClick={() => {onHandleCart(product); addItem(product.id)}}>
-                              <img className="price__button--cart__image" src={checkShoppingCart} alt="add to shopping cart"/>
+                            <button
+                              className="price__button--cart__check"
+                              onClick={() => {onHandleCart(product); addItem(product.id)}}
+                            >
+                              <motion.img
+                                key={product.id}
+                                initial={{ opacity: 0, y: "-100%" }}
+                                animate={{ opacity: 1, y: "0%" }}
+                                exit={{ opacity: 0.2,
+                                        y: "120%",
+                                        transition: {duration: 0.3}
+                                    }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                className="price__button--cart__image"
+                                src={checkShoppingCart}
+                                alt="add to shopping cart"
+                              />
                             </button>
                           }
                           {!product.inCart &&
-                            <button className="price__button--cart" onClick={() => {onHandleCart(product); addItem(product.id)}}>
-                              <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
+                            <button
+                              className="price__button--cart"
+                              onClick={() => {onHandleCart(product); addItem(product.id)}}
+                            >
+                              <motion.img
+                                key='a-{product.id}'
+                                initial={{ opacity: 0, y: "-100%" }}
+                                animate={{ opacity: 1, y: "0%" }}
+                                exit={{ opacity: 0.2,
+                                        y: "120%",
+                                        transition: {duration: 0.3}
+                                    }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}  
+                                className="price__button--cart__image"
+                                src={addShoppingCart}
+                                alt="add to shopping cart"
+                              />
                             </button>
                           }
+                        </AnimatePresence>
                       </div>
                     </div>
 
