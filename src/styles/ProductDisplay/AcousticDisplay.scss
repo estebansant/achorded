@@ -126,6 +126,21 @@
         }
     }
 }
+.gridbis__card--button__check{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #00A606;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 12%;
+    bottom: 3%;
+    transition: all 0.5s ease-in-out;
+}
 @media (min-width: 768px){
     .displaybis{
         &__title{

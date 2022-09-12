@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';
+import { ItemData } from '@pages/sections/products/ProductData/ItemData';
 import { motion, AnimatePresence } from "framer-motion";
 import checkShoppingCart from '@icons/shopping_cart_check.svg';
 import addShoppingCart from '@icons/shopping_cart_add.svg';
@@ -72,7 +73,7 @@ const LesPaulBlue = ({ addToCart, added, addItem }) => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = added.filter(object => object.id <= 10);
+  const CarouselNewArray = ItemData.filter(object => object.id <= 10);
   const RemoveCurrentGuitar = CarouselNewArray.splice(3, 1);
 
   // Cart Context

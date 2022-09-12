@@ -90,6 +90,8 @@ const App = () => {
               <Route exact path="/accessories" element={<Accessories>
                 <AccessoriesDisplay
                   addToCart={addToCart}
+                  added={added}
+                  addItem={addItem}
                 />
               </Accessories>} />
               <Route exact path="/electric-guitars" element={<ElectricGuitars>
@@ -103,6 +105,8 @@ const App = () => {
               <Route exact path="/acoustic-guitars" element={<AcousticGuitars>
                 <AcousticDisplay
                   addToCart={addToCart}
+                  added={added}
+                  addItem={addItem}
                 />
               </AcousticGuitars>} />
 
@@ -159,24 +163,88 @@ const App = () => {
               />} />
 
               {/* Acoustic guitars routes */}
-              <Route exact path="/acoustic-guitars/dean-eab-bass" element={<DeanEAB />} />
-              <Route exact path="/acoustic-guitars/fender-concert-fa-135ce" element={<FenderConcert />} />
-              <Route exact path="/acoustic-guitars/fender-dreadnought" element={<FenderDreadnought />} />
-              <Route exact path="/acoustic-guitars/gibson-g-writer" element={<GibsonGWriter />} />
-              <Route exact path="/acoustic-guitars/gibson-j-45-6-chords" element={<J45_6Chords />} />
-              <Route exact path="/acoustic-guitars/gibson-j-45-12-chords" element={<J45_12Chords />} />
-              <Route exact path="/acoustic-guitars/yamaha-c-40" element={<YamahaC40 />} />
-              <Route exact path="/acoustic-guitars/cuatro" element={<Cuatro />} />
+              <Route exact path="/acoustic-guitars/dean-eab-bass" element={<DeanEAB 
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/acoustic-guitars/fender-concert-fa-135ce" element={<FenderConcert
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/acoustic-guitars/fender-dreadnought" element={<FenderDreadnought
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/acoustic-guitars/gibson-g-writer" element={<GibsonGWriter 
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/acoustic-guitars/gibson-j-45-6-chords" element={<J45_6Chords
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/acoustic-guitars/gibson-j-45-12-chords" element={<J45_12Chords
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/acoustic-guitars/yamaha-c-40" element={<YamahaC40
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/acoustic-guitars/cuatro" element={<Cuatro
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
 
               {/* Accessories routes */}
-              <Route exact path="/accessories/studio-amplifier" element={<BigAmplifier />} />
-              <Route exact path="/accessories/portable-amplifier" element={<SmallAmplifier />} />
-              <Route exact path="/accessories/plectrum-bundle" element={<PlectrumBundle />} />
-              <Route exact path="/accessories/plectrum-spider" element={<SpiderPlectrum />} />
-              <Route exact path="/accessories/plectrum-templar" element={<TemplarPlectrum />} />
-              <Route exact path="/accessories/plectrum-black" element={<BlackPlectrum />} />
-              <Route exact path="/accessories/plectrum-guitar" element={<GuitarPlectrum />} />
-              <Route exact path="/accessories/plectrum-rock" element={<RockPlectrum />} />
+              <Route exact path="/accessories/studio-amplifier" element={<BigAmplifier
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/accessories/portable-amplifier" element={<SmallAmplifier
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/accessories/plectrum-bundle" element={<PlectrumBundle
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/accessories/plectrum-spider" element={<SpiderPlectrum
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/accessories/plectrum-templar" element={<TemplarPlectrum
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/accessories/plectrum-black" element={<BlackPlectrum 
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/accessories/plectrum-guitar" element={<GuitarPlectrum
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
+              <Route exact path="/accessories/plectrum-rock" element={<RockPlectrum
+                addToCart={addToCart}
+                added={added}
+                addItem={addItem}  
+              />} />
 
               {/* Not found route */}
               <Route path="*" element={<NotFound />} />

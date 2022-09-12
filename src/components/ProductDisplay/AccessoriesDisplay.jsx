@@ -1,15 +1,16 @@
 import React from 'react';
 import '@styles/ProductDisplay/AccessoriesDisplay.scss'
-import { ItemData } from '@pages/sections/products/ProductData/ItemData';
+import { motion, AnimatePresence } from "framer-motion";
 import addShoppingCart from '@icons/shopping_cart_add.svg';
+import checkShoppingCart from '@icons/shopping_cart_check.svg';
 
-const AccessoriesDisplay = ({ addToCart }) => {
+const AccessoriesDisplay = ({ addToCart, added, addItem }) => {
 
   const onHandleCart = item => {
     addToCart(item)
   }
 
-  const AccessoriesData = ItemData.filter(object => object.id > 18);
+  const AccessoriesData = added.filter(object => object.id > 18);
 
   return (
     <React.Fragment>
@@ -36,9 +37,41 @@ const AccessoriesDisplay = ({ addToCart }) => {
                                 </div>
                             </a>
                             
-                            <button className="grid__cards--button" onClick={() => onHandleCart(card)}>
+                            <AnimatePresence>
+                            {card.inCart &&
+                              <motion.button
+                                key={card.id}
+                                initial={{ opacity: 0, y: "-50%" }}
+                                animate={{ opacity: 1, y: "0%" }}
+                                exit={{ opacity: 0.2,
+                                        x: "120%",
+                                        transition: {duration: 0.1}
+                                    }}
+                                transition={{ duration: 0.05, ease: "easeInOut" }}
+                                className="grid__cards--button__check"
+                                onClick={() => {onHandleCart(card); addItem(card.id)}}
+                              >
+                                <img className="grid__cards--button__image" src={checkShoppingCart} alt="add to shopping cart"/>
+                              </motion.button>
+                            }
+                            {!card.inCart && 
+                              <motion.button
+                                key='a-{card.id}'
+                                initial={{ opacity: 0, y: "50%" }}
+                                animate={{ opacity: 1, y: "0%" }}
+                                exit={{ opacity: 0.2,
+                                        scale: "0%",
+                                        transition: {duration: 0.1}
+                                    }}
+                                transition={{ duration: 0.05, ease: "easeInOut" }}                        
+                                className="grid__cards--button"
+                                onClick={() => {onHandleCart(card); addItem(card.id)}}
+
+                              >
                                 <img className="grid__cards--button__image" src={addShoppingCart} alt="add to shopping cart"/>
-                            </button>
+                              </motion.button>
+                            }
+                          </AnimatePresence>
 
                         </div>
                     )

@@ -6,11 +6,11 @@ import checkShoppingCart from '@icons/shopping_cart_check.svg';
 
 const ElectricDisplay = ({ addToCart, added, addItem }) => {
 
-  const ElectricData = added.filter(object => object.id <= 10)
-
   const onHandleCart = item => {
     addToCart(item)
   }
+  
+  const ElectricData = added.filter(object => object.id <= 10)
   
   return (
     <React.Fragment>
