@@ -75,6 +75,7 @@ const FenderDreadnought = ({ addToCart, added, addItem }) => {
   // Sort recommended items on the carousel
   const CarouselNewArray = ItemData.filter(object => object.id > 10 && object.id < 19);
   const RemoveCurrentGuitar = CarouselNewArray.splice(3, 1);
+  const RemoveCuatro = CarouselNewArray.splice(6, 1);
 
   const onHandleCart = item => {
     addToCart(item);

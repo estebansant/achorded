@@ -73,8 +73,9 @@ const FenderConcert = ({ addToCart, added, addItem }) => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = ItemDatadded.filter(object => object.id > 10 && object.id < 19);
+  const CarouselNewArray = ItemData.filter(object => object.id > 10 && object.id < 19);
   const RemoveCurrentGuitar = CarouselNewArray.splice(2, 1);
+  const RemoveCuatro = CarouselNewArray.splice(6, 1);
 
   const onHandleCart = item => {
     addToCart(item);
