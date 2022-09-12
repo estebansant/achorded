@@ -33,33 +33,40 @@ const Basket = ({cart, onToggleBasket, price, changeAmount, removeItem}) => {
                         </motion.p>
                     }
                 </AnimatePresence>
-                <AnimatePresence>
-                    {cart.map(product => (
-                        <motion.div
-                            key={product.id}
-                            initial={{ opacity: 0, x: "130%" }}
-                            animate={{ opacity: 1, x: "0%" }}
-                            exit={{ opacity: 0.2,
-                                    x: "130%"
-                                }}
-                            transition={{ duration: 0.4, ease: "easeInOut" }} 
-                        >
-                            <BasketItem
-                                removeItem={removeItem}
-                                changeAmount={changeAmount}
-                                product={product}
-                                key={`basketItem-${product.id}`}
-                            />
-                        </motion.div>
-                    ))}
-                </AnimatePresence>
-                <div className="basket__content--price">
-                    <p>Total</p>
-                    <p>{price}$ USD</p>
+
+                <div className="basket__content--items">
+                    <AnimatePresence>
+                        {cart.map(product => (
+                            <motion.div
+                                key={product.id}
+                                initial={{ opacity: 0, x: "130%" }}
+                                animate={{ opacity: 1, x: "0%" }}
+                                exit={{ opacity: 0.2,
+                                        x: "130%"
+                                    }}
+                                transition={{ duration: 0.4, ease: "easeInOut" }} 
+                            >
+                                <BasketItem
+                                    removeItem={removeItem}
+                                    changeAmount={changeAmount}
+                                    product={product}
+                                    key={`basketItem-${product.id}`}
+                                />
+                            </motion.div>
+                        ))}
+                    </AnimatePresence>
                 </div>
-                <a href="/checkout" className="basket__content--checkout">
-                    <p>Go to Checkout</p>
-                </a>
+                
+                <div className="basket__content--container">
+                    <div className="basket__content--container__price">
+                        <p>Total</p>
+                        <p>{price}$ USD</p>
+                    </div>
+                    <a href="/checkout" className="basket__content--container__checkout">
+                        <p>Go to Checkout</p>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </aside>
