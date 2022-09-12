@@ -1,13 +1,14 @@
 import React from 'react';
 import Slider from "react-slick";
-import { ItemData } from '../ProductData/ItemData';
 import '@styles/Recommendations/Carousel.scss';
 import '@styles/Products/Guitars.scss';
+import { motion, AnimatePresence } from "framer-motion";
 import addShoppingCart from '@icons/shopping_cart_add.svg';
+import checkShoppingCart from '@icons/shopping_cart_check.svg';
 import rightArrow from '@icons/arrow-right.svg';
 import leftArrow from '@icons/arrow-left.svg';
 
-const GibsonFlyingV = ({ addToCart, product }) => {
+const GibsonFlyingV = ({ addToCart, added, addItem }) => {
 
   // Carousel settings
 
@@ -71,7 +72,7 @@ const GibsonFlyingV = ({ addToCart, product }) => {
   };
 
   // Sort recommended items on the carousel
-  const CarouselNewArray = ItemData.filter(object => object.id <= 10);
+  const CarouselNewArray = added.filter(object => object.id <= 10);
   const RemoveCurrentGuitar = CarouselNewArray.splice(0, 1);
   
   // Cart Context
@@ -82,7 +83,7 @@ const GibsonFlyingV = ({ addToCart, product }) => {
 
   return (
     <main>
-        {ItemData.filter(item => item.id === 1).map(((product, index) => {
+        {added.filter(item => item.id === 1).map(((product, index) => {
           return (
             <section key={index} className="main__container">
 
@@ -134,12 +135,52 @@ const GibsonFlyingV = ({ addToCart, product }) => {
 
                   {/* Price section */}
 
-                  <div className="price">
+                    <div className="price">
                       <div className="price__container">
                         <button className="price__button--buy">Buy Now</button>
-                        <button className="price__button--cart" onClick={() => onHandleCart(product)}>
-                          <img className="price__button--cart__image" src={addShoppingCart} alt="add to shopping cart"/>
-                        </button>
+                        
+                        <AnimatePresence>
+                          {product.inCart &&
+                            <button
+                              className="price__button--cart__check"
+                              onClick={() => {onHandleCart(product); addItem(product.id)}}
+                            >
+                              <motion.img
+                                key={product.id}
+                                initial={{ opacity: 0, y: "-100%" }}
+                                animate={{ opacity: 1, y: "0%" }}
+                                exit={{ opacity: 0.2,
+                                        y: "120%",
+                                        transition: {duration: 0.3}
+                                    }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                className="price__button--cart__image"
+                                src={checkShoppingCart}
+                                alt="add to shopping cart"
+                              />
+                            </button>
+                          }
+                          {!product.inCart &&
+                            <button
+                              className="price__button--cart"
+                              onClick={() => {onHandleCart(product); addItem(product.id)}}
+                            >
+                              <motion.img
+                                key='a-{product.id}'
+                                initial={{ opacity: 0, y: "-100%" }}
+                                animate={{ opacity: 1, y: "0%" }}
+                                exit={{ opacity: 0.2,
+                                        y: "120%",
+                                        transition: {duration: 0.3}
+                                    }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}  
+                                className="price__button--cart__image"
+                                src={addShoppingCart}
+                                alt="add to shopping cart"
+                              />
+                            </button>
+                          }
+                        </AnimatePresence>
                       </div>
                     </div>
 

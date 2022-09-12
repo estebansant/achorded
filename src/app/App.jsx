@@ -109,6 +109,8 @@ const App = () => {
               {/* Electric guitars routes */}
               <Route exact path="/electric-guitars/stratocaster-as" element={<StratocasterAS
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/gibson-explorer" element={<GibsonExplorer
                 addToCart={addToCart}
@@ -117,27 +119,43 @@ const App = () => {
               />} />
               <Route exact path="/electric-guitars/les-paul-black" element={<LesPaulBlack
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/les-paul-blue" element={<LesPaulBlue
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/jackson-rhoads" element={<JacksonRhoads
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/jackson-soloist" element={<JacksonSoloist
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/p-bass" element={<PBass
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/stratocaster" element={<Stratocaster
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/telecaster" element={<Telecaster
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
               <Route exact path="/electric-guitars/gibson-flying-v" element={<GibsonFlyingV
                 addToCart={addToCart}
+                added={added}
+                addItem={addItem}
               />} />
 
               {/* Acoustic guitars routes */}
