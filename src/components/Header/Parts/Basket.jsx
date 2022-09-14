@@ -19,12 +19,12 @@ const Basket = ({cart, onToggleBasket, price, changeAmount, removeItem}) => {
                 <AnimatePresence>
                     {cart.length === 0 &&
                         <motion.p
+                            layout
                             key="message"
                             initial={{ opacity: 0, scale: 0 }}
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0.2,
-                                    y: "-120%",
-                                    transition: {duration: 0.2}
+                                    y: "-120%"
                                 }}
                             transition={{ duration: 0.4, ease: "easeInOut" }}
                             className="basket__content--message"
@@ -33,29 +33,35 @@ const Basket = ({cart, onToggleBasket, price, changeAmount, removeItem}) => {
                         </motion.p>
                     }
                 </AnimatePresence>
-
-                <div className="basket__content--items">
-                    <AnimatePresence>
-                        {cart.map(product => (
-                            <motion.div
-                                key={product.id}
-                                initial={{ opacity: 0, x: "130%" }}
-                                animate={{ opacity: 1, x: "0%" }}
-                                exit={{ opacity: 0.2,
-                                        x: "130%"
-                                    }}
-                                transition={{ duration: 0.4, ease: "easeInOut" }} 
-                            >
-                                <BasketItem
-                                    removeItem={removeItem}
-                                    changeAmount={changeAmount}
-                                    product={product}
-                                    key={`basketItem-${product.id}`}
-                                />
-                            </motion.div>
-                        ))}
-                    </AnimatePresence>
-                </div>
+                
+                <AnimatePresence>
+                    <motion.div
+                        layout
+                        className="basket__content--items"
+                    >
+                        <AnimatePresence>
+                            {cart.map(product => (
+                                <motion.div
+                                    layout
+                                    key={product.id}
+                                    initial={{ opacity: 0, x: 250 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0.2,
+                                            x: 250
+                                        }}
+                                    transition={{ duration: 0.4, ease: "easeInOut" }} 
+                                >
+                                    <BasketItem
+                                        removeItem={removeItem}
+                                        changeAmount={changeAmount}
+                                        product={product}
+                                        key={`basketItem-${product.id}`}
+                                    />
+                                </motion.div>
+                            ))}
+                        </AnimatePresence>
+                    </motion.div>
+                </AnimatePresence>
                 
                 <div className="basket__content--container">
                     <div className="basket__content--container__price">

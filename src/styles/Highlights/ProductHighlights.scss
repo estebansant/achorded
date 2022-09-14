@@ -73,6 +73,18 @@
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
+.big__amplifier{
+    width: 64%;
+    transform: translate(0%, 50%);
+    margin: 0 auto;   
+    transition: all 0.3s ease-in-out;  
+}
+.small__amplifier{
+    width: 64%;
+    transform: translate(0%, 72.5%);
+    margin: 0 auto;   
+    transition: all 0.3s ease-in-out;  
+}
 @media(min-width: 768px){
     .wrapper{
         flex-direction: row;
@@ -87,6 +99,16 @@
         .showcase__image{
             position: relative;
             margin-top: -15%;
+            transform: rotateZ(10deg);
+        }
+        .big__amplifier{
+            position: relative;
+            margin-top: 12%;
+            transform: rotateZ(10deg);
+        }
+        .small__amplifier{
+            position: relative;
+            margin-top: 10%;
             transform: rotateZ(10deg);
         }
     }

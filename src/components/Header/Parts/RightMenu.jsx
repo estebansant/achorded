@@ -1,6 +1,6 @@
 import React from 'react';
 import { Basket } from './Basket';
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import question from '@icons/question.svg';
 import shoppingCart from '@icons/shopping_cart.svg';
 import '@styles/Header/RightMenu.scss';
@@ -77,28 +77,31 @@ const RightMenu = ({cart, price, changeAmount, removeItem}) => {
                 </li>
                 </ul>
             </div>
-            <AnimatePresence>
-                {toggleBasket &&
-                    <motion.div
-                        key="cart"
-                        initial={{ opacity: 0, x: "130%" }}
-                        animate={{ opacity: 1, x: "0%" }}
-                        exit={{ opacity: 0.2,
-                                x: "130%"
-                            }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="basket__container"
-                    >
-                        <Basket
-                            cart={cart} 
-                            price={price}
-                            changeAmount={changeAmount}
-                            removeItem={removeItem}
-                            onToggleBasket={onToggleBasket}
-                        />
-                    </motion.div>
-                }
-            </AnimatePresence>
+            <LayoutGroup>
+                <AnimatePresence>
+                    {toggleBasket &&
+                        <motion.div
+                            layout
+                            key="cart"
+                            initial={{ opacity: 0, x: "130%" }}
+                            animate={{ opacity: 1, x: "0%" }}
+                            exit={{ opacity: 0.2,
+                                    x: "130%"
+                                }}
+                            transition={{ duration: 0.4, ease: "easeInOut" }}
+                            className="basket__container"
+                        >
+                            <Basket
+                                cart={cart} 
+                                price={price}
+                                changeAmount={changeAmount}
+                                removeItem={removeItem}
+                                onToggleBasket={onToggleBasket}
+                            />
+                        </motion.div>
+                    }
+                </AnimatePresence>
+            </LayoutGroup>
         </React.Fragment>
     )
 }
