@@ -1,3 +1,91 @@
 @use "@styles/variables/colors";
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
+
+.questions__container{
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 83px;
+    margin-bottom: 20px;
+    &--title{
+        font-family: fonts.$title;
+        font-size: size.$title;
+        font-weight: bold;
+        color: colors.$white;
+        margin-bottom: 15px;
+    }
+    &--list{
+        list-style: none;
+        margin-bottom: 15px;
+    }
+}
+.questions__item{
+    width: 100%;
+    min-height: 45px;
+    max-height: fit-content;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid colors.$light-white;
+    transition: height 2s ease-in-out;
+    &--container{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+    }
+    &--checkbox{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        opacity: 0;
+    }
+    &--text{
+        font-family: fonts.$title;
+        color: colors.$white;
+        font-weight: 500;
+        font-size: size.$subtitle;
+        cursor: pointer;
+    }
+    &--arrow{
+        width: 18px;
+        height: 9px;
+        margin-right: 8px;
+        transform: rotate(0deg);
+        transition: all 0.4s ease-in-out;
+    }
+    &--content{
+        display: inline-block;
+        width: 100%;
+        height: inherit;
+        &__text{
+            font-size: size.$text;
+            font-family: fonts.$text;
+            font-weight: 500;
+            text-align: left;
+            width: 90%;
+            margin-bottom: 20px;
+            color: colors.$light-white;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+.questions__item--checkbox{
+    cursor: pointer;
+}
+.questions__item--checkbox:checked ~ .questions__item--arrow{
+    transform: rotate(-180deg);
+}
+.questions__item--arrow:hover{
+    cursor: pointer;
+}

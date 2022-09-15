@@ -29,7 +29,7 @@ const Faqs = () => {
     }
 
     const onToggleQuestion5 = () => {
-        setQuestion5(!question1);
+        setQuestion5(!question5);
     }
 
   return (
@@ -49,11 +49,12 @@ const Faqs = () => {
                 {question1 && 
                 
                     <motion.div
+                        layout
                         key="question 1"
-                        initial={{ opacity: 0, y: "-110%" }}
+                        initial={{ opacity: 0, y: "-80%" }}
                         animate={{ opacity: 1, y: "0%" }}
-                        exit={{ opacity: 0, x: "-110%" }}
-                        transition={{ duration: 0.35, ease: "easeInOut" }}
+                        exit={{ opacity: 0, x: "-80%", transition: {duration: 0.4} }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
                         className="questions__item--content"
                     >
                         <p className="questions__item--content__text">No, this website does not sell real guitars, that is why in the checkout page we don't ask for any payment methods.</p>
@@ -74,11 +75,12 @@ const Faqs = () => {
                 {question2 && 
                 
                     <motion.div
+                        layout
                         key="question 2"
-                        initial={{ opacity: 0, y: "-110%" }}
+                        initial={{ opacity: 0, y: "-95%" }}
                         animate={{ opacity: 1, y: "0%" }}
-                        exit={{ opacity: 0, x: "-110%" }}
-                        transition={{ duration: 0.35, ease: "easeInOut" }}
+                        exit={{ opacity: 0, x: "-80%", ransition: {duration: 0.4} }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
                         className="questions__item--content"
                     >
                         <p className="questions__item--content__text">No, as Achorded does not sell any real products, then you will not be charged when placing an order. It is just a function to create the full experience of a working e-commerce.</p>
@@ -99,11 +101,12 @@ const Faqs = () => {
                 {question3 && 
                 
                     <motion.div
+                        layout
                         key="question 3"
-                        initial={{ opacity: 0, y: "-110%" }}
+                        initial={{ opacity: 0, y: "-95%" }}
                         animate={{ opacity: 1, y: "0%" }}
-                        exit={{ opacity: 0, x: "-110%" }}
-                        transition={{ duration: 0.35, ease: "easeInOut" }}
+                        exit={{ opacity: 0, x: "-80%", transition: {duration: 0.4} }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
                         className="questions__item--content"
                     >
                         <p className="questions__item--content__text">Achorded was born as a way to test my skills as a developer, and to form part of my personal portfolio. It's main objective is to simulate the behaviour of a real e-commerce.</p>
@@ -124,11 +127,12 @@ const Faqs = () => {
                 {question4 && 
                 
                     <motion.div
+                        layout
                         key="question 4"
-                        initial={{ opacity: 0, y: "-110%" }}
+                        initial={{ opacity: 0, y: "-95%" }}
                         animate={{ opacity: 1, y: "0%" }}
-                        exit={{ opacity: 0, x: "-110%" }}
-                        transition={{ duration: 0.35, ease: "easeInOut" }}
+                        exit={{ opacity: 0, x: "-80%", transition: {duration: 0.4} }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
                         className="questions__item--content"
                     >
                         <p className="questions__item--content__text">I used React.js to develop this website, alongside with some libraries like React Router, React Slick and Framer Motion to complement it, and I also created the styles using SASS.</p>
@@ -149,11 +153,12 @@ const Faqs = () => {
                 {question5 && 
                 
                     <motion.div
+                        layout
                         key="question 5"
-                        initial={{ opacity: 0, y: "-110%" }}
+                        initial={{ opacity: 0, y: "-95%" }}
                         animate={{ opacity: 1, y: "0%" }}
-                        exit={{ opacity: 0, x: "-110%" }}
-                        transition={{ duration: 0.35, ease: "easeInOut" }}
+                        exit={{ opacity: 0, x: "-80%", transition: {duration: 0.4} }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
                         className="questions__item--content"
                     >
                         <p className="questions__item--content__text">You can contact me through my e-mail address or any of my social media accounts, they are linked on the footer of the website.</p>
