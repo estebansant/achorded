@@ -7,12 +7,13 @@
     height: fit-content;
     padding: 10px;
     margin: 0 auto;
+    margin-top: 83px;
+    margin-bottom: 20px;
     &--title{
         font-family: fonts.$title;
         font-size: size.$title;
         font-weight: bold;
         color: colors.$white;
-        margin-top: 25px;
         margin-bottom: 15px;
     }
     &--content{
@@ -21,11 +22,28 @@
         font-weight: 500;
         color: colors.$light-white;
         text-align: justify;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
 @media(min-width: 768px){
-    .about__container--content{
-        margin-bottom: 0px;
+    .about__container{
+        width: 70%;
+        padding: 20px;
+        border: 3px solid colors.$light-white;
+        border-radius: 16px;
+        &--content{
+            margin-bottom: 0px;
+        }
+    }
+}
+@media(min-width: 1024px){
+    .about__container{
+        width: 60%;
+        padding: 35px;
+    }
+}
+@media(min-width: 1440px){
+    .about__container{
+        width: 45%;
     }
 }

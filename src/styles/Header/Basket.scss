@@ -122,3 +122,16 @@
         }
     }
 }
+@media(min-width: 2560px){
+    .basket{
+        &__content{
+            justify-content: flex-start;
+            &--items{
+                div{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
