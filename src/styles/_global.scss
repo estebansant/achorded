@@ -33,3 +33,8 @@ main{
     background: colors.$secondary-black;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 }
+@media(min-width: 2560px){
+    main{
+        min-height: calc(100vh - 63px - 10vh);
+    }
+}

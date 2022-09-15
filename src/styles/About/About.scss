@@ -1,3 +1,31 @@
 @use "@styles/variables/colors";
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
+
+.about__container{
+    width: 80%;
+    height: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    &--title{
+        font-family: fonts.$title;
+        font-size: size.$title;
+        font-weight: bold;
+        color: colors.$white;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    &--content{
+        font-family: fonts.$text;
+        font-size: size.$text;
+        font-weight: 500;
+        color: colors.$light-white;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+}
+@media(min-width: 768px){
+    .about__container--content{
+        margin-bottom: 0px;
+    }
+}

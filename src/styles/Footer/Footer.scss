@@ -11,6 +11,9 @@
     align-items: center;
     background-color: colors.$main-black;
     padding: 10px;
+    z-index: 100;
+    position: absolute;
+    margin-top: -30px;
     &__contact{
         display: flex;
         flex-direction: column;
@@ -56,6 +59,10 @@
     }
 }
 @media(min-width: 768px){
+    .footer{
+        margin-top: 0px;
+        position: static;
+    }
     .footer__list--item:hover{
         text-decoration: underline;
     }
