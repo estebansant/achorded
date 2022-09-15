@@ -24,7 +24,7 @@ const RightMenu = ({cart, price, changeAmount, removeItem}) => {
                 <ul className="navigation__right">
 
                 <li className="about">
-                    <a href="/about">About Us</a>
+                    <a href="/about">About</a>
                 </li>
 
                 <li className="profile">

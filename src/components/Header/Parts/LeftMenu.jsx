@@ -80,6 +80,12 @@ const LeftMenu = () => {
                                 <a href="/accessories" className="hidden__navigation--left__item">
                                     <li>Accessories</li>
                                 </a>
+                                <a href="/about" className="hidden__navigation--left__item">
+                                    <li>About</li>
+                                </a>
+                                <a href="/questions" className="hidden__navigation--left__item">
+                                    <li>FAQs</li>
+                                </a>
                             </ul>
                         </motion.div>
                         }
