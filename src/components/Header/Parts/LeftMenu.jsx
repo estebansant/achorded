@@ -71,21 +71,21 @@ const LeftMenu = () => {
                                     </AnimatePresence>
                                 </li>
                                 
-                                <a href="/electric-guitars" className="hidden__navigation--left__item">
-                                    <li>Electric Guitars</li>
-                                </a>
-                                <a href="/acoustic-guitars" className="hidden__navigation--left__item">
-                                    <li>Acoustic Guitars</li>
-                                </a>
-                                <a href="/accessories" className="hidden__navigation--left__item">
-                                    <li>Accessories</li>
-                                </a>
-                                <a href="/about" className="hidden__navigation--left__item">
-                                    <li>About</li>
-                                </a>
-                                <a href="/questions" className="hidden__navigation--left__item">
-                                    <li>FAQs</li>
-                                </a>
+                                <li className="hidden__navigation--left__item">
+                                    <a href="/electric-guitars">Electric Guitars</a>
+                                </li>
+                                <li className="hidden__navigation--left__item">
+                                    <a href="/acoustic-guitars">Acoustic Guitars</a>
+                                </li>
+                                <li className="hidden__navigation--left__item">
+                                    <a href="/accessories">Accessories</a>
+                                </li>
+                                <li className="hidden__navigation--left__item">
+                                    <a href="/about">About</a>
+                                </li>
+                                <li className="hidden__navigation--left__item">
+                                    <a href="/questions">FAQs</a>
+                                </li>
                             </ul>
                         </motion.div>
                         }
