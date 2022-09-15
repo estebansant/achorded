@@ -5,23 +5,24 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__contact">
-        <p>Contact me:</p>
-        <ul>
-          <li>
-              <p>E-mail</p>
+        <p className="footer__contact--title">Liked my work?</p>
+        <p className="footer__contact--subtitle">Contact me:</p>
+        <ul className="footer__list">
+          <li className="footer__list--mail">
+              <p>E-mail:</p>
               <p>estebansant30@gmail.com</p>
           </li>
-          <li>
+          <li className="footer__list--item">
             <a href="https://www.linkedin.com/in/esteban-s-25b76113a">
               <p>LinkedIn</p>
             </a>
           </li>
-          <li>
+          <li className="footer__list--item">
             <a href="https://github.com/estebansant">
               <p>GitHub</p>
             </a>
           </li>
-          <li>
+          <li className="footer__list--item">
             <a href="https://twitter.com/esteban_sant30">
               <p>Twitter</p>
             </a>
@@ -30,18 +31,18 @@ const Footer = () => {
       </div>
 
       <div className="footer__sections">
-        <ul>
-          <li>
+        <ul className="footer__list">
+          <li className="footer__list--item">
             <a href="/electric-guitars">
               <p>Electric guitars</p>
             </a>
           </li>
-          <li>
+          <li className="footer__list--item">
             <a href="/acoustic-guitars">
               <p>Acoustic guitars</p>
             </a>
           </li>
-          <li>
+          <li className="footer__list--item">
             <a href="/accessories">
               <p>Accessories</p>
             </a>
@@ -50,13 +51,13 @@ const Footer = () => {
       </div>
 
       <div className="footer__information">
-        <ul>
-          <li>
+        <ul className="footer__list">
+          <li className="footer__list--item">
             <a href="/about">
               <p>About</p>
             </a>
           </li>
-          <li>
+          <li className="footer__list--item">
             <a href="/questions">
               <p>FAQs</p>
             </a>

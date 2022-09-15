@@ -1,3 +1,62 @@
 @use "@styles/variables/colors";
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
+
+.footer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: colors.$main-black;
+    padding: 10px;
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        &--title{
+            font-size: size.$text;
+            font-family: fonts.$text;
+            color: colors.$white;
+            margin-top: 25px;
+        }
+        &--subtitle{
+            font-size: 1.4rem;
+            font-family: fonts.$text;
+            color: colors.$white;
+            margin-bottom: 10px;
+        }
+    }
+}
+.footer__list--mail{
+    margin-bottom: 5px;
+    p{
+        font-size: 1.2rem;
+        font-family: fonts.$text;
+        color: colors.$light-white;
+    }
+}
+.footer__list{
+    list-style: none;
+    margin-bottom: 15px;
+    &--item{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        a{
+            text-decoration: none;
+            color: colors.$white;
+            p{
+                font-size: 1.4rem;
+                font-family: fonts.$text;
+                color: colors.$light-white;
+            }
+        }
+    }
+}
+@media(min-width: 768px){
+    .footer__list--item:hover{
+        text-decoration: underline;
+    }
+}
