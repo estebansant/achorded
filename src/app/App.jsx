@@ -8,6 +8,9 @@ import { useInitialState } from './useInitialState.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '../containers/Layout';
 import { Header } from '@components/Header/Header.jsx';
+import { LeftMenu } from '../components/Header/Parts/LeftMenu.jsx';
+import { MainLogo } from '../components/Header/Parts/MainLogo.jsx';
+import { RightMenu } from '../components/Header/Parts/RightMenu.jsx';
 import { Footer } from '@components/Footer/Footer.jsx';
 import { Login } from '../pages/Login';
 import { Home } from '../pages/Home';
@@ -72,12 +75,16 @@ const App = () => {
   return (
       <BrowserRouter>
         <Layout>
-          <Header
-            cart={cart}
-            price={price}
-            changeAmount={changeAmount}
-            removeItem={removeItem}
-          />
+          <Header>
+            <LeftMenu />
+            <MainLogo />
+            <RightMenu
+              cart={cart}
+              price={price}
+              changeAmount={changeAmount}
+              removeItem={removeItem}
+            />
+          </Header>
           <Routes>
             {/* Website pages routes */}
               <Route exact path="/" element={<Home />} />
@@ -87,13 +94,8 @@ const App = () => {
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/checkout" element={<Checkout />} />
               <Route exact path="/questions" element={<Faqs />} />
-              <Route exact path="/accessories" element={<Accessories>
-                <AccessoriesDisplay
-                  addToCart={addToCart}
-                  added={added}
-                  addItem={addItem}
-                />
-              </Accessories>} />
+
+              {/* Product Display pages */}
               <Route exact path="/electric-guitars" element={<ElectricGuitars>
                 <ElectricDisplay
                   addToCart={addToCart}
@@ -109,6 +111,13 @@ const App = () => {
                   addItem={addItem}
                 />
               </AcousticGuitars>} />
+              <Route exact path="/accessories" element={<Accessories>
+                <AccessoriesDisplay
+                  addToCart={addToCart}
+                  added={added}
+                  addItem={addItem}
+                />
+              </Accessories>} />
 
               {/* Electric guitars routes */}
               <Route exact path="/electric-guitars/stratocaster-as" element={<StratocasterAS
