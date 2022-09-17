@@ -16,14 +16,12 @@ module.exports = {
             '@components': path.resolve(__dirname, 'src/components/'),
             '@containers': path.resolve(__dirname, 'src/containers/'),
             '@pages': path.resolve(__dirname, 'src/pages/'),
-            '@products': path.resolve(__dirname, 'src/pages/products/'),
+            '@products': path.resolve(__dirname, 'src/pages/sections/products/'),
             '@sections': path.resolve(__dirname, 'src/pages/sections/'),
             '@styles': path.resolve(__dirname, 'src/styles/'),
             '@icons': path.resolve(__dirname, 'src/assets/icons/'),
             '@images': path.resolve(__dirname, 'src/assets/images/'),
             '@logo': path.resolve(__dirname, 'src/assets/logo/'),
-            '@context': path.resolve(__dirname, 'src/context/'),
-            '@hooks': path.resolve(__dirname, 'src/hooks/')
         }
     },
     mode: 'production',

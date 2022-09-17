@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '@styles/Checkout/Checkout.scss';
 
-const Checkout = () => {
+const Checkout = ({children}) => {
   return (
     <main>
-      <h1>Checkout</h1>
+      <section className='checkout__container'>
+        {children}
+      </section>
     </main>
   )
 }

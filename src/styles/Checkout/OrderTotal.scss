@@ -1,0 +1,11 @@
+@use "@styles/variables/colors";
+@use "@styles/variables/size";
+@use "@styles/variables/fonts";
+
+.total{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
