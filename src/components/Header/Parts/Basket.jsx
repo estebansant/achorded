@@ -12,12 +12,12 @@ const Basket = ({cart, onToggleBasket, price, changeAmount, removeItem}) => {
                 <img src={x} alt="close" className="x__container--image" onClick={onToggleBasket}/>
             </div>
 
-            <div className="basket__header">
-                <h4 className="basket__header--title">My Cart</h4>
-            </div>
-
-            
             <div className="basket__scroll">
+
+                <div className="basket__header">
+                    <h4 className="basket__header--title">My Cart</h4>
+                </div>
+                
                 <div className="basket__content">
                     <AnimatePresence>
                         {cart.length === 0 &&

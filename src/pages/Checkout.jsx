@@ -3,8 +3,8 @@ import '@styles/Checkout/Checkout.scss';
 
 const Checkout = ({children}) => {
   return (
-    <main>
-      <section className='checkout__container'>
+    <main className="checkout__main">
+      <section className="checkout__container">
         {children}
       </section>
     </main>

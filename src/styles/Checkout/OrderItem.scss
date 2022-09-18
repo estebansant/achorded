@@ -2,3 +2,109 @@
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
 
+.order__card{
+    width: 100%;
+    height: 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    // background: linear-gradient(140deg, rgba(22,20,20,1) 0%, rgba(25,30,37,1) 62%, rgba(36,45,53,1) 100%);
+    // box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid colors.$light-white;
+    padding-bottom: 15px;
+    &--item{
+        width: 73%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        transform: translate(-10px, 0px);
+        &__image{
+            width: 28%;
+            max-width: 109px;
+            height: 100%;
+            max-height: 185px;
+            rotate: -15deg;
+            transform: translate(0px, -20px);
+            margin-right: 10px;
+        }
+        &__details{
+            height: 100%;
+            width: 60%;
+            margin-left: -10px;
+            h4{
+                font-size: size.$secondary-subtitle;
+                font-family: fonts.$title;
+                font-weight: bold;
+                color: colors.$white;
+            }
+            p{
+                font-size: size.$text;
+                font-family: fonts.$text;
+                font-weight: 500;
+                color: colors.$light-white;
+                margin-bottom: 15px;
+            }
+        }
+        &__quantity{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: -10px;
+            &--minus{
+                width: 25px;
+                height: 25px;
+                color: colors.$white;
+                background-color: #c12a2a;
+                border: 2px solid colors.$main-black;
+                border-radius: 5px;
+            }
+            &--amount{
+                color: colors.$light-white;
+                font-family: fonts.$text;
+                font-size: size.$secondary-subtitle;
+                font-weight: 500;
+            }
+            &--plus{
+                width: 25px;
+                height: 25px;
+                color: colors.$white;
+                background-color: #2a48c1;
+                border: 2px solid colors.$main-black;
+                border-radius: 5px;
+            }
+        }
+    }
+    &--trash{
+        width: 35px;
+        height: 50px;
+        &__image{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.order__card--trash:hover{
+    cursor: pointer;
+}
+.order__card--item__quantity--minus{
+    cursor: pointer;
+}
+.order__card--item__quantity--plus{
+    cursor: pointer;
+}
+@media(min-width: 768px){
+    .order__card{
+        margin-bottom: 0px;
+        &--item{
+            &__image{
+                rotate: -18deg;
+                transform: translate(-10px, -20px);
+            }
+        }
+    }
+}

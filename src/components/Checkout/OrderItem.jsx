@@ -1,5 +1,5 @@
 import React from 'react';
-import '@styles/Header/BasketItem.scss';
+import '@styles/Checkout/OrderItem.scss';
 import trash from '@icons/trash.svg';
 
 const OrderItem = ({product, removeItem, changeAmount}) => {

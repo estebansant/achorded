@@ -2,6 +2,15 @@
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
 
+.checkout__main{
+    min-height: calc(100vh - 63px - 15vh);
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    min-width: 320px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
 .checkout__container{
     width: 100%;
     height: 100%;
@@ -9,9 +18,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: colors.$main-black;
+    border-bottom: 2px solid colors.$light-white;
 }
 @media(min-width:768px){
     .checkout__container{
         flex-direction: row;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: flex-start;
     }
 }
