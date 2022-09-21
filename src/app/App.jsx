@@ -102,6 +102,7 @@ const App = () => {
                 />
                 <OrderTotal 
                   price={price}
+                  cart={cart}
                 />
               </Checkout>} />
               <Route exact path="/questions" element={<Faqs />} />

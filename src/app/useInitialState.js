@@ -6,7 +6,7 @@ const dataLocalStorage = JSON.parse(localStorage.getItem('GUITARS_DATA') || JSON
 
 const useInitialState = () => {
     const [cart, setCart] = React.useState(cartLocalStorage);
-    const [price, setPrice] = React.useState(cartLocalStorage);
+    const [price, setPrice] = React.useState(0);
     const [added, setAdded] = React.useState(dataLocalStorage);
 
     React.useEffect(() => {

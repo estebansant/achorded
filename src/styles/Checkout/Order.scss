@@ -4,7 +4,7 @@
 
 .order{
     width: 100%;
-    height: 95vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,4 +29,19 @@
 }
 .order__scroll::-webkit-scrollbar {
     display: none;
+}
+@media(min-width: 768px){
+    .order{
+        height: 95vh;
+    }
+}
+@media(min-width: 1024px){
+    .order{
+        height: 80vh;
+    }
+}
+@media(min-width: 1440px){
+    .order{
+        height: 90vh;
+    }
 }
