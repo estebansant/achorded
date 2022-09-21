@@ -95,11 +95,14 @@
 }
 @media(min-width: 768px){
     .basket__card{
+        min-height: 165px;
+        max-height: 200px;
         margin-bottom: 40px;
         &--item{
             &__image{
                 rotate: -18deg;
-                transform: translate(-10px, -20px);
+                width: 35%;
+                transform: translate(0px, -10px);
             }
         }
     }
