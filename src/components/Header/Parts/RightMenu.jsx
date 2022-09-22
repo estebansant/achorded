@@ -55,7 +55,7 @@ const RightMenu = ({cart, price, changeAmount, removeItem}) => {
                                         <a href="/orders">My orders</a>
                                     </li>
                                     <li className="inner__menu--item">
-                                        <p>Log out</p>
+                                        <a href="/">Log out</a>
                                     </li>
                                     </ul>
                                 </motion.div>

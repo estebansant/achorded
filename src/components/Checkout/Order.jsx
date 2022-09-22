@@ -6,6 +6,14 @@ import '@styles/Checkout/Order.scss';
 const Order = ({cart, changeAmount, removeItem}) => {
   return (
     <section className="order">
+        {cart.length === 0 &&
+            <div className="order__empty">
+                <p className="order__empty--message">You haven't added any item to your cart. 
+                    <br /><br />
+                    <a href="/electric-guitars" className="order__empty--message__link">Browse our shop</a> and pick whatever you like. Those items will appear here once you have added them to the cart.
+                </p>
+            </div>
+        }
         <div className="order__scroll">
             <AnimatePresence>
                 {cart.map(product => (

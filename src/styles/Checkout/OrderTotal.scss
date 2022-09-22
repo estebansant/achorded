@@ -22,11 +22,17 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 12px;
-            p{
+            &__subtotal{
                 font-family: fonts.$text;
                 font-size: size.$text;
                 font-weight: 500;
                 color: colors.$light-white;
+            }
+            &__total{
+                font-family: fonts.$text;
+                font-size: size.$secondary-subtitle;
+                font-weight: bold;
+                color: colors.$white;
             }
         }
     }
@@ -104,6 +110,62 @@
     width: 15px;
     height: 15px;
 }
+.modal__background{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal{
+    position: absolute;
+    width: 80vw;
+    max-width: 400px;
+    height: fit-content;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: colors.$secondary-red;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    text-align: center;
+    &__x{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        margin-bottom: 15px;
+        &--image{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__title{
+        width: 80%;
+        font-size: size.$subtitle;
+        font-family: fonts.$title;
+        font-weight: bold;
+        color: colors.$white;
+        margin: 0 auto 20px auto;
+    }
+    &__message{
+        font-size: size.$text;
+        font-family: fonts.$text;
+        font-weight: 500;
+        color: colors.$white;
+        margin-bottom: 20px;
+        &--link{
+            color: colors.$light-white;
+            text-decoration: underline;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
 @media(min-width: 768px){
     .total{
         width: 60%;
@@ -112,6 +174,16 @@
     }
     .payment{
         height: 100%;
+    }
+    .payment__container--option:hover{
+        cursor: pointer;
+    }
+    .payment__submit:hover{
+        cursor: pointer;
+    }
+    .modal__message--link:hover{
+        cursor: pointer;
+        color: colors.$white;
     }
 }
 @media(min-width: 1024px){
