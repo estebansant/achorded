@@ -16,8 +16,8 @@ const OrderTotal = ({price, cart}) => {
   const onToggleOrdered = (event) => {
     setOrdered(!ordered);
   }
-  const handleCheckout = (event, cart) => {
-    event.preventDefault();
+  const handleCheckout = (cart) => {
+    
   }
 
   return (

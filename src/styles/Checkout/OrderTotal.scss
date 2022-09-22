@@ -185,6 +185,9 @@
         cursor: pointer;
         color: colors.$white;
     }
+    .modal__x:hover{
+        cursor: pointer;
+    }
 }
 @media(min-width: 1024px){
     .total{
