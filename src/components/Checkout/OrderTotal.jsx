@@ -5,9 +5,9 @@ import paypal from '@icons/paypal.svg';
 import card from '@icons/credit-card.svg';
 import x from '@icons/x_icon.svg';
 
-const OrderTotal = ({price, cart}) => {
+const OrderTotal = ({price, cart, addOrders, setCart}) => {
 
-  const [ordered, setOrdered] = React.useState(false);
+  const [payed, setPayed] = React.useState(false);
   const [emptyCheckout, setEmptyCheckout] = React.useState(false);
 
   const handleSubmit = (event) => {
@@ -17,19 +17,22 @@ const OrderTotal = ({price, cart}) => {
     if(cart.length === 0){   
       setEmptyCheckout(true);
     } else {
-      setOrdered(!ordered);
+      setPayed(!payed);
     }
   }
 
-  const onToggleOrdered = () => {
-    setOrdered(!ordered);
+  const onTogglePayed = () => {
+    setPayed(!payed);
   }
   const onToggleEmptyCheckout = () => {
     setEmptyCheckout(!emptyCheckout);
   }
 
-  const handleCheckout = (cart) => {
-    
+  const handleCheckout = (payload) => {
+    addOrders(payload)
+    setTimeout(() => {
+      setCart([])
+    }, 0)
   }
 
   return (
@@ -91,7 +94,7 @@ const OrderTotal = ({price, cart}) => {
         </form>
 
         <AnimatePresence>
-          {ordered &&
+          {payed &&
           <motion.div 
             key="background"
             initial={{ opacity: 0 }}
@@ -114,7 +117,7 @@ const OrderTotal = ({price, cart}) => {
               className="modal"
             >
               <div className="modal__x">
-                <img src={x} alt="close" className="modal__x--image" onClick={onToggleOrdered}/>
+                <img src={x} alt="close" className="modal__x--image" onClick={onTogglePayed}/>
               </div>
                 <h3 className="modal__title">Thanks for your purchase!</h3>
                 <p className="modal__message">You can see the orders you have placed in the "<a href="/orders" className="modal__message--link">my orders</a>" page. Click the link to see what you have bought.

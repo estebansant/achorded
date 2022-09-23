@@ -3,11 +3,13 @@ import { ItemData } from '@pages/sections/products/ProductData/ItemData';
 
 const cartLocalStorage = JSON.parse(localStorage.getItem('GUITARS_V1') || '[]');
 const dataLocalStorage = JSON.parse(localStorage.getItem('GUITARS_DATA') || JSON.stringify(ItemData));
+const ordersLocalStorage = JSON.parse(localStorage.getItem('ORDERS') || '[]');
 
 const useInitialState = () => {
     const [cart, setCart] = React.useState(cartLocalStorage);
     const [price, setPrice] = React.useState(0);
     const [added, setAdded] = React.useState(dataLocalStorage);
+    const [orders, setOrders] = React.useState(ordersLocalStorage);
 
     React.useEffect(() => {
 
@@ -18,6 +20,14 @@ const useInitialState = () => {
     React.useEffect(() => {
         localStorage.setItem('GUITARS_DATA', JSON.stringify(added));
     }, [added])
+
+    React.useEffect(() => {
+      localStorage.setItem('ORDERS', JSON.stringify(orders));
+    }, [orders])
+
+    const addOrders = (payload) => {
+      setOrders([...orders, payload]);
+    }
 
     const addToCart = (payload) => {
         const duplicates = cart.findIndex(object => object.id === payload.id);
@@ -85,8 +95,11 @@ const useInitialState = () => {
         added,
         addItem,
         addToCart,
+        addOrders,
         changeAmount,
         removeItem,
+        orders,
+        setCart,
     };
 }
 

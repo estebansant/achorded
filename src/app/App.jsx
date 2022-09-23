@@ -68,10 +68,13 @@ const App = () => {
     cart,
     price,
     added,
+    orders,
     addItem,
     addToCart,
+    addOrders,
     changeAmount,
     removeItem,
+    setCart,
   } = useInitialState();
 
   return (
@@ -91,7 +94,11 @@ const App = () => {
             {/* Website pages routes */}
               <Route exact path="/" element={<Home />} />
               <Route exact path="/about" element={<About />} />
-              <Route exact path="/orders" element={<MyOrders />} />
+              <Route exact path="/orders"
+              element={<MyOrders 
+                orders={orders}
+                cart={cart}
+              />} />
               <Route exact path="/signup" element={<SignUp />} />
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/checkout" element={<Checkout>
@@ -103,6 +110,8 @@ const App = () => {
                 <OrderTotal 
                   price={price}
                   cart={cart}
+                  addOrders={addOrders}
+                  setCart={setCart}
                 />
               </Checkout>} />
               <Route exact path="/questions" element={<Faqs />} />
