@@ -138,7 +138,12 @@ const StratocasterAS = ({ addToCart, added, addItem }) => {
 
                     <div className="price">
                       <div className="price__container">
-                        <button className="price__button--buy">Buy Now</button>
+                        <a className="price__button--buy"
+                          onClick={() => {onHandleCart(product); addItem(product.id)}}
+                          href="/checkout"
+                        >
+                          Buy Now
+                        </a>
                         
                         <AnimatePresence>
                           {product.inCart &&

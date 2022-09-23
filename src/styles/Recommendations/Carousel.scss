@@ -65,7 +65,7 @@
             margin-top: 20px;
         }
         &--image{
-            width: 64%;
+            width: 179px;
             min-height: 450px;
             max-height: 450px;
             height: auto;
@@ -113,6 +113,9 @@
     }
     .right__arrow{
         right: 30px;
+    }
+    .slides__link--image{
+        width: 64%;
     }
     .slides:hover{
         transform: scale(1.06);

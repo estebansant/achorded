@@ -118,7 +118,12 @@ const SpiderPlectrum = ({ addToCart, added, addItem }) => {
 
                   <div className="priceB">
                       <div className="priceB__container">
-                        <button className="priceB__button--buy">Buy Now</button>
+                        <a className="priceB__button--buy"
+                          onClick={() => {onHandleCart(product); addItem(product.id)}}
+                          href="/checkout"
+                        >
+                          Buy Now
+                        </a>
                         
                         <AnimatePresence>
                           {product.inCart &&
