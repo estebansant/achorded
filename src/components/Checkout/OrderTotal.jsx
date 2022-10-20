@@ -29,7 +29,12 @@ const OrderTotal = ({price, cart, addOrders, setCart}) => {
   }
 
   const handleCheckout = (payload) => {
-    addOrders(payload)
+
+    if(payload.length === 0){
+    } else{
+      addOrders(payload)
+    }
+    
     setTimeout(() => {
       setCart([])
     }, 0)
@@ -53,7 +58,7 @@ const OrderTotal = ({price, cart, addOrders, setCart}) => {
           </div>
         </div>
 
-        <form className="payment" onSubmit={handleSubmit}>
+        <form className="payment" onSubmit={() => {handleSubmit(event) ; handleCheckout(cart)}}>
           <div className="payment__wrapper">
             <label className="payment__title">Select payment method:</label>
             <section className="payment__methods">
@@ -90,7 +95,7 @@ const OrderTotal = ({price, cart, addOrders, setCart}) => {
             </section>
           </div>
           
-          <input type="submit" value="Make payment" className="payment__submit" onSubmit={() => handleCheckout(cart)}/>
+          <input type="submit" value="Make payment" className="payment__submit"/>
         </form>
 
         <AnimatePresence>
