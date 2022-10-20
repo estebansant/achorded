@@ -90,7 +90,7 @@ const OrderTotal = ({price, cart, addOrders, setCart}) => {
             </section>
           </div>
           
-          <input type="submit" value="Make payment" className="payment__submit" onClick={() => handleCheckout(cart)}/>
+          <input type="submit" value="Make payment" className="payment__submit" onSubmit={() => handleCheckout(cart)}/>
         </form>
 
         <AnimatePresence>
