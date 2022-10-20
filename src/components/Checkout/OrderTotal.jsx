@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion, AnimatePresence } from "framer-motion";
+import { ItemData } from '@pages/sections/products/ProductData/ItemData';
 import '@styles/Checkout/OrderTotal.scss';
 import paypal from '@icons/paypal.svg';
 import card from '@icons/credit-card.svg';
 import x from '@icons/x_icon.svg';
 
-const OrderTotal = ({price, cart, addOrders, setCart}) => {
+const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
 
   const [payed, setPayed] = React.useState(false);
   const [emptyCheckout, setEmptyCheckout] = React.useState(false);
@@ -37,6 +38,7 @@ const OrderTotal = ({price, cart, addOrders, setCart}) => {
     
     setTimeout(() => {
       setCart([])
+      setAdded(ItemData)
     }, 0)
   }
 

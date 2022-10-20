@@ -45,9 +45,9 @@ const AccessoriesDisplay = ({ addToCart, added, addItem }) => {
                                 animate={{ opacity: 1, y: "0%" }}
                                 exit={{ opacity: 0.2,
                                         x: "120%",
-                                        transition: {duration: 0.1}
+                                        transition: {duration: 0.15}
                                     }}
-                                transition={{ duration: 0.05, ease: "easeInOut" }}
+                                transition={{ duration: 0.2, ease: "easeInOut" }}
                                 className="grid__cards--button__check"
                                 onClick={() => {onHandleCart(card); addItem(card.id)}}
                               >
@@ -61,9 +61,9 @@ const AccessoriesDisplay = ({ addToCart, added, addItem }) => {
                                 animate={{ opacity: 1, y: "0%" }}
                                 exit={{ opacity: 0.2,
                                         scale: "0%",
-                                        transition: {duration: 0.1}
+                                        transition: {duration: 0.15}
                                     }}
-                                transition={{ duration: 0.05, ease: "easeInOut" }}                        
+                                transition={{ duration: 0.2, ease: "easeInOut" }}                        
                                 className="grid__cards--button"
                                 onClick={() => {onHandleCart(card); addItem(card.id)}}
 

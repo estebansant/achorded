@@ -100,6 +100,7 @@ const useInitialState = () => {
         removeItem,
         orders,
         setCart,
+        setAdded,
     };
 }
 

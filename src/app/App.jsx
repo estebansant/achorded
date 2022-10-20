@@ -75,6 +75,7 @@ const App = () => {
     changeAmount,
     removeItem,
     setCart,
+    setAdded,
   } = useInitialState();
 
   return (
@@ -112,7 +113,7 @@ const App = () => {
                   cart={cart}
                   addOrders={addOrders}
                   setCart={setCart}
-                />
+                  setAdded={setAdded}/>
               </Checkout>} />
               <Route exact path="/questions" element={<Faqs />} />
 
