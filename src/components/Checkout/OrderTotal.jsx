@@ -34,7 +34,7 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
 
     let calendar = new Date();
     let time = calendar.getHours() + ':' + calendar.getMinutes() + ':' + calendar.getSeconds();
-    let date = calendar.getFullYear() + '-' + (calendar.getMonth() + 1) + '-' + calendar.getDate();
+    let date = calendar.getDate() + '/' + (calendar.getMonth() + 1) + '/' + calendar.getFullYear();
 
     if(payload.length === 0){
     } else{
@@ -44,7 +44,7 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
         hour: time,
         amount: price,
         payment: method,
-        items: payload
+        items: payload,
       }
 
       addOrders(update)
@@ -87,7 +87,7 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
                   <input
                     type="radio"
                     name="payment"
-                    value="paypal"
+                    value="PayPal"
                     className="checkbox"
                     onChange={e=>setMethod(e.target.value)}
                     required
@@ -103,7 +103,7 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
                   <input
                     type="radio"
                     name="payment"
-                    value="card"
+                    value="Credit card/Debit card"
                     className="checkbox"
                     onChange={e=>setMethod(e.target.value)}
                     required
@@ -143,7 +143,7 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
                 <img src={x} alt="close" className="modal__x--image" onClick={onTogglePayed}/>
               </div>
                 <h3 className="modal__title">Thanks for your purchase!</h3>
-                <p className="modal__message">You can see the orders you have placed in the "<a href="/orders" className="modal__message--link">my orders</a>" page. Click the link to see what you have bought.
+                <p className="modal__message">You can see the orders you have placed in the "<a href="/orders" className="modal__message--link">My Orders</a>" page. Click the link to see what you have bought.
                 </p>
             </motion.div>
           </motion.div>
