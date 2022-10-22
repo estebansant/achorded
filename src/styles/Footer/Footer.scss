@@ -35,8 +35,8 @@
 }
 .footer__list--mail{
     margin-bottom: 5px;
-    p{
-        font-size: 1.2rem;
+    a{
+        font-size: 1.4rem;
         font-family: fonts.$text;
         color: colors.$light-white;
     }
@@ -64,6 +64,9 @@
         position: static;
     }
     .footer__list--item:hover{
+        text-decoration: underline;
+    }
+    .footer__list--mail:hover{
         text-decoration: underline;
     }
 }

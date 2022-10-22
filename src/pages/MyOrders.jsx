@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion, AnimatePresence } from "framer-motion";
 import '@styles/Orders/MyOrders.scss';
 
 const MyOrders = ({orders, cart}) => {
@@ -16,19 +15,17 @@ const MyOrders = ({orders, cart}) => {
                 <div className="myorder__left--items">
                   <input type="checkbox" className="myorder__left--items__checkbox"/>
                   <p className="myorder__left--items__text">Show items ({bought.items.length})</p>
-                  <AnimatePresence>
+                  <div className="myorder__products">
                     {bought.items &&
-                      <motion.div className="myorder__products">
-                        {bought.items.map((item, i) => {
+                        bought.items.map((item, i) => {
                           return(
                             <div key={i}>
                               {item.title}
                             </div>
                           )
-                        })}
-                      </motion.div>
+                        })
                     }
-                  </AnimatePresence>
+                  </div>
                 </div>
               </div>
               <div className="myorder__right">

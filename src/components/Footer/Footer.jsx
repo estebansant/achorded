@@ -9,8 +9,7 @@ const Footer = () => {
         <p className="footer__contact--subtitle">Contact me:</p>
         <ul className="footer__list">
           <li className="footer__list--mail">
-              <p>E-mail:</p>
-              <p>estebansant30@gmail.com</p>
+              <a href="mailto:estebansant30@gmail.com">Send me an E-mail</a>
           </li>
           <li className="footer__list--item">
             <a href="https://www.linkedin.com/in/esteban-s-25b76113a">
@@ -45,6 +44,11 @@ const Footer = () => {
           <li className="footer__list--item">
             <a href="/accessories">
               <p>Accessories</p>
+            </a>
+          </li>
+          <li className="footer__list--item">
+            <a href="/orders">
+              <p>My orders</p>
             </a>
           </li>
         </ul>
