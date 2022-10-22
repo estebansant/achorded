@@ -1,3 +1,12 @@
 @use "@styles/variables/colors";
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
+
+.myorder__products{
+    display: none;
+}
+.myorder__left--items__checkbox:checked~.myorder__products{
+    display:block;
+    width: 300px;
+    color: white;
+}
