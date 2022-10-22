@@ -10,6 +10,7 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
 
   const [payed, setPayed] = React.useState(false);
   const [emptyCheckout, setEmptyCheckout] = React.useState(false);
+  const [method, setMethod] = React.useState();
 
   const handleSubmit = (event) => {
 
@@ -31,9 +32,22 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
 
   const handleCheckout = (payload) => {
 
+    let calendar = new Date();
+    let time = calendar.getHours() + ':' + calendar.getMinutes() + ':' + calendar.getSeconds();
+    let date = calendar.getFullYear() + '-' + (calendar.getMonth() + 1) + '-' + calendar.getDate();
+
     if(payload.length === 0){
     } else{
-      addOrders(payload)
+
+      let update={
+        day: date,
+        hour: time,
+        amount: price,
+        payment: method,
+        items: payload
+      }
+
+      addOrders(update)
     }
     
     setTimeout(() => {
@@ -75,6 +89,7 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
                     name="payment"
                     value="paypal"
                     className="checkbox"
+                    onChange={e=>setMethod(e.target.value)}
                     required
                   />
                 </label>
@@ -90,6 +105,7 @@ const OrderTotal = ({price, cart, addOrders, setCart, setAdded}) => {
                     name="payment"
                     value="card"
                     className="checkbox"
+                    onChange={e=>setMethod(e.target.value)}
                     required
                   />
                 </label>
