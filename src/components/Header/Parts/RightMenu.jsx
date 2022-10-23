@@ -23,10 +23,6 @@ const RightMenu = ({cart, price, changeAmount, removeItem}) => {
             <div className="Header__container--right">
                 <ul className="navigation__right">
 
-                <li className="about">
-                    <a href="/about">About</a>
-                </li>
-
                 <li className="profile">
                     <div className="profile__container">
 
@@ -63,6 +59,10 @@ const RightMenu = ({cart, price, changeAmount, removeItem}) => {
                             }
                         </AnimatePresence>
                     </div>
+                </li>
+                
+                <li className="about">
+                    <a href="/about">About</a>
                 </li>
 
                 <li className="question__icon">

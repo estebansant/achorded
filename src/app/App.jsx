@@ -98,7 +98,6 @@ const App = () => {
               <Route exact path="/orders"
               element={<MyOrders 
                 orders={orders}
-                cart={cart}
               />} />
               <Route exact path="/signup" element={<SignUp />} />
               <Route exact path="/login" element={<Login />} />

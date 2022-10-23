@@ -2,11 +2,148 @@
 @use "@styles/variables/size";
 @use "@styles/variables/fonts";
 
-.myorder__products{
-    display: none;
+.main__section--wrapper{
+    width: 100%;
+    height: 100%;
 }
-.myorder__left--items__checkbox:checked~.myorder__products{
-    display:block;
-    width: 300px;
-    color: white;
+.main__title{
+    font-size: size.$title;
+    font-family: fonts.$title;
+    font-weight: bold;
+    color: colors.$white;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.myorder__wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.myorder{
+    width: 100%;
+    min-height: 45px;
+    height: fit-content;
+    border-top: 2px solid colors.$light-white;
+    padding: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    &__title{
+        font-size: size.$subtitle;
+        font-family: fonts.$title;
+        font-weight: bold;
+        color: colors.$white;
+        margin-bottom: 8px;
+    }
+    &__message{
+        font-size: size.$text;
+        font-family: fonts.$text;
+        font-weight: 400;
+        color: colors.$light-white;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    &__content--container{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+    }
+    &__left{
+        width: 60%;
+        height: fit-content;
+        transition: all 0.3s ease-in-out;
+        &--date{
+            font-size: size.$text;
+            font-family: fonts.$text;
+            font-weight: 400;
+            color: colors.$light-white;
+            margin-bottom: 8px;
+        }
+        &--items{
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &__arrow{
+                width: 16px;
+                height: 8px;
+                margin-right: 8px;
+                transform: rotate(0deg);
+                transition: all 0.4s ease-in-out;
+            }
+            &__text{
+                font-size: size.$text;
+                font-family: fonts.$text;
+                font-weight: 400;
+                color: colors.$light-white;
+            }
+            &__products{
+                width: 100%;
+                height: fit-content;
+                margin-top: 20px;
+                .product__card{
+                    width: 100%;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    border-top: 2px solid colors.$light-white;
+                    padding-top: 15px;
+                    margin-bottom: 10px;
+                    padding-left: 20px;
+                    &--image{
+                        width: 28%;
+                        max-width: 109px;
+                        height: 100%;
+                        max-height: 185px;
+                        rotate: -15deg;
+                        margin-right: 10px;
+                    }
+                    &--content{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        &__title{
+                            font-size: size.$subtitle;
+                            font-family: fonts.$title;
+                            font-weight: bold;
+                            color: colors.$white;
+                        }
+                        &__text{
+                            font-size: size.$text;
+                            font-family: fonts.$text;
+                            font-weight: 400;
+                            color: colors.$light-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__right{
+        width: 50%;
+        height: fit-content;
+        &--content{
+            font-size: size.$text;
+            font-family: fonts.$text;
+            font-weight: 400;
+            color: colors.$light-white;
+            text-align: right;
+        }
+    }
+}
+.myorder__left--items:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: colors.$light-white;
 }
