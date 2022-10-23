@@ -79,7 +79,7 @@ const App = () => {
   } = useInitialState();
 
   return (
-      <HashRouter>
+      <HashRouter hashType="noslash">
         <Layout>
           <Header>
             <LeftMenu />
