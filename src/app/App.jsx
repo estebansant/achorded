@@ -79,7 +79,7 @@ const App = () => {
   } = useInitialState();
 
   return (
-      <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+      <BrowserRouter basename="/achorded">
         <Layout>
           <Header>
             <LeftMenu />
