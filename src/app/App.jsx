@@ -79,7 +79,7 @@ const App = () => {
   } = useInitialState();
 
   return (
-      <BrowserRouter basename={window.location.pathname || ''}>
+      <BrowserRouter basename="/acorded">
         <Layout>
           <Header>
             <LeftMenu />
