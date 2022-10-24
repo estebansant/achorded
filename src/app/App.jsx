@@ -5,7 +5,7 @@ import { useInitialState } from './useInitialState.js';
 
 // Website pages
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Layout } from '@containers/Layout';
 import { Header } from '@components/Header/Header.jsx';
 import { LeftMenu } from '@components/Header/Parts/LeftMenu.jsx';
@@ -79,7 +79,6 @@ const App = () => {
   } = useInitialState();
 
   return (
-      <BrowserRouter basename="/achorded">
         <Layout>
           <Header>
             <LeftMenu />
@@ -281,7 +280,6 @@ const App = () => {
           </Routes>
           <Footer />
         </Layout>
-      </BrowserRouter>
   )
 }
 
