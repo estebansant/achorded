@@ -93,7 +93,7 @@ const App = () => {
           </Header>
           <Routes>
             {/* Website pages routes */}
-              <Route exact path="" element={<Home />} />
+              <Route exact path="/" element={<Home />} />
               <Route exact path="/about" element={<About />} />
               <Route exact path="/orders"
               element={<MyOrders 
