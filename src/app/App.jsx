@@ -5,7 +5,7 @@ import { useInitialState } from './useInitialState.js';
 
 // Website pages
 
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from '@containers/Layout';
 import { Header } from '@components/Header/Header.jsx';
 import { LeftMenu } from '@components/Header/Parts/LeftMenu.jsx';
@@ -79,7 +79,7 @@ const App = () => {
   } = useInitialState();
 
   return (
-      <HashRouter>
+      <BrowserRouter basename={window.location.pathname || ''}>
         <Layout>
           <Header>
             <LeftMenu />
@@ -281,7 +281,7 @@ const App = () => {
           </Routes>
           <Footer />
         </Layout>
-      </HashRouter>
+      </BrowserRouter>
   )
 }
 
