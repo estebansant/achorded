@@ -21,11 +21,6 @@ const Footer = () => {
               <p>GitHub</p>
             </a>
           </li>
-          <li className="footer__list--item">
-            <a href="https://twitter.com/esteban_sant30">
-              <p>Twitter</p>
-            </a>
-          </li>
         </ul>
       </div>
 
