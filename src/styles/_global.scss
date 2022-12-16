@@ -7,6 +7,9 @@
     padding: 0;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 main{
     min-height: calc(100vh - 63px - 15vh);
     width: 100vw;
